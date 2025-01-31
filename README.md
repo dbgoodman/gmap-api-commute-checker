@@ -4,6 +4,8 @@ A Python tool for analyzing and visualizing commute routes using Google Maps API
 
 ## Features
 
+> **Note:** The transit analysis feature is currently a work in progress.
+
 - Visualizes commute routes on an interactive map
 - Calculates driving time to transit stations
 - Analyzes transit time to final destination
