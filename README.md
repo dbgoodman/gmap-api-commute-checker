@@ -33,8 +33,23 @@ cd commute-analysis
 pip install -r requirements.txt
 
 ```
+## Environment Variables
 
-3. Create a `.env` file in the project root and add your Google Maps API key:
+This project uses environment variables for configuration. To get started:
+
+```bash
+cp .env.example .env
+```
+
+| Variable | Description |
+|----------|-------------|
+| `GOOGLE_MAPS_API_KEY` | Your Google Maps API key |
+| `WORK_ADDRESS` | Your workplace address |
+| `PREFERRED_STATION` | Your preferred train station (optional) |
+| `FINAL_DESTINATION` | Your final destination address |
+| `FALLBACK_STATIONS` | Backup train stations (optional) |
+| `MORNING_ARRIVAL` | Target arrival time (format: HH:MM) |
+| `EVENING_ARRIVAL` | Target departure time (format: HH:MM) |
 
 
 ```

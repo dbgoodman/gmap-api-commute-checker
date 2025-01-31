@@ -36,3 +36,5 @@ var/
 
 # Project specific
 credentials.json
+
+.env
