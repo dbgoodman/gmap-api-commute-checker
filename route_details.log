@@ -1,0 +1,2406 @@
+API queries_quota: 60
+Error running transit analysis: 'TransitAnalyzer' object has no attribute 'analyze_commute'
+2025-01-30 14:28:03,457 - INFO - API queries_quota: 60
+2025-01-30 14:28:03,473 - DEBUG - Starting new HTTPS connection (1): maps.googleapis.com:443
+2025-01-30 14:28:03,600 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:28:04,121 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/place/nearbysearch/json?keyword=train+station&location=40.0293325%2C-75.2460143&maxprice=None&minprice=None&radius=3000&type=train_station&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 2701
+2025-01-30 14:28:04,121 - INFO - 
+Found stations near 1420 Centennial Rd, Narberth, PA 19072:
+2025-01-30 14:28:04,121 - INFO - - Cynwyd (Bala Cynwyd)
+2025-01-30 14:28:04,121 - INFO - - Wynnewood (Lower Merion Township)
+2025-01-30 14:28:04,122 - INFO - - Manayunk (District of Freedom#8573311~!#, Philadelphia)
+2025-01-30 14:28:04,122 - INFO - - Ivy Ridge (Philadelphia)
+2025-01-30 14:28:04,122 - INFO - - Narberth (211 Elmwood Ave, Narberth)
+2025-01-30 14:28:04,122 - INFO - - Wissahickon (Philadelphia)
+2025-01-30 14:28:04,122 - INFO - - Bala (Bala Cynwyd)
+2025-01-30 14:28:04,122 - ERROR - Error running transit analysis: TransitAnalyzer.get_transit_details() missing 1 required positional argument: 'destination'
+2025-01-30 14:28:51,686 - INFO - API queries_quota: 60
+2025-01-30 14:28:51,694 - DEBUG - 
+Searching for stations near 1420 Centennial Rd, Narberth, PA 19072
+2025-01-30 14:28:51,699 - DEBUG - Starting new HTTPS connection (1): maps.googleapis.com:443
+2025-01-30 14:28:51,787 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:28:51,852 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/place/nearbysearch/json?keyword=train+station&location=40.0293325%2C-75.2460143&maxprice=None&minprice=None&radius=3000&type=train_station&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 2706
+2025-01-30 14:28:51,853 - INFO - 
+Found stations near 1420 Centennial Rd, Narberth, PA 19072:
+2025-01-30 14:28:51,853 - INFO - - Cynwyd (Bala Cynwyd)
+2025-01-30 14:28:51,853 - INFO - - Wynnewood (Lower Merion Township)
+2025-01-30 14:28:51,853 - INFO - - Manayunk (District of Freedom#8573311~!#, Philadelphia)
+2025-01-30 14:28:51,853 - INFO - - Ivy Ridge (Philadelphia)
+2025-01-30 14:28:51,853 - INFO - - Narberth (211 Elmwood Ave, Narberth)
+2025-01-30 14:28:51,853 - INFO - - Wissahickon (Philadelphia)
+2025-01-30 14:28:51,853 - INFO - - Bala (Bala Cynwyd)
+2025-01-30 14:28:51,853 - DEBUG - 
+Analyzing morning commute using Cynwyd
+2025-01-30 14:28:51,853 - DEBUG - Morning route: Cynwyd -> 3400 Civic Center Boulevard, Philadelphia, PA 19104
+2025-01-30 14:28:51,853 - DEBUG - Target arrival time: 2025-01-31 09:00:00-05:00
+2025-01-30 14:28:51,853 - DEBUG - 
+Analyzing routes from Cynwyd to 3400 Civic Center Boulevard, Philadelphia, PA 19104:
+2025-01-30 14:28:52,985 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738332000&destination=3400+Civic+Center+Boulevard%2C+Philadelphia%2C+PA+19104&mode=transit&origin=40.0067313%2C-75.23191190000001&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:28:52,992 - DEBUG - 
+Route 1:
+2025-01-30 14:28:52,992 - DEBUG -   Walk: 0m (0.0 min)
+2025-01-30 14:28:52,992 - DEBUG -   Transit: Cynwyd Line (Train) from Cynwyd to William H. Gray III 30th Street
+2025-01-30 14:28:52,992 - DEBUG -   Transit: Airport Line (Train) from William H. Gray III 30th Street to Penn Medicine Station
+2025-01-30 14:28:52,992 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:28:52,993 - DEBUG -   Valid route found: 20.0 min transit + 7.7 min walk
+2025-01-30 14:28:52,993 - DEBUG - 
+Route 2:
+2025-01-30 14:28:52,993 - DEBUG -   Walk: 0m (0.0 min)
+2025-01-30 14:28:52,993 - DEBUG -   Transit: Cynwyd Line (Train) from Cynwyd to William H. Gray III 30th Street
+2025-01-30 14:28:52,993 - DEBUG -   Walk: 235m (4.6 min)
+2025-01-30 14:28:52,993 - DEBUG -   Transit: SEPTA Route 13 (Light rail) from 30th St to 37th St
+2025-01-30 14:28:52,993 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:28:52,993 - DEBUG -   Valid route found: 21.3 min transit + 9.1 min walk
+2025-01-30 14:28:52,993 - DEBUG - 
+Route 3:
+2025-01-30 14:28:52,993 - DEBUG -   Walk: 2127m (29.4 min)
+2025-01-30 14:28:52,993 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Merion to William H. Gray III 30th Street
+2025-01-30 14:28:52,993 - DEBUG -   Transit: Airport Line (Train) from William H. Gray III 30th Street to Penn Medicine Station
+2025-01-30 14:28:52,993 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:28:52,993 - DEBUG -   Valid route found: 15.0 min transit + 7.7 min walk
+2025-01-30 14:28:52,993 - DEBUG - 
+Route 4:
+2025-01-30 14:28:52,993 - DEBUG -   Walk: 2127m (29.4 min)
+2025-01-30 14:28:52,993 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Merion to Suburban Station
+2025-01-30 14:28:52,993 - DEBUG -   Transit: Wilmington/Newark Line (Train) from Suburban Station to Penn Medicine Station
+2025-01-30 14:28:52,993 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:28:52,993 - DEBUG -   Valid route found: 25.0 min transit + 7.7 min walk
+2025-01-30 14:28:52,993 - DEBUG - 
+Route 5:
+2025-01-30 14:28:52,993 - DEBUG -   Walk: 2127m (29.4 min)
+2025-01-30 14:28:52,993 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Merion to William H. Gray III 30th Street
+2025-01-30 14:28:52,993 - DEBUG -   Walk: 235m (4.6 min)
+2025-01-30 14:28:52,994 - DEBUG -   Transit: SEPTA Route 36 (Light rail) from 30th St to 37th St
+2025-01-30 14:28:52,994 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:28:52,994 - DEBUG -   Valid route found: 16.3 min transit + 9.1 min walk
+2025-01-30 14:28:52,994 - DEBUG - 
+Route 6:
+2025-01-30 14:28:52,994 - DEBUG -   Walk: 868m (12.1 min)
+2025-01-30 14:28:52,994 - DEBUG -   Transit: Germantown-Chelten to 69th St TC (Bus) from City Av & Bala Av to Malvern Av & 63rd St - FS
+2025-01-30 14:28:52,994 - DEBUG -   Walk: 39m (0.7 min)
+2025-01-30 14:28:52,994 - DEBUG -   Transit: SEPTA Route 10 (Light rail) from Malvern Av & 63rd St to 33rd St
+2025-01-30 14:28:52,994 - DEBUG -   Walk: 1044m (14.7 min)
+2025-01-30 14:28:52,994 - DEBUG -   Valid route found: 38.0 min transit + 14.7 min walk
+2025-01-30 14:28:52,994 - DEBUG - 
+Selected best route: 15.0 min transit + 7.7 min walk
+2025-01-30 14:28:53,132 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?departure_time=1738327320&destination=40.0067313%2C-75.23191190000001&mode=driving&origin=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:28:53,133 - DEBUG - 
+Analyzing morning commute using Wynnewood
+2025-01-30 14:28:53,133 - DEBUG - Morning route: Wynnewood -> 3400 Civic Center Boulevard, Philadelphia, PA 19104
+2025-01-30 14:28:53,133 - DEBUG - Target arrival time: 2025-01-31 09:00:00-05:00
+2025-01-30 14:28:53,133 - DEBUG - 
+Analyzing routes from Wynnewood to 3400 Civic Center Boulevard, Philadelphia, PA 19104:
+2025-01-30 14:28:53,618 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738332000&destination=3400+Civic+Center+Boulevard%2C+Philadelphia%2C+PA+19104&mode=transit&origin=40.0027266%2C-75.2730773&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:28:53,621 - DEBUG - 
+Route 1:
+2025-01-30 14:28:53,622 - DEBUG -   Walk: 55m (2.5 min)
+2025-01-30 14:28:53,622 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Wynnewood to William H. Gray III 30th Street
+2025-01-30 14:28:53,622 - DEBUG -   Transit: Airport Line (Train) from William H. Gray III 30th Street to Penn Medicine Station
+2025-01-30 14:28:53,622 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:28:53,622 - DEBUG -   Valid route found: 19.0 min transit + 7.7 min walk
+2025-01-30 14:28:53,622 - DEBUG - 
+Route 2:
+2025-01-30 14:28:53,622 - DEBUG -   Walk: 55m (2.5 min)
+2025-01-30 14:28:53,622 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Wynnewood to Suburban Station
+2025-01-30 14:28:53,622 - DEBUG -   Transit: Wilmington/Newark Line (Train) from Suburban Station to Penn Medicine Station
+2025-01-30 14:28:53,622 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:28:53,622 - DEBUG -   Valid route found: 29.0 min transit + 7.7 min walk
+2025-01-30 14:28:53,622 - DEBUG - 
+Route 3:
+2025-01-30 14:28:53,622 - DEBUG -   Walk: 55m (2.5 min)
+2025-01-30 14:28:53,622 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Wynnewood to Suburban Station
+2025-01-30 14:28:53,622 - DEBUG -   Walk: 290m (4.2 min)
+2025-01-30 14:28:53,622 - DEBUG -   Transit: SEPTA Route 13 (Light rail) from 15th St Trolley Station to 37th St
+2025-01-30 14:28:53,622 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:28:53,622 - DEBUG -   Valid route found: 29.5 min transit + 9.1 min walk
+2025-01-30 14:28:53,622 - DEBUG - 
+Route 4:
+2025-01-30 14:28:53,623 - DEBUG -   Walk: 55m (2.5 min)
+2025-01-30 14:28:53,623 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Wynnewood to William H. Gray III 30th Street
+2025-01-30 14:28:53,623 - DEBUG -   Walk: 235m (4.6 min)
+2025-01-30 14:28:53,623 - DEBUG -   Transit: SEPTA Route 36 (Light rail) from 30th St to 37th St
+2025-01-30 14:28:53,623 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:28:53,623 - DEBUG -   Valid route found: 20.3 min transit + 9.1 min walk
+2025-01-30 14:28:53,623 - DEBUG - 
+Route 5:
+2025-01-30 14:28:53,623 - DEBUG -   Walk: 55m (2.5 min)
+2025-01-30 14:28:53,623 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Wynnewood to Jefferson Station
+2025-01-30 14:28:53,623 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Jefferson Station to Penn Medicine Station
+2025-01-30 14:28:53,623 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:28:53,623 - DEBUG -   Valid route found: 40.0 min transit + 7.7 min walk
+2025-01-30 14:28:53,623 - DEBUG - 
+Route 6:
+2025-01-30 14:28:53,623 - DEBUG -   Walk: 55m (2.5 min)
+2025-01-30 14:28:53,623 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Wynnewood to William H. Gray III 30th Street
+2025-01-30 14:28:53,623 - DEBUG -   Walk: 235m (4.6 min)
+2025-01-30 14:28:53,624 - DEBUG -   Transit: Route 34 (Light rail) from 30th St to 37th St
+2025-01-30 14:28:53,624 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:28:53,624 - DEBUG -   Valid route found: 21.3 min transit + 9.1 min walk
+2025-01-30 14:28:53,627 - DEBUG - 
+Selected best route: 19.0 min transit + 7.7 min walk
+2025-01-30 14:28:53,711 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?departure_time=1738328700&destination=40.0027266%2C-75.2730773&mode=driving&origin=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:28:53,712 - DEBUG - 
+Analyzing morning commute using Manayunk
+2025-01-30 14:28:53,712 - DEBUG - Morning route: Manayunk -> 3400 Civic Center Boulevard, Philadelphia, PA 19104
+2025-01-30 14:28:53,712 - DEBUG - Target arrival time: 2025-01-31 09:00:00-05:00
+2025-01-30 14:28:53,712 - DEBUG - 
+Analyzing routes from Manayunk to 3400 Civic Center Boulevard, Philadelphia, PA 19104:
+2025-01-30 14:28:54,334 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738332000&destination=3400+Civic+Center+Boulevard%2C+Philadelphia%2C+PA+19104&mode=transit&origin=40.0268558%2C-75.2252668&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:28:54,339 - DEBUG - 
+Route 1:
+2025-01-30 14:28:54,340 - DEBUG -   Walk: 63m (3.1 min)
+2025-01-30 14:28:54,340 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Manayunk to Penn Medicine Station
+2025-01-30 14:28:54,340 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:28:54,340 - DEBUG -   Valid route found: 33.0 min transit + 7.7 min walk
+2025-01-30 14:28:54,340 - DEBUG - 
+Route 2:
+2025-01-30 14:28:54,340 - DEBUG -   Walk: 63m (3.1 min)
+2025-01-30 14:28:54,340 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Manayunk to Penn Medicine Station
+2025-01-30 14:28:54,340 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:28:54,340 - DEBUG -   Valid route found: 32.0 min transit + 7.7 min walk
+2025-01-30 14:28:54,340 - DEBUG - 
+Route 3:
+2025-01-30 14:28:54,340 - DEBUG -   Walk: 63m (3.1 min)
+2025-01-30 14:28:54,340 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Manayunk to Suburban Station
+2025-01-30 14:28:54,340 - DEBUG -   Walk: 290m (4.2 min)
+2025-01-30 14:28:54,340 - DEBUG -   Transit: SEPTA Route 13 (Light rail) from 15th St Trolley Station to 37th St
+2025-01-30 14:28:54,341 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:28:54,341 - DEBUG -   Valid route found: 32.5 min transit + 9.1 min walk
+2025-01-30 14:28:54,341 - DEBUG - 
+Route 4:
+2025-01-30 14:28:54,341 - DEBUG -   Walk: 63m (3.1 min)
+2025-01-30 14:28:54,341 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Manayunk to Jefferson Station
+2025-01-30 14:28:54,341 - DEBUG -   Walk: 437m (6.3 min)
+2025-01-30 14:28:54,341 - DEBUG -   Transit: SEPTA Route 36 (Light rail) from 13th St Trolley Station to 37th St
+2025-01-30 14:28:54,341 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:28:54,341 - DEBUG -   Valid route found: 28.5 min transit + 9.1 min walk
+2025-01-30 14:28:54,341 - DEBUG - 
+Route 5:
+2025-01-30 14:28:54,341 - DEBUG -   Walk: 63m (3.1 min)
+2025-01-30 14:28:54,341 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Manayunk to Penn Medicine Station
+2025-01-30 14:28:54,342 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:28:54,342 - DEBUG -   Valid route found: 32.0 min transit + 7.7 min walk
+2025-01-30 14:28:54,342 - DEBUG - 
+Route 6:
+2025-01-30 14:28:54,342 - DEBUG -   Walk: 63m (3.1 min)
+2025-01-30 14:28:54,342 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Manayunk to William H. Gray III 30th Street
+2025-01-30 14:28:54,342 - DEBUG -   Walk: 235m (4.6 min)
+2025-01-30 14:28:54,342 - DEBUG -   Transit: Route 34 (Light rail) from 30th St to 37th St
+2025-01-30 14:28:54,342 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:28:54,342 - DEBUG -   Valid route found: 33.9 min transit + 9.1 min walk
+2025-01-30 14:28:54,342 - DEBUG - 
+Selected best route: 28.5 min transit + 9.1 min walk
+2025-01-30 14:28:54,463 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?departure_time=1738324860&destination=40.0268558%2C-75.2252668&mode=driving&origin=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:28:54,479 - DEBUG - 
+Analyzing morning commute using Ivy Ridge
+2025-01-30 14:28:54,480 - DEBUG - Morning route: Ivy Ridge -> 3400 Civic Center Boulevard, Philadelphia, PA 19104
+2025-01-30 14:28:54,480 - DEBUG - Target arrival time: 2025-01-31 09:00:00-05:00
+2025-01-30 14:28:54,480 - DEBUG - 
+Analyzing routes from Ivy Ridge to 3400 Civic Center Boulevard, Philadelphia, PA 19104:
+2025-01-30 14:28:55,049 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738332000&destination=3400+Civic+Center+Boulevard%2C+Philadelphia%2C+PA+19104&mode=transit&origin=40.0341617%2C-75.2356293&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:28:55,067 - DEBUG - 
+Route 1:
+2025-01-30 14:28:55,068 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Ivy Ridge to Penn Medicine Station
+2025-01-30 14:28:55,068 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:28:55,068 - DEBUG -   Valid route found: 37.0 min transit + 7.7 min walk
+2025-01-30 14:28:55,068 - DEBUG - 
+Route 2:
+2025-01-30 14:28:55,068 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Ivy Ridge to Penn Medicine Station
+2025-01-30 14:28:55,068 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:28:55,068 - DEBUG -   Valid route found: 35.0 min transit + 7.7 min walk
+2025-01-30 14:28:55,068 - DEBUG - 
+Route 3:
+2025-01-30 14:28:55,068 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Ivy Ridge to Temple University
+2025-01-30 14:28:55,068 - DEBUG -   Transit: Lansdale/Doylestown Line (Train) from Temple University to Penn Medicine Station
+2025-01-30 14:28:55,068 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:28:55,068 - DEBUG -   Valid route found: 32.0 min transit + 7.7 min walk
+2025-01-30 14:28:55,068 - DEBUG - 
+Route 4:
+2025-01-30 14:28:55,068 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Ivy Ridge to Suburban Station
+2025-01-30 14:28:55,068 - DEBUG -   Walk: 290m (4.2 min)
+2025-01-30 14:28:55,068 - DEBUG -   Transit: SEPTA Route 13 (Light rail) from 15th St Trolley Station to 37th St
+2025-01-30 14:28:55,068 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:28:55,068 - DEBUG -   Valid route found: 34.5 min transit + 9.1 min walk
+2025-01-30 14:28:55,068 - DEBUG - 
+Route 5:
+2025-01-30 14:28:55,068 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Ivy Ridge to Jefferson Station
+2025-01-30 14:28:55,068 - DEBUG -   Walk: 437m (6.3 min)
+2025-01-30 14:28:55,068 - DEBUG -   Transit: SEPTA Route 36 (Light rail) from 13th St Trolley Station to 37th St
+2025-01-30 14:28:55,069 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:28:55,069 - DEBUG -   Valid route found: 30.5 min transit + 9.1 min walk
+2025-01-30 14:28:55,069 - DEBUG - 
+Route 6:
+2025-01-30 14:28:55,069 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Ivy Ridge to Penn Medicine Station
+2025-01-30 14:28:55,069 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:28:55,069 - DEBUG -   Valid route found: 35.0 min transit + 7.7 min walk
+2025-01-30 14:28:55,069 - DEBUG - 
+Selected best route: 30.5 min transit + 9.1 min walk
+2025-01-30 14:28:55,149 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?departure_time=1738324980&destination=40.0341617%2C-75.2356293&mode=driving&origin=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:28:55,150 - DEBUG - 
+Analyzing morning commute using Narberth
+2025-01-30 14:28:55,150 - DEBUG - Morning route: Narberth -> 3400 Civic Center Boulevard, Philadelphia, PA 19104
+2025-01-30 14:28:55,150 - DEBUG - Target arrival time: 2025-01-31 09:00:00-05:00
+2025-01-30 14:28:55,150 - DEBUG - 
+Analyzing routes from Narberth to 3400 Civic Center Boulevard, Philadelphia, PA 19104:
+2025-01-30 14:28:55,674 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738332000&destination=3400+Civic+Center+Boulevard%2C+Philadelphia%2C+PA+19104&mode=transit&origin=40.0047601%2C-75.2614664&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:28:55,678 - DEBUG - 
+Route 1:
+2025-01-30 14:28:55,678 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Narberth to William H. Gray III 30th Street
+2025-01-30 14:28:55,678 - DEBUG -   Transit: Airport Line (Train) from William H. Gray III 30th Street to Penn Medicine Station
+2025-01-30 14:28:55,678 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:28:55,678 - DEBUG -   Valid route found: 17.0 min transit + 7.7 min walk
+2025-01-30 14:28:55,678 - DEBUG - 
+Route 2:
+2025-01-30 14:28:55,678 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Narberth to Suburban Station
+2025-01-30 14:28:55,679 - DEBUG -   Transit: Wilmington/Newark Line (Train) from Suburban Station to Penn Medicine Station
+2025-01-30 14:28:55,679 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:28:55,679 - DEBUG -   Valid route found: 27.0 min transit + 7.7 min walk
+2025-01-30 14:28:55,679 - DEBUG - 
+Route 3:
+2025-01-30 14:28:55,679 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Narberth to Suburban Station
+2025-01-30 14:28:55,679 - DEBUG -   Walk: 290m (4.2 min)
+2025-01-30 14:28:55,679 - DEBUG -   Transit: SEPTA Route 13 (Light rail) from 15th St Trolley Station to 37th St
+2025-01-30 14:28:55,679 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:28:55,679 - DEBUG -   Valid route found: 27.5 min transit + 9.1 min walk
+2025-01-30 14:28:55,679 - DEBUG - 
+Route 4:
+2025-01-30 14:28:55,679 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Narberth to William H. Gray III 30th Street
+2025-01-30 14:28:55,679 - DEBUG -   Walk: 235m (4.6 min)
+2025-01-30 14:28:55,679 - DEBUG -   Transit: SEPTA Route 36 (Light rail) from 30th St to 37th St
+2025-01-30 14:28:55,679 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:28:55,679 - DEBUG -   Valid route found: 18.3 min transit + 9.1 min walk
+2025-01-30 14:28:55,679 - DEBUG - 
+Route 5:
+2025-01-30 14:28:55,679 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Narberth to Jefferson Station
+2025-01-30 14:28:55,679 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Jefferson Station to Penn Medicine Station
+2025-01-30 14:28:55,679 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:28:55,679 - DEBUG -   Valid route found: 38.0 min transit + 7.7 min walk
+2025-01-30 14:28:55,679 - DEBUG - 
+Route 6:
+2025-01-30 14:28:55,679 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Narberth to William H. Gray III 30th Street
+2025-01-30 14:28:55,679 - DEBUG -   Walk: 235m (4.6 min)
+2025-01-30 14:28:55,679 - DEBUG -   Transit: Route 34 (Light rail) from 30th St to 37th St
+2025-01-30 14:28:55,679 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:28:55,680 - DEBUG -   Valid route found: 19.3 min transit + 9.1 min walk
+2025-01-30 14:28:55,680 - DEBUG - 
+Selected best route: 17.0 min transit + 7.7 min walk
+2025-01-30 14:28:55,808 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?departure_time=1738329000&destination=40.0047601%2C-75.2614664&mode=driving&origin=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:28:55,811 - DEBUG - 
+Analyzing morning commute using Wissahickon
+2025-01-30 14:28:55,811 - DEBUG - Morning route: Wissahickon -> 3400 Civic Center Boulevard, Philadelphia, PA 19104
+2025-01-30 14:28:55,812 - DEBUG - Target arrival time: 2025-01-31 09:00:00-05:00
+2025-01-30 14:28:55,812 - DEBUG - 
+Analyzing routes from Wissahickon to 3400 Civic Center Boulevard, Philadelphia, PA 19104:
+2025-01-30 14:28:56,359 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738332000&destination=3400+Civic+Center+Boulevard%2C+Philadelphia%2C+PA+19104&mode=transit&origin=40.0166454%2C-75.2102424&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:28:56,362 - DEBUG - 
+Route 1:
+2025-01-30 14:28:56,363 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Wissahickon to Penn Medicine Station
+2025-01-30 14:28:56,363 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:28:56,363 - DEBUG -   Valid route found: 31.0 min transit + 7.7 min walk
+2025-01-30 14:28:56,363 - DEBUG - 
+Route 2:
+2025-01-30 14:28:56,363 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Wissahickon to Penn Medicine Station
+2025-01-30 14:28:56,363 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:28:56,363 - DEBUG -   Valid route found: 29.0 min transit + 7.7 min walk
+2025-01-30 14:28:56,363 - DEBUG - 
+Route 3:
+2025-01-30 14:28:56,363 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Wissahickon to Suburban Station
+2025-01-30 14:28:56,363 - DEBUG -   Transit: Wilmington/Newark Line (Train) from Suburban Station to Penn Medicine Station
+2025-01-30 14:28:56,364 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:28:56,364 - DEBUG -   Valid route found: 28.0 min transit + 7.7 min walk
+2025-01-30 14:28:56,364 - DEBUG - 
+Route 4:
+2025-01-30 14:28:56,364 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Wissahickon to Suburban Station
+2025-01-30 14:28:56,364 - DEBUG -   Walk: 290m (4.2 min)
+2025-01-30 14:28:56,364 - DEBUG -   Transit: SEPTA Route 13 (Light rail) from 15th St Trolley Station to 37th St
+2025-01-30 14:28:56,364 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:28:56,364 - DEBUG -   Valid route found: 30.5 min transit + 9.1 min walk
+2025-01-30 14:28:56,364 - DEBUG - 
+Route 5:
+2025-01-30 14:28:56,364 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Wissahickon to Jefferson Station
+2025-01-30 14:28:56,364 - DEBUG -   Walk: 437m (6.3 min)
+2025-01-30 14:28:56,364 - DEBUG -   Transit: SEPTA Route 36 (Light rail) from 13th St Trolley Station to 37th St
+2025-01-30 14:28:56,364 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:28:56,364 - DEBUG -   Valid route found: 26.5 min transit + 9.1 min walk
+2025-01-30 14:28:56,365 - DEBUG - 
+Route 6:
+2025-01-30 14:28:56,366 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Wissahickon to Penn Medicine Station
+2025-01-30 14:28:56,366 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:28:56,367 - DEBUG -   Valid route found: 29.0 min transit + 7.7 min walk
+2025-01-30 14:28:56,367 - DEBUG - 
+Selected best route: 26.5 min transit + 9.1 min walk
+2025-01-30 14:28:56,449 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?departure_time=1738325220&destination=40.0166454%2C-75.2102424&mode=driving&origin=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:28:56,450 - DEBUG - 
+Analyzing morning commute using Bala
+2025-01-30 14:28:56,450 - DEBUG - Morning route: Bala -> 3400 Civic Center Boulevard, Philadelphia, PA 19104
+2025-01-30 14:28:56,450 - DEBUG - Target arrival time: 2025-01-31 09:00:00-05:00
+2025-01-30 14:28:56,450 - DEBUG - 
+Analyzing routes from Bala to 3400 Civic Center Boulevard, Philadelphia, PA 19104:
+2025-01-30 14:28:57,206 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738332000&destination=3400+Civic+Center+Boulevard%2C+Philadelphia%2C+PA+19104&mode=transit&origin=40.0010048%2C-75.22781069999999&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:28:57,214 - DEBUG - 
+Route 1:
+2025-01-30 14:28:57,215 - DEBUG -   Transit: Cynwyd Line (Train) from Bala to William H. Gray III 30th Street
+2025-01-30 14:28:57,215 - DEBUG -   Transit: Airport Line (Train) from William H. Gray III 30th Street to Penn Medicine Station
+2025-01-30 14:28:57,216 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:28:57,216 - DEBUG -   Valid route found: 18.0 min transit + 7.7 min walk
+2025-01-30 14:28:57,216 - DEBUG - 
+Route 2:
+2025-01-30 14:28:57,216 - DEBUG -   Transit: Cynwyd Line (Train) from Bala to William H. Gray III 30th Street
+2025-01-30 14:28:57,216 - DEBUG -   Walk: 235m (4.6 min)
+2025-01-30 14:28:57,216 - DEBUG -   Transit: SEPTA Route 13 (Light rail) from 30th St to 37th St
+2025-01-30 14:28:57,216 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:28:57,216 - DEBUG -   Valid route found: 19.3 min transit + 9.1 min walk
+2025-01-30 14:28:57,216 - DEBUG - 
+Route 3:
+2025-01-30 14:28:57,216 - DEBUG -   Walk: 187m (2.7 min)
+2025-01-30 14:28:57,216 - DEBUG -   Transit: Germantown-Chelten to 69th St TC (Bus) from City Av & Bala Av to City Av & Merion Rd
+2025-01-30 14:28:57,216 - DEBUG -   Walk: 138m (2.3 min)
+2025-01-30 14:28:57,216 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Overbrook to William H. Gray III 30th Street
+2025-01-30 14:28:57,216 - DEBUG -   Transit: Airport Line (Train) from William H. Gray III 30th Street to Penn Medicine Station
+2025-01-30 14:28:57,216 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:28:57,216 - DEBUG -   Valid route found: 19.1 min transit + 7.7 min walk
+2025-01-30 14:28:57,216 - DEBUG - 
+Route 4:
+2025-01-30 14:28:57,216 - DEBUG -   Walk: 187m (2.7 min)
+2025-01-30 14:28:57,216 - DEBUG -   Transit: Germantown-Chelten to 69th St TC (Bus) from City Av & Bala Av to City Av & Merion Rd
+2025-01-30 14:28:57,216 - DEBUG -   Walk: 138m (2.3 min)
+2025-01-30 14:28:57,216 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Overbrook to Suburban Station
+2025-01-30 14:28:57,216 - DEBUG -   Transit: Wilmington/Newark Line (Train) from Suburban Station to Penn Medicine Station
+2025-01-30 14:28:57,216 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:28:57,216 - DEBUG -   Valid route found: 29.1 min transit + 7.7 min walk
+2025-01-30 14:28:57,216 - DEBUG - 
+Route 5:
+2025-01-30 14:28:57,216 - DEBUG -   Walk: 198m (3.5 min)
+2025-01-30 14:28:57,217 - DEBUG -   Transit: Germantown-Chelten to 69th St TC (Bus) from City Av & Conshohocken Av - FS to Ridge Av & Osborn St - MBNS
+2025-01-30 14:28:57,217 - DEBUG -   Walk: 87m (3.2 min)
+2025-01-30 14:28:57,217 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Wissahickon to Penn Medicine Station
+2025-01-30 14:28:57,217 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:28:57,217 - DEBUG -   Valid route found: 38.9 min transit + 7.7 min walk
+2025-01-30 14:28:57,217 - DEBUG - 
+Route 6:
+2025-01-30 14:28:57,217 - DEBUG -   Walk: 187m (2.7 min)
+2025-01-30 14:28:57,217 - DEBUG -   Transit: Germantown-Chelten to 69th St TC (Bus) from City Av & Bala Av to Malvern Av & 63rd St - FS
+2025-01-30 14:28:57,217 - DEBUG -   Walk: 39m (0.7 min)
+2025-01-30 14:28:57,217 - DEBUG -   Transit: SEPTA Route 10 (Light rail) from Malvern Av & 63rd St to 33rd St
+2025-01-30 14:28:57,217 - DEBUG -   Walk: 1044m (14.7 min)
+2025-01-30 14:28:57,217 - DEBUG -   Valid route found: 38.0 min transit + 14.7 min walk
+2025-01-30 14:28:57,217 - DEBUG - 
+Selected best route: 18.0 min transit + 7.7 min walk
+2025-01-30 14:28:57,357 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?departure_time=1738326600&destination=40.0010048%2C-75.22781069999999&mode=driving&origin=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:28:57,362 - DEBUG - 
+Searching for stations near 1420 Centennial Rd, Narberth, PA 19072
+2025-01-30 14:28:57,406 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:28:57,473 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/place/nearbysearch/json?keyword=train+station&location=40.0293325%2C-75.2460143&maxprice=None&minprice=None&radius=3000&type=train_station&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 2705
+2025-01-30 14:28:57,473 - INFO - 
+Found stations near 1420 Centennial Rd, Narberth, PA 19072:
+2025-01-30 14:28:57,474 - INFO - - Cynwyd (Bala Cynwyd)
+2025-01-30 14:28:57,474 - INFO - - Wynnewood (Lower Merion Township)
+2025-01-30 14:28:57,474 - INFO - - Manayunk (District of Freedom#8573311~!#, Philadelphia)
+2025-01-30 14:28:57,474 - INFO - - Ivy Ridge (Philadelphia)
+2025-01-30 14:28:57,474 - INFO - - Narberth (211 Elmwood Ave, Narberth)
+2025-01-30 14:28:57,474 - INFO - - Wissahickon (Philadelphia)
+2025-01-30 14:28:57,474 - INFO - - Bala (Bala Cynwyd)
+2025-01-30 14:28:57,474 - DEBUG - 
+Analyzing evening commute using Cynwyd
+2025-01-30 14:28:57,474 - DEBUG - Evening route: 3400 Civic Center Boulevard, Philadelphia, PA 19104 -> Cynwyd
+2025-01-30 14:28:57,474 - DEBUG - Target arrival time: 2025-01-31 17:30:00-05:00
+2025-01-30 14:28:57,474 - DEBUG - 
+Analyzing routes from Cynwyd to 40.0067313,-75.23191190000001:
+2025-01-30 14:28:57,521 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738362600&destination=40.0067313%2C-75.23191190000001&mode=transit&origin=40.0067313%2C-75.23191190000001&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:28:57,521 - DEBUG - No routes found from Cynwyd
+2025-01-30 14:28:57,521 - DEBUG - No valid transit routes found for Cynwyd
+2025-01-30 14:28:57,521 - DEBUG - 
+Analyzing evening commute using Wynnewood
+2025-01-30 14:28:57,521 - DEBUG - Evening route: 3400 Civic Center Boulevard, Philadelphia, PA 19104 -> Wynnewood
+2025-01-30 14:28:57,521 - DEBUG - Target arrival time: 2025-01-31 17:30:00-05:00
+2025-01-30 14:28:57,521 - DEBUG - 
+Analyzing routes from Wynnewood to 40.0027266,-75.2730773:
+2025-01-30 14:28:57,620 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738362600&destination=40.0027266%2C-75.2730773&mode=transit&origin=40.0027266%2C-75.2730773&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:28:57,620 - DEBUG - No routes found from Wynnewood
+2025-01-30 14:28:57,620 - DEBUG - No valid transit routes found for Wynnewood
+2025-01-30 14:28:57,620 - DEBUG - 
+Analyzing evening commute using Manayunk
+2025-01-30 14:28:57,620 - DEBUG - Evening route: 3400 Civic Center Boulevard, Philadelphia, PA 19104 -> Manayunk
+2025-01-30 14:28:57,621 - DEBUG - Target arrival time: 2025-01-31 17:30:00-05:00
+2025-01-30 14:28:57,621 - DEBUG - 
+Analyzing routes from Manayunk to 40.0268558,-75.2252668:
+2025-01-30 14:28:57,712 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738362600&destination=40.0268558%2C-75.2252668&mode=transit&origin=40.0268558%2C-75.2252668&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:28:57,714 - DEBUG - No routes found from Manayunk
+2025-01-30 14:28:57,714 - DEBUG - No valid transit routes found for Manayunk
+2025-01-30 14:28:57,715 - DEBUG - 
+Analyzing evening commute using Ivy Ridge
+2025-01-30 14:28:57,715 - DEBUG - Evening route: 3400 Civic Center Boulevard, Philadelphia, PA 19104 -> Ivy Ridge
+2025-01-30 14:28:57,715 - DEBUG - Target arrival time: 2025-01-31 17:30:00-05:00
+2025-01-30 14:28:57,715 - DEBUG - 
+Analyzing routes from Ivy Ridge to 40.0341617,-75.2356293:
+2025-01-30 14:28:57,798 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738362600&destination=40.0341617%2C-75.2356293&mode=transit&origin=40.0341617%2C-75.2356293&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:28:57,802 - DEBUG - No routes found from Ivy Ridge
+2025-01-30 14:28:57,802 - DEBUG - No valid transit routes found for Ivy Ridge
+2025-01-30 14:28:57,802 - DEBUG - 
+Analyzing evening commute using Narberth
+2025-01-30 14:28:57,803 - DEBUG - Evening route: 3400 Civic Center Boulevard, Philadelphia, PA 19104 -> Narberth
+2025-01-30 14:28:57,803 - DEBUG - Target arrival time: 2025-01-31 17:30:00-05:00
+2025-01-30 14:28:57,803 - DEBUG - 
+Analyzing routes from Narberth to 40.0047601,-75.2614664:
+2025-01-30 14:28:57,907 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738362600&destination=40.0047601%2C-75.2614664&mode=transit&origin=40.0047601%2C-75.2614664&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:28:57,908 - DEBUG - No routes found from Narberth
+2025-01-30 14:28:57,908 - DEBUG - No valid transit routes found for Narberth
+2025-01-30 14:28:57,908 - DEBUG - 
+Analyzing evening commute using Wissahickon
+2025-01-30 14:28:57,909 - DEBUG - Evening route: 3400 Civic Center Boulevard, Philadelphia, PA 19104 -> Wissahickon
+2025-01-30 14:28:57,909 - DEBUG - Target arrival time: 2025-01-31 17:30:00-05:00
+2025-01-30 14:28:57,909 - DEBUG - 
+Analyzing routes from Wissahickon to 40.0166454,-75.2102424:
+2025-01-30 14:28:57,992 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738362600&destination=40.0166454%2C-75.2102424&mode=transit&origin=40.0166454%2C-75.2102424&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:28:57,993 - DEBUG - No routes found from Wissahickon
+2025-01-30 14:28:57,993 - DEBUG - No valid transit routes found for Wissahickon
+2025-01-30 14:28:57,993 - DEBUG - 
+Analyzing evening commute using Bala
+2025-01-30 14:28:57,993 - DEBUG - Evening route: 3400 Civic Center Boulevard, Philadelphia, PA 19104 -> Bala
+2025-01-30 14:28:57,993 - DEBUG - Target arrival time: 2025-01-31 17:30:00-05:00
+2025-01-30 14:28:57,993 - DEBUG - 
+Analyzing routes from Bala to 40.0010048,-75.22781069999999:
+2025-01-30 14:28:58,101 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738362600&destination=40.0010048%2C-75.22781069999999&mode=transit&origin=40.0010048%2C-75.22781069999999&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:28:58,101 - DEBUG - No routes found from Bala
+2025-01-30 14:28:58,101 - DEBUG - No valid transit routes found for Bala
+2025-01-30 14:30:17,606 - INFO - API queries_quota: 60
+2025-01-30 14:30:17,617 - DEBUG - 
+Searching for stations near 1420 Centennial Rd, Narberth, PA 19072
+2025-01-30 14:30:17,621 - DEBUG - Starting new HTTPS connection (1): maps.googleapis.com:443
+2025-01-30 14:30:17,782 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:30:18,150 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/place/nearbysearch/json?keyword=train+station&location=40.0293325%2C-75.2460143&maxprice=None&minprice=None&radius=3000&type=train_station&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 2699
+2025-01-30 14:30:18,151 - INFO - 
+Found stations near 1420 Centennial Rd, Narberth, PA 19072:
+2025-01-30 14:30:18,152 - INFO - - Cynwyd (Bala Cynwyd)
+2025-01-30 14:30:18,152 - INFO - - Ivy Ridge (Philadelphia)
+2025-01-30 14:30:18,152 - INFO - - Wissahickon (Philadelphia)
+2025-01-30 14:30:18,152 - INFO - - Manayunk (District of Freedom#8573311~!#, Philadelphia)
+2025-01-30 14:30:18,152 - INFO - - Wynnewood (Lower Merion Township)
+2025-01-30 14:30:18,152 - INFO - - Narberth (211 Elmwood Ave, Narberth)
+2025-01-30 14:30:18,152 - INFO - - Bala (Bala Cynwyd)
+2025-01-30 14:30:18,152 - DEBUG - 
+Analyzing morning commute using Cynwyd
+2025-01-30 14:30:18,152 - DEBUG - Morning route: Cynwyd -> 3400 Civic Center Boulevard, Philadelphia, PA 19104
+2025-01-30 14:30:18,152 - DEBUG - Target arrival time: 2025-01-31 09:00:00-05:00
+2025-01-30 14:30:18,152 - DEBUG - 
+Analyzing routes from 3400 Civic Center Boulevard, Philadelphia, PA 19104 to 40.0067313,-75.23191190000001:
+2025-01-30 14:30:18,619 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738332000&destination=40.0067313%2C-75.23191190000001&mode=transit&origin=3400+Civic+Center+Boulevard%2C+Philadelphia%2C+PA+19104&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:30:18,631 - DEBUG - 
+Route 1:
+2025-01-30 14:30:18,631 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:30:18,632 - DEBUG -   Transit: Wilmington/Newark Line (Train) from Penn Medicine Station to William H. Gray III 30th Street
+2025-01-30 14:30:18,632 - DEBUG -   Transit: Cynwyd Line (Train) from William H. Gray III 30th Street to Cynwyd
+2025-01-30 14:30:18,632 - DEBUG -   Walk: 0m (0.0 min)
+2025-01-30 14:30:18,632 - DEBUG -   Valid route found: 19.0 min transit + 0.0 min walk
+2025-01-30 14:30:18,632 - DEBUG - 
+Route 2:
+2025-01-30 14:30:18,632 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:30:18,632 - DEBUG -   Transit: Airport Line (Train) from Penn Medicine Station to Suburban Station
+2025-01-30 14:30:18,632 - DEBUG -   Transit: Cynwyd Line (Train) from Suburban Station to Cynwyd
+2025-01-30 14:30:18,632 - DEBUG -   Walk: 0m (0.0 min)
+2025-01-30 14:30:18,632 - DEBUG -   Valid route found: 29.0 min transit + 0.0 min walk
+2025-01-30 14:30:18,632 - DEBUG - 
+Route 3:
+2025-01-30 14:30:18,632 - DEBUG -   Walk: 669m (9.9 min)
+2025-01-30 14:30:18,632 - DEBUG -   Transit: SEPTA Route 13 (Light rail) from 37th St to Drexel Station at 30th St
+2025-01-30 14:30:18,632 - DEBUG -   Walk: 266m (5.3 min)
+2025-01-30 14:30:18,632 - DEBUG -   Transit: Cynwyd Line (Train) from William H. Gray III 30th Street to Cynwyd
+2025-01-30 14:30:18,632 - DEBUG -   Walk: 0m (0.0 min)
+2025-01-30 14:30:18,632 - DEBUG -   Valid route found: 20.4 min transit + 0.0 min walk
+2025-01-30 14:30:18,632 - DEBUG - 
+Route 4:
+2025-01-30 14:30:18,632 - DEBUG -   Walk: 669m (9.9 min)
+2025-01-30 14:30:18,632 - DEBUG -   Transit: SEPTA Route 11 (Light rail) from 37th St to 15th St Trolley Station
+2025-01-30 14:30:18,632 - DEBUG -   Walk: 324m (4.7 min)
+2025-01-30 14:30:18,632 - DEBUG -   Transit: Cynwyd Line (Train) from Suburban Station to Cynwyd
+2025-01-30 14:30:18,632 - DEBUG -   Walk: 0m (0.0 min)
+2025-01-30 14:30:18,632 - DEBUG -   Valid route found: 30.1 min transit + 0.0 min walk
+2025-01-30 14:30:18,632 - DEBUG - 
+Route 5:
+2025-01-30 14:30:18,632 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:30:18,632 - DEBUG -   Transit: Media/Wawa Line (Train) from Penn Medicine Station to William H. Gray III 30th Street
+2025-01-30 14:30:18,632 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from William H. Gray III 30th Street to Merion
+2025-01-30 14:30:18,632 - DEBUG -   Walk: 2126m (30.5 min)
+2025-01-30 14:30:18,632 - DEBUG -   Valid route found: 13.0 min transit + 30.5 min walk
+2025-01-30 14:30:18,632 - DEBUG - 
+Route 6:
+2025-01-30 14:30:18,632 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:30:18,632 - DEBUG -   Transit: Media/Wawa Line (Train) from Penn Medicine Station to William H. Gray III 30th Street
+2025-01-30 14:30:18,632 - DEBUG -   Transit: Cynwyd Line (Train) from William H. Gray III 30th Street to Cynwyd
+2025-01-30 14:30:18,632 - DEBUG -   Walk: 0m (0.0 min)
+2025-01-30 14:30:18,632 - DEBUG -   Valid route found: 20.0 min transit + 0.0 min walk
+2025-01-30 14:30:18,632 - DEBUG - 
+Selected best route: 19.0 min transit + 0.0 min walk
+2025-01-30 14:30:18,760 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?departure_time=1738328220&destination=40.0067313%2C-75.23191190000001&mode=driving&origin=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:30:18,761 - DEBUG - 
+Analyzing morning commute using Ivy Ridge
+2025-01-30 14:30:18,761 - DEBUG - Morning route: Ivy Ridge -> 3400 Civic Center Boulevard, Philadelphia, PA 19104
+2025-01-30 14:30:18,762 - DEBUG - Target arrival time: 2025-01-31 09:00:00-05:00
+2025-01-30 14:30:18,762 - DEBUG - 
+Analyzing routes from 3400 Civic Center Boulevard, Philadelphia, PA 19104 to 40.0341617,-75.2356293:
+2025-01-30 14:30:19,190 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738332000&destination=40.0341617%2C-75.2356293&mode=transit&origin=3400+Civic+Center+Boulevard%2C+Philadelphia%2C+PA+19104&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:30:19,200 - DEBUG - 
+Route 1:
+2025-01-30 14:30:19,200 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:30:19,200 - DEBUG -   Transit: Media/Wawa Line (Train) from Penn Medicine Station to Ivy Ridge
+2025-01-30 14:30:19,200 - DEBUG -   Valid route found: 32.0 min transit + 7.2 min walk
+2025-01-30 14:30:19,200 - DEBUG - 
+Route 2:
+2025-01-30 14:30:19,200 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:30:19,201 - DEBUG -   Transit: Media/Wawa Line (Train) from Penn Medicine Station to William H. Gray III 30th Street
+2025-01-30 14:30:19,201 - DEBUG -   Transit: Chestnut Hill West Line (Train) from William H. Gray III 30th Street to Ivy Ridge
+2025-01-30 14:30:19,201 - DEBUG -   Valid route found: 32.0 min transit + 7.2 min walk
+2025-01-30 14:30:19,201 - DEBUG - 
+Route 3:
+2025-01-30 14:30:19,201 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:30:19,201 - DEBUG -   Transit: Media/Wawa Line (Train) from Penn Medicine Station to Jefferson Station
+2025-01-30 14:30:19,201 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Jefferson Station to Ivy Ridge
+2025-01-30 14:30:19,201 - DEBUG -   Valid route found: 32.0 min transit + 7.2 min walk
+2025-01-30 14:30:19,201 - DEBUG - 
+Route 4:
+2025-01-30 14:30:19,201 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:30:19,201 - DEBUG -   Transit: Wilmington/Newark Line (Train) from Penn Medicine Station to William H. Gray III 30th Street
+2025-01-30 14:30:19,201 - DEBUG -   Transit: Trenton Line (Train) from William H. Gray III 30th Street to Ivy Ridge
+2025-01-30 14:30:19,201 - DEBUG -   Valid route found: 31.0 min transit + 7.2 min walk
+2025-01-30 14:30:19,201 - DEBUG - 
+Route 5:
+2025-01-30 14:30:19,201 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:30:19,201 - DEBUG -   Transit: Wilmington/Newark Line (Train) from Penn Medicine Station to Jefferson Station
+2025-01-30 14:30:19,201 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Jefferson Station to Ivy Ridge
+2025-01-30 14:30:19,201 - DEBUG -   Valid route found: 31.0 min transit + 7.2 min walk
+2025-01-30 14:30:19,201 - DEBUG - 
+Route 6:
+2025-01-30 14:30:19,201 - DEBUG -   Walk: 669m (9.9 min)
+2025-01-30 14:30:19,201 - DEBUG -   Transit: SEPTA Route 36 (Light rail) from 37th St to 13th St Trolley Station
+2025-01-30 14:30:19,201 - DEBUG -   Walk: 437m (6.2 min)
+2025-01-30 14:30:19,201 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Jefferson Station to Ivy Ridge
+2025-01-30 14:30:19,201 - DEBUG -   Valid route found: 28.4 min transit + 6.2 min walk
+2025-01-30 14:30:19,201 - DEBUG - 
+Selected best route: 28.4 min transit + 6.2 min walk
+2025-01-30 14:30:19,326 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?departure_time=1738324860&destination=40.0341617%2C-75.2356293&mode=driving&origin=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:30:19,329 - DEBUG - 
+Analyzing morning commute using Wissahickon
+2025-01-30 14:30:19,329 - DEBUG - Morning route: Wissahickon -> 3400 Civic Center Boulevard, Philadelphia, PA 19104
+2025-01-30 14:30:19,329 - DEBUG - Target arrival time: 2025-01-31 09:00:00-05:00
+2025-01-30 14:30:19,329 - DEBUG - 
+Analyzing routes from 3400 Civic Center Boulevard, Philadelphia, PA 19104 to 40.0166454,-75.2102424:
+2025-01-30 14:30:19,885 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738332000&destination=40.0166454%2C-75.2102424&mode=transit&origin=3400+Civic+Center+Boulevard%2C+Philadelphia%2C+PA+19104&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:30:19,904 - DEBUG - 
+Route 1:
+2025-01-30 14:30:19,904 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:30:19,904 - DEBUG -   Transit: Media/Wawa Line (Train) from Penn Medicine Station to Wissahickon
+2025-01-30 14:30:19,904 - DEBUG -   Valid route found: 27.0 min transit + 7.2 min walk
+2025-01-30 14:30:19,904 - DEBUG - 
+Route 2:
+2025-01-30 14:30:19,904 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:30:19,904 - DEBUG -   Transit: Wilmington/Newark Line (Train) from Penn Medicine Station to William H. Gray III 30th Street
+2025-01-30 14:30:19,904 - DEBUG -   Transit: Cynwyd Line (Train) from William H. Gray III 30th Street to Bala
+2025-01-30 14:30:19,904 - DEBUG -   Walk: 189m (3.5 min)
+2025-01-30 14:30:19,904 - DEBUG -   Transit: Germantown-Chelten to 69th St TC (Bus) from City Av & Conshohocken Av - FS to Ridge Av & Osborn St - MBNS
+2025-01-30 14:30:19,904 - DEBUG -   Walk: 71m (1.2 min)
+2025-01-30 14:30:19,904 - DEBUG -   Valid route found: 24.9 min transit + 1.2 min walk
+2025-01-30 14:30:19,904 - DEBUG - 
+Route 3:
+2025-01-30 14:30:19,904 - DEBUG -   Walk: 669m (9.9 min)
+2025-01-30 14:30:19,905 - DEBUG -   Transit: SEPTA Route 36 (Light rail) from 37th St to 22nd St
+2025-01-30 14:30:19,905 - DEBUG -   Walk: 14m (0.4 min)
+2025-01-30 14:30:19,905 - DEBUG -   Transit: Chesterbrook to 13th & Market (Bus) from Market St & 22nd St to Wissahickon Transportation Center
+2025-01-30 14:30:19,905 - DEBUG -   Walk: 385m (6.3 min)
+2025-01-30 14:30:19,905 - DEBUG -   Valid route found: 19.4 min transit + 6.3 min walk
+2025-01-30 14:30:19,905 - DEBUG - 
+Route 4:
+2025-01-30 14:30:19,905 - DEBUG -   Walk: 669m (9.9 min)
+2025-01-30 14:30:19,905 - DEBUG -   Transit: SEPTA Route 36 (Light rail) from 37th St to Drexel Station at 30th St
+2025-01-30 14:30:19,905 - DEBUG -   Walk: 384m (5.8 min)
+2025-01-30 14:30:19,905 - DEBUG -   Transit: 4th-Walnut to Andorra (Bus) from Schuylkill Av & JFK Blvd to Ridge Av & Osborn St - MBNS
+2025-01-30 14:30:19,905 - DEBUG -   Walk: 71m (1.2 min)
+2025-01-30 14:30:19,905 - DEBUG -   Valid route found: 19.3 min transit + 1.2 min walk
+2025-01-30 14:30:19,905 - DEBUG - 
+Route 5:
+2025-01-30 14:30:19,905 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:30:19,905 - DEBUG -   Transit: Media/Wawa Line (Train) from Penn Medicine Station to William H. Gray III 30th Street
+2025-01-30 14:30:19,905 - DEBUG -   Walk: 219m (4.3 min)
+2025-01-30 14:30:19,905 - DEBUG -   Transit: 4th-Walnut to Andorra (Bus) from Schuylkill Av & JFK Blvd to Ridge Av & Osborn St - MBNS
+2025-01-30 14:30:19,905 - DEBUG -   Walk: 71m (1.2 min)
+2025-01-30 14:30:19,905 - DEBUG -   Valid route found: 17.9 min transit + 1.2 min walk
+2025-01-30 14:30:19,905 - DEBUG - 
+Route 6:
+2025-01-30 14:30:19,905 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:30:19,905 - DEBUG -   Transit: Media/Wawa Line (Train) from Penn Medicine Station to Jefferson Station
+2025-01-30 14:30:19,905 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Jefferson Station to Wissahickon
+2025-01-30 14:30:19,905 - DEBUG -   Valid route found: 28.0 min transit + 7.2 min walk
+2025-01-30 14:30:19,905 - DEBUG - 
+Selected best route: 17.9 min transit + 1.2 min walk
+2025-01-30 14:30:20,025 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?departure_time=1738328460&destination=40.0166454%2C-75.2102424&mode=driving&origin=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:30:20,029 - DEBUG - 
+Analyzing morning commute using Manayunk
+2025-01-30 14:30:20,029 - DEBUG - Morning route: Manayunk -> 3400 Civic Center Boulevard, Philadelphia, PA 19104
+2025-01-30 14:30:20,030 - DEBUG - Target arrival time: 2025-01-31 09:00:00-05:00
+2025-01-30 14:30:20,031 - DEBUG - 
+Analyzing routes from 3400 Civic Center Boulevard, Philadelphia, PA 19104 to 40.0268558,-75.2252668:
+2025-01-30 14:30:20,629 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738332000&destination=40.0268558%2C-75.2252668&mode=transit&origin=3400+Civic+Center+Boulevard%2C+Philadelphia%2C+PA+19104&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:30:20,650 - DEBUG - 
+Route 1:
+2025-01-30 14:30:20,650 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:30:20,650 - DEBUG -   Transit: Media/Wawa Line (Train) from Penn Medicine Station to Manayunk
+2025-01-30 14:30:20,650 - DEBUG -   Walk: 63m (3.2 min)
+2025-01-30 14:30:20,650 - DEBUG -   Valid route found: 30.0 min transit + 3.2 min walk
+2025-01-30 14:30:20,650 - DEBUG - 
+Route 2:
+2025-01-30 14:30:20,650 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:30:20,650 - DEBUG -   Transit: Media/Wawa Line (Train) from Penn Medicine Station to Jefferson Station
+2025-01-30 14:30:20,650 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Jefferson Station to Manayunk
+2025-01-30 14:30:20,650 - DEBUG -   Walk: 63m (3.2 min)
+2025-01-30 14:30:20,650 - DEBUG -   Valid route found: 30.0 min transit + 3.2 min walk
+2025-01-30 14:30:20,650 - DEBUG - 
+Route 3:
+2025-01-30 14:30:20,650 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:30:20,650 - DEBUG -   Transit: Wilmington/Newark Line (Train) from Penn Medicine Station to Jefferson Station
+2025-01-30 14:30:20,650 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Jefferson Station to Manayunk
+2025-01-30 14:30:20,650 - DEBUG -   Walk: 63m (3.2 min)
+2025-01-30 14:30:20,650 - DEBUG -   Valid route found: 29.0 min transit + 3.2 min walk
+2025-01-30 14:30:20,650 - DEBUG - 
+Route 4:
+2025-01-30 14:30:20,650 - DEBUG -   Walk: 669m (9.9 min)
+2025-01-30 14:30:20,650 - DEBUG -   Transit: SEPTA Route 13 (Light rail) from 37th St to 15th St Trolley Station
+2025-01-30 14:30:20,650 - DEBUG -   Walk: 324m (4.7 min)
+2025-01-30 14:30:20,650 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Suburban Station to Manayunk
+2025-01-30 14:30:20,650 - DEBUG -   Walk: 63m (3.2 min)
+2025-01-30 14:30:20,651 - DEBUG -   Valid route found: 30.3 min transit + 3.2 min walk
+2025-01-30 14:30:20,651 - DEBUG - 
+Route 5:
+2025-01-30 14:30:20,651 - DEBUG -   Walk: 669m (9.9 min)
+2025-01-30 14:30:20,651 - DEBUG -   Transit: SEPTA Route 11 (Light rail) from 37th St to Drexel Station at 30th St
+2025-01-30 14:30:20,651 - DEBUG -   Walk: 384m (5.8 min)
+2025-01-30 14:30:20,651 - DEBUG -   Transit: Chesterbrook to 13th & Market (Bus) from Schuylkill Av & JFK Blvd to Wissahickon Transportation Center
+2025-01-30 14:30:20,651 - DEBUG -   Walk: 51m (0.9 min)
+2025-01-30 14:30:20,651 - DEBUG -   Transit: 9th-Market to Manayunk (Bus) from Ridge Av & Wissahickon Transit Center to Main St & Levering St
+2025-01-30 14:30:20,651 - DEBUG -   Walk: 171m (2.5 min)
+2025-01-30 14:30:20,651 - DEBUG -   Valid route found: 20.7 min transit + 2.5 min walk
+2025-01-30 14:30:20,651 - DEBUG - 
+Route 6:
+2025-01-30 14:30:20,651 - DEBUG -   Walk: 669m (9.9 min)
+2025-01-30 14:30:20,651 - DEBUG -   Transit: SEPTA Route 36 (Light rail) from 37th St to 22nd St
+2025-01-30 14:30:20,651 - DEBUG -   Walk: 14m (0.4 min)
+2025-01-30 14:30:20,651 - DEBUG -   Transit: Chesterbrook to 13th & Market (Bus) from Market St & 22nd St to Wissahickon Transportation Center
+2025-01-30 14:30:20,651 - DEBUG -   Walk: 51m (0.9 min)
+2025-01-30 14:30:20,651 - DEBUG -   Transit: 9th-Market to Manayunk (Bus) from Ridge Av & Wissahickon Transit Center to Main St & Levering St
+2025-01-30 14:30:20,651 - DEBUG -   Walk: 171m (2.5 min)
+2025-01-30 14:30:20,651 - DEBUG -   Valid route found: 24.6 min transit + 2.5 min walk
+2025-01-30 14:30:20,651 - DEBUG - 
+Selected best route: 20.7 min transit + 2.5 min walk
+2025-01-30 14:30:20,740 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?departure_time=1738328460&destination=40.0268558%2C-75.2252668&mode=driving&origin=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:30:20,742 - DEBUG - 
+Analyzing morning commute using Wynnewood
+2025-01-30 14:30:20,742 - DEBUG - Morning route: Wynnewood -> 3400 Civic Center Boulevard, Philadelphia, PA 19104
+2025-01-30 14:30:20,742 - DEBUG - Target arrival time: 2025-01-31 09:00:00-05:00
+2025-01-30 14:30:20,742 - DEBUG - 
+Analyzing routes from 3400 Civic Center Boulevard, Philadelphia, PA 19104 to 40.0027266,-75.2730773:
+2025-01-30 14:30:21,093 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738332000&destination=40.0027266%2C-75.2730773&mode=transit&origin=3400+Civic+Center+Boulevard%2C+Philadelphia%2C+PA+19104&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:30:21,112 - DEBUG - 
+Route 1:
+2025-01-30 14:30:21,112 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:30:21,112 - DEBUG -   Transit: Media/Wawa Line (Train) from Penn Medicine Station to William H. Gray III 30th Street
+2025-01-30 14:30:21,112 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from William H. Gray III 30th Street to Wynnewood
+2025-01-30 14:30:21,112 - DEBUG -   Walk: 55m (2.4 min)
+2025-01-30 14:30:21,112 - DEBUG -   Valid route found: 17.0 min transit + 2.4 min walk
+2025-01-30 14:30:21,112 - DEBUG - 
+Route 2:
+2025-01-30 14:30:21,112 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:30:21,112 - DEBUG -   Transit: Airport Line (Train) from Penn Medicine Station to Suburban Station
+2025-01-30 14:30:21,112 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Suburban Station to Wynnewood
+2025-01-30 14:30:21,112 - DEBUG -   Walk: 55m (2.4 min)
+2025-01-30 14:30:21,112 - DEBUG -   Valid route found: 27.0 min transit + 2.4 min walk
+2025-01-30 14:30:21,112 - DEBUG - 
+Route 3:
+2025-01-30 14:30:21,112 - DEBUG -   Walk: 669m (9.9 min)
+2025-01-30 14:30:21,112 - DEBUG -   Transit: SEPTA Route 11 (Light rail) from 37th St to 13th St Trolley Station
+2025-01-30 14:30:21,113 - DEBUG -   Walk: 551m (8.3 min)
+2025-01-30 14:30:21,113 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Suburban Station to Wynnewood
+2025-01-30 14:30:21,113 - DEBUG -   Walk: 55m (2.4 min)
+2025-01-30 14:30:21,113 - DEBUG -   Valid route found: 29.2 min transit + 2.4 min walk
+2025-01-30 14:30:21,113 - DEBUG - 
+Route 4:
+2025-01-30 14:30:21,113 - DEBUG -   Walk: 669m (9.9 min)
+2025-01-30 14:30:21,113 - DEBUG -   Transit: SEPTA Route 36 (Light rail) from 37th St to 13th St Trolley Station
+2025-01-30 14:30:21,113 - DEBUG -   Walk: 437m (6.2 min)
+2025-01-30 14:30:21,113 - DEBUG -   Transit: Chestnut Hill East Line (Train) from Jefferson Station to Wynnewood
+2025-01-30 14:30:21,113 - DEBUG -   Walk: 55m (2.4 min)
+2025-01-30 14:30:21,113 - DEBUG -   Valid route found: 33.4 min transit + 2.4 min walk
+2025-01-30 14:30:21,113 - DEBUG - 
+Route 5:
+2025-01-30 14:30:21,113 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:30:21,113 - DEBUG -   Transit: Media/Wawa Line (Train) from Penn Medicine Station to William H. Gray III 30th Street
+2025-01-30 14:30:21,113 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from William H. Gray III 30th Street to Bryn Mawr
+2025-01-30 14:30:21,113 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Bryn Mawr to Wynnewood
+2025-01-30 14:30:21,113 - DEBUG -   Walk: 55m (2.4 min)
+2025-01-30 14:30:21,113 - DEBUG -   Valid route found: 24.0 min transit + 2.4 min walk
+2025-01-30 14:30:21,113 - DEBUG - 
+Route 6:
+2025-01-30 14:30:21,113 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:30:21,113 - DEBUG -   Transit: Media/Wawa Line (Train) from Penn Medicine Station to William H. Gray III 30th Street
+2025-01-30 14:30:21,113 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from William H. Gray III 30th Street to Wynnewood
+2025-01-30 14:30:21,113 - DEBUG -   Walk: 55m (2.4 min)
+2025-01-30 14:30:21,113 - DEBUG -   Valid route found: 17.0 min transit + 2.4 min walk
+2025-01-30 14:30:21,113 - DEBUG - 
+Selected best route: 17.0 min transit + 2.4 min walk
+2025-01-30 14:30:21,267 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?departure_time=1738328460&destination=40.0027266%2C-75.2730773&mode=driving&origin=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:30:21,269 - DEBUG - 
+Analyzing morning commute using Narberth
+2025-01-30 14:30:21,270 - DEBUG - Morning route: Narberth -> 3400 Civic Center Boulevard, Philadelphia, PA 19104
+2025-01-30 14:30:21,270 - DEBUG - Target arrival time: 2025-01-31 09:00:00-05:00
+2025-01-30 14:30:21,270 - DEBUG - 
+Analyzing routes from 3400 Civic Center Boulevard, Philadelphia, PA 19104 to 40.0047601,-75.2614664:
+2025-01-30 14:30:21,697 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738332000&destination=40.0047601%2C-75.2614664&mode=transit&origin=3400+Civic+Center+Boulevard%2C+Philadelphia%2C+PA+19104&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:30:21,713 - DEBUG - 
+Route 1:
+2025-01-30 14:30:21,713 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:30:21,713 - DEBUG -   Transit: Media/Wawa Line (Train) from Penn Medicine Station to William H. Gray III 30th Street
+2025-01-30 14:30:21,713 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from William H. Gray III 30th Street to Narberth
+2025-01-30 14:30:21,714 - DEBUG -   Valid route found: 15.0 min transit + 7.2 min walk
+2025-01-30 14:30:21,714 - DEBUG - 
+Route 2:
+2025-01-30 14:30:21,725 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:30:21,725 - DEBUG -   Transit: Airport Line (Train) from Penn Medicine Station to Suburban Station
+2025-01-30 14:30:21,725 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Suburban Station to Narberth
+2025-01-30 14:30:21,725 - DEBUG -   Valid route found: 25.0 min transit + 7.2 min walk
+2025-01-30 14:30:21,725 - DEBUG - 
+Route 3:
+2025-01-30 14:30:21,725 - DEBUG -   Walk: 669m (9.9 min)
+2025-01-30 14:30:21,725 - DEBUG -   Transit: Route 34 (Light rail) from 37th St to Drexel Station at 30th St
+2025-01-30 14:30:21,725 - DEBUG -   Walk: 266m (5.3 min)
+2025-01-30 14:30:21,725 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from William H. Gray III 30th Street to Narberth
+2025-01-30 14:30:21,726 - DEBUG -   Valid route found: 17.7 min transit + 5.3 min walk
+2025-01-30 14:30:21,726 - DEBUG - 
+Route 4:
+2025-01-30 14:30:21,726 - DEBUG -   Walk: 669m (9.9 min)
+2025-01-30 14:30:21,726 - DEBUG -   Transit: SEPTA Route 11 (Light rail) from 37th St to 13th St Trolley Station
+2025-01-30 14:30:21,726 - DEBUG -   Walk: 551m (8.3 min)
+2025-01-30 14:30:21,726 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Suburban Station to Narberth
+2025-01-30 14:30:21,726 - DEBUG -   Valid route found: 27.2 min transit + 8.3 min walk
+2025-01-30 14:30:21,726 - DEBUG - 
+Route 5:
+2025-01-30 14:30:21,726 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:30:21,726 - DEBUG -   Transit: Media/Wawa Line (Train) from Penn Medicine Station to William H. Gray III 30th Street
+2025-01-30 14:30:21,726 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from William H. Gray III 30th Street to Narberth
+2025-01-30 14:30:21,726 - DEBUG -   Valid route found: 15.0 min transit + 7.2 min walk
+2025-01-30 14:30:21,726 - DEBUG - 
+Route 6:
+2025-01-30 14:30:21,726 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:30:21,726 - DEBUG -   Transit: Wilmington/Newark Line (Train) from Penn Medicine Station to William H. Gray III 30th Street
+2025-01-30 14:30:21,726 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from William H. Gray III 30th Street to Narberth
+2025-01-30 14:30:21,726 - DEBUG -   Valid route found: 15.0 min transit + 7.2 min walk
+2025-01-30 14:30:21,726 - DEBUG - 
+Selected best route: 15.0 min transit + 7.2 min walk
+2025-01-30 14:30:21,904 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?departure_time=1738328460&destination=40.0047601%2C-75.2614664&mode=driving&origin=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:30:21,908 - DEBUG - 
+Analyzing morning commute using Bala
+2025-01-30 14:30:21,909 - DEBUG - Morning route: Bala -> 3400 Civic Center Boulevard, Philadelphia, PA 19104
+2025-01-30 14:30:21,909 - DEBUG - Target arrival time: 2025-01-31 09:00:00-05:00
+2025-01-30 14:30:21,909 - DEBUG - 
+Analyzing routes from 3400 Civic Center Boulevard, Philadelphia, PA 19104 to 40.0010048,-75.22781069999999:
+2025-01-30 14:30:22,471 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738332000&destination=40.0010048%2C-75.22781069999999&mode=transit&origin=3400+Civic+Center+Boulevard%2C+Philadelphia%2C+PA+19104&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:30:22,490 - DEBUG - 
+Route 1:
+2025-01-30 14:30:22,491 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:30:22,491 - DEBUG -   Transit: Wilmington/Newark Line (Train) from Penn Medicine Station to William H. Gray III 30th Street
+2025-01-30 14:30:22,491 - DEBUG -   Transit: Cynwyd Line (Train) from William H. Gray III 30th Street to Bala
+2025-01-30 14:30:22,491 - DEBUG -   Valid route found: 17.0 min transit + 7.2 min walk
+2025-01-30 14:30:22,491 - DEBUG - 
+Route 2:
+2025-01-30 14:30:22,491 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:30:22,491 - DEBUG -   Transit: Airport Line (Train) from Penn Medicine Station to Suburban Station
+2025-01-30 14:30:22,491 - DEBUG -   Transit: Cynwyd Line (Train) from Suburban Station to Bala
+2025-01-30 14:30:22,491 - DEBUG -   Valid route found: 27.0 min transit + 7.2 min walk
+2025-01-30 14:30:22,491 - DEBUG - 
+Route 3:
+2025-01-30 14:30:22,491 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:30:22,491 - DEBUG -   Transit: Media/Wawa Line (Train) from Penn Medicine Station to William H. Gray III 30th Street
+2025-01-30 14:30:22,491 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from William H. Gray III 30th Street to Overbrook
+2025-01-30 14:30:22,491 - DEBUG -   Walk: 193m (3.1 min)
+2025-01-30 14:30:22,491 - DEBUG -   Transit: Germantown-Chelten to 69th St TC (Bus) from City Av & Overbrook Av - MBNS to City Av & Bala Av
+2025-01-30 14:30:22,491 - DEBUG -   Walk: 248m (4.1 min)
+2025-01-30 14:30:22,491 - DEBUG -   Valid route found: 17.5 min transit + 4.1 min walk
+2025-01-30 14:30:22,491 - DEBUG - 
+Route 4:
+2025-01-30 14:30:22,491 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:30:22,491 - DEBUG -   Transit: Media/Wawa Line (Train) from Penn Medicine Station to Wissahickon
+2025-01-30 14:30:22,491 - DEBUG -   Walk: 86m (3.1 min)
+2025-01-30 14:30:22,491 - DEBUG -   Transit: Germantown-Chelten to 69th St TC (Bus) from Ridge Av & Cresson St - FS to City Av & Conshohocken State Rd
+2025-01-30 14:30:22,491 - DEBUG -   Walk: 191m (3.1 min)
+2025-01-30 14:30:22,491 - DEBUG -   Valid route found: 36.5 min transit + 3.1 min walk
+2025-01-30 14:30:22,491 - DEBUG - 
+Route 5:
+2025-01-30 14:30:22,492 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:30:22,492 - DEBUG -   Transit: Media/Wawa Line (Train) from Penn Medicine Station to William H. Gray III 30th Street
+2025-01-30 14:30:22,492 - DEBUG -   Transit: Cynwyd Line (Train) from William H. Gray III 30th Street to Bala
+2025-01-30 14:30:22,492 - DEBUG -   Valid route found: 17.0 min transit + 7.2 min walk
+2025-01-30 14:30:22,492 - DEBUG - 
+Route 6:
+2025-01-30 14:30:22,492 - DEBUG -   Walk: 980m (13.8 min)
+2025-01-30 14:30:22,492 - DEBUG -   Transit: SEPTA Route 10 (Light rail) from 33rd St Station to 63rd-Malvern
+2025-01-30 14:30:22,492 - DEBUG -   Walk: 10m (0.1 min)
+2025-01-30 14:30:22,492 - DEBUG -   Transit: Germantown-Chelten to 69th St TC (Bus) from Malvern Av & 63rd St Loop to City Av & Bala Av
+2025-01-30 14:30:22,492 - DEBUG -   Walk: 248m (4.1 min)
+2025-01-30 14:30:22,492 - DEBUG -   Valid route found: 36.2 min transit + 4.1 min walk
+2025-01-30 14:30:22,492 - DEBUG - 
+Selected best route: 17.5 min transit + 4.1 min walk
+2025-01-30 14:30:22,652 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?departure_time=1738328460&destination=40.0010048%2C-75.22781069999999&mode=driving&origin=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:30:22,653 - DEBUG - 
+Searching for stations near 1420 Centennial Rd, Narberth, PA 19072
+2025-01-30 14:30:22,736 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:30:22,849 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/place/nearbysearch/json?keyword=train+station&location=40.0293325%2C-75.2460143&maxprice=None&minprice=None&radius=3000&type=train_station&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 2699
+2025-01-30 14:30:22,850 - INFO - 
+Found stations near 1420 Centennial Rd, Narberth, PA 19072:
+2025-01-30 14:30:22,851 - INFO - - Cynwyd (Bala Cynwyd)
+2025-01-30 14:30:22,851 - INFO - - Ivy Ridge (Philadelphia)
+2025-01-30 14:30:22,851 - INFO - - Wissahickon (Philadelphia)
+2025-01-30 14:30:22,851 - INFO - - Manayunk (District of Freedom#8573311~!#, Philadelphia)
+2025-01-30 14:30:22,851 - INFO - - Wynnewood (Lower Merion Township)
+2025-01-30 14:30:22,851 - INFO - - Narberth (211 Elmwood Ave, Narberth)
+2025-01-30 14:30:22,851 - INFO - - Bala (Bala Cynwyd)
+2025-01-30 14:30:22,851 - DEBUG - 
+Analyzing evening commute using Cynwyd
+2025-01-30 14:30:22,851 - DEBUG - Evening route: 3400 Civic Center Boulevard, Philadelphia, PA 19104 -> Cynwyd
+2025-01-30 14:30:22,851 - DEBUG - Target arrival time: 2025-01-31 17:30:00-05:00
+2025-01-30 14:30:22,851 - DEBUG - 
+Analyzing routes from 40.0067313,-75.23191190000001 to 40.0067313,-75.23191190000001:
+2025-01-30 14:30:22,977 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738362600&destination=40.0067313%2C-75.23191190000001&mode=transit&origin=40.0067313%2C-75.23191190000001&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:30:22,978 - DEBUG - No routes found
+2025-01-30 14:30:22,978 - DEBUG - No valid transit routes found for Cynwyd
+2025-01-30 14:30:22,978 - DEBUG - 
+Analyzing evening commute using Ivy Ridge
+2025-01-30 14:30:22,978 - DEBUG - Evening route: 3400 Civic Center Boulevard, Philadelphia, PA 19104 -> Ivy Ridge
+2025-01-30 14:30:22,978 - DEBUG - Target arrival time: 2025-01-31 17:30:00-05:00
+2025-01-30 14:30:22,978 - DEBUG - 
+Analyzing routes from 40.0341617,-75.2356293 to 40.0341617,-75.2356293:
+2025-01-30 14:30:23,110 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738362600&destination=40.0341617%2C-75.2356293&mode=transit&origin=40.0341617%2C-75.2356293&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:30:23,112 - DEBUG - No routes found
+2025-01-30 14:30:23,112 - DEBUG - No valid transit routes found for Ivy Ridge
+2025-01-30 14:30:23,112 - DEBUG - 
+Analyzing evening commute using Wissahickon
+2025-01-30 14:30:23,112 - DEBUG - Evening route: 3400 Civic Center Boulevard, Philadelphia, PA 19104 -> Wissahickon
+2025-01-30 14:30:23,112 - DEBUG - Target arrival time: 2025-01-31 17:30:00-05:00
+2025-01-30 14:30:23,112 - DEBUG - 
+Analyzing routes from 40.0166454,-75.2102424 to 40.0166454,-75.2102424:
+2025-01-30 14:30:23,233 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738362600&destination=40.0166454%2C-75.2102424&mode=transit&origin=40.0166454%2C-75.2102424&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:30:23,234 - DEBUG - No routes found
+2025-01-30 14:30:23,234 - DEBUG - No valid transit routes found for Wissahickon
+2025-01-30 14:30:23,234 - DEBUG - 
+Analyzing evening commute using Manayunk
+2025-01-30 14:30:23,234 - DEBUG - Evening route: 3400 Civic Center Boulevard, Philadelphia, PA 19104 -> Manayunk
+2025-01-30 14:30:23,234 - DEBUG - Target arrival time: 2025-01-31 17:30:00-05:00
+2025-01-30 14:30:23,234 - DEBUG - 
+Analyzing routes from 40.0268558,-75.2252668 to 40.0268558,-75.2252668:
+2025-01-30 14:30:23,320 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738362600&destination=40.0268558%2C-75.2252668&mode=transit&origin=40.0268558%2C-75.2252668&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:30:23,321 - DEBUG - No routes found
+2025-01-30 14:30:23,321 - DEBUG - No valid transit routes found for Manayunk
+2025-01-30 14:30:23,321 - DEBUG - 
+Analyzing evening commute using Wynnewood
+2025-01-30 14:30:23,321 - DEBUG - Evening route: 3400 Civic Center Boulevard, Philadelphia, PA 19104 -> Wynnewood
+2025-01-30 14:30:23,321 - DEBUG - Target arrival time: 2025-01-31 17:30:00-05:00
+2025-01-30 14:30:23,321 - DEBUG - 
+Analyzing routes from 40.0027266,-75.2730773 to 40.0027266,-75.2730773:
+2025-01-30 14:30:23,450 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738362600&destination=40.0027266%2C-75.2730773&mode=transit&origin=40.0027266%2C-75.2730773&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:30:23,450 - DEBUG - No routes found
+2025-01-30 14:30:23,451 - DEBUG - No valid transit routes found for Wynnewood
+2025-01-30 14:30:23,451 - DEBUG - 
+Analyzing evening commute using Narberth
+2025-01-30 14:30:23,451 - DEBUG - Evening route: 3400 Civic Center Boulevard, Philadelphia, PA 19104 -> Narberth
+2025-01-30 14:30:23,451 - DEBUG - Target arrival time: 2025-01-31 17:30:00-05:00
+2025-01-30 14:30:23,451 - DEBUG - 
+Analyzing routes from 40.0047601,-75.2614664 to 40.0047601,-75.2614664:
+2025-01-30 14:30:23,564 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738362600&destination=40.0047601%2C-75.2614664&mode=transit&origin=40.0047601%2C-75.2614664&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:30:23,565 - DEBUG - No routes found
+2025-01-30 14:30:23,565 - DEBUG - No valid transit routes found for Narberth
+2025-01-30 14:30:23,566 - DEBUG - 
+Analyzing evening commute using Bala
+2025-01-30 14:30:23,566 - DEBUG - Evening route: 3400 Civic Center Boulevard, Philadelphia, PA 19104 -> Bala
+2025-01-30 14:30:23,566 - DEBUG - Target arrival time: 2025-01-31 17:30:00-05:00
+2025-01-30 14:30:23,566 - DEBUG - 
+Analyzing routes from 40.0010048,-75.22781069999999 to 40.0010048,-75.22781069999999:
+2025-01-30 14:30:23,681 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738362600&destination=40.0010048%2C-75.22781069999999&mode=transit&origin=40.0010048%2C-75.22781069999999&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:30:23,682 - DEBUG - No routes found
+2025-01-30 14:30:23,682 - DEBUG - No valid transit routes found for Bala
+2025-01-30 14:31:12,566 - INFO - API queries_quota: 60
+2025-01-30 14:31:12,577 - DEBUG - 
+Searching for stations near 1420 Centennial Rd, Narberth, PA 19072
+2025-01-30 14:31:12,580 - DEBUG - Starting new HTTPS connection (1): maps.googleapis.com:443
+2025-01-30 14:31:12,727 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:31:12,819 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/place/nearbysearch/json?keyword=train+station&location=40.0293325%2C-75.2460143&maxprice=None&minprice=None&radius=3000&type=train_station&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 2702
+2025-01-30 14:31:12,820 - INFO - 
+Found stations near 1420 Centennial Rd, Narberth, PA 19072:
+2025-01-30 14:31:12,820 - INFO - - Cynwyd (Bala Cynwyd)
+2025-01-30 14:31:12,820 - INFO - - Ivy Ridge (Philadelphia)
+2025-01-30 14:31:12,820 - INFO - - Wissahickon (Philadelphia)
+2025-01-30 14:31:12,820 - INFO - - Manayunk (District of Freedom#8573311~!#, Philadelphia)
+2025-01-30 14:31:12,820 - INFO - - Wynnewood (Lower Merion Township)
+2025-01-30 14:31:12,820 - INFO - - Narberth (211 Elmwood Ave, Narberth)
+2025-01-30 14:31:12,820 - INFO - - Bala (Bala Cynwyd)
+2025-01-30 14:31:12,820 - DEBUG - 
+Analyzing morning commute using Cynwyd
+2025-01-30 14:31:12,820 - DEBUG - Morning route: Cynwyd -> 3400 Civic Center Boulevard, Philadelphia, PA 19104
+2025-01-30 14:31:12,820 - DEBUG - Target arrival time: 2025-01-31 09:00:00-05:00
+2025-01-30 14:31:12,820 - DEBUG - 
+Analyzing morning route from 40.0067313,-75.23191190000001 to 3400 Civic Center Boulevard, Philadelphia, PA 19104
+2025-01-30 14:31:13,611 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738332000&destination=3400+Civic+Center+Boulevard%2C+Philadelphia%2C+PA+19104&mode=transit&origin=40.0067313%2C-75.23191190000001&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:31:13,623 - DEBUG - 
+Route 1:
+2025-01-30 14:31:13,624 - DEBUG -   Walk: 0m (0.0 min)
+2025-01-30 14:31:13,624 - DEBUG -   Transit: Cynwyd Line (Train) from Cynwyd to William H. Gray III 30th Street
+2025-01-30 14:31:13,624 - DEBUG -   Transit: Airport Line (Train) from William H. Gray III 30th Street to Penn Medicine Station
+2025-01-30 14:31:13,624 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:31:13,624 - DEBUG -   Valid route found: 20.0 min transit + 7.7 min walk
+2025-01-30 14:31:13,624 - DEBUG - 
+Route 2:
+2025-01-30 14:31:13,624 - DEBUG -   Walk: 0m (0.0 min)
+2025-01-30 14:31:13,624 - DEBUG -   Transit: Cynwyd Line (Train) from Cynwyd to William H. Gray III 30th Street
+2025-01-30 14:31:13,624 - DEBUG -   Walk: 235m (4.6 min)
+2025-01-30 14:31:13,624 - DEBUG -   Transit: SEPTA Route 13 (Light rail) from 30th St to 37th St
+2025-01-30 14:31:13,624 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:31:13,624 - DEBUG -   Valid route found: 21.3 min transit + 9.1 min walk
+2025-01-30 14:31:13,624 - DEBUG - 
+Route 3:
+2025-01-30 14:31:13,624 - DEBUG -   Walk: 2127m (29.4 min)
+2025-01-30 14:31:13,624 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Merion to William H. Gray III 30th Street
+2025-01-30 14:31:13,624 - DEBUG -   Transit: Airport Line (Train) from William H. Gray III 30th Street to Penn Medicine Station
+2025-01-30 14:31:13,624 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:31:13,624 - DEBUG -   Valid route found: 15.0 min transit + 7.7 min walk
+2025-01-30 14:31:13,624 - DEBUG - 
+Route 4:
+2025-01-30 14:31:13,624 - DEBUG -   Walk: 2127m (29.4 min)
+2025-01-30 14:31:13,624 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Merion to Suburban Station
+2025-01-30 14:31:13,624 - DEBUG -   Transit: Wilmington/Newark Line (Train) from Suburban Station to Penn Medicine Station
+2025-01-30 14:31:13,624 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:31:13,624 - DEBUG -   Valid route found: 25.0 min transit + 7.7 min walk
+2025-01-30 14:31:13,624 - DEBUG - 
+Route 5:
+2025-01-30 14:31:13,624 - DEBUG -   Walk: 2127m (29.4 min)
+2025-01-30 14:31:13,624 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Merion to William H. Gray III 30th Street
+2025-01-30 14:31:13,624 - DEBUG -   Walk: 235m (4.6 min)
+2025-01-30 14:31:13,625 - DEBUG -   Transit: SEPTA Route 36 (Light rail) from 30th St to 37th St
+2025-01-30 14:31:13,625 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:31:13,625 - DEBUG -   Valid route found: 16.3 min transit + 9.1 min walk
+2025-01-30 14:31:13,625 - DEBUG - 
+Route 6:
+2025-01-30 14:31:13,625 - DEBUG -   Walk: 868m (12.1 min)
+2025-01-30 14:31:13,625 - DEBUG -   Transit: Germantown-Chelten to 69th St TC (Bus) from City Av & Bala Av to Malvern Av & 63rd St - FS
+2025-01-30 14:31:13,625 - DEBUG -   Walk: 39m (0.7 min)
+2025-01-30 14:31:13,625 - DEBUG -   Transit: SEPTA Route 10 (Light rail) from Malvern Av & 63rd St to 33rd St
+2025-01-30 14:31:13,625 - DEBUG -   Walk: 1044m (14.7 min)
+2025-01-30 14:31:13,625 - DEBUG -   Valid route found: 38.0 min transit + 14.7 min walk
+2025-01-30 14:31:13,625 - DEBUG - 
+Selected best route: 15.0 min transit + 7.7 min walk
+2025-01-30 14:31:13,759 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?departure_time=1738327320&destination=40.0067313%2C-75.23191190000001&mode=driving&origin=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:31:13,760 - DEBUG - 
+Analyzing morning commute using Ivy Ridge
+2025-01-30 14:31:13,760 - DEBUG - Morning route: Ivy Ridge -> 3400 Civic Center Boulevard, Philadelphia, PA 19104
+2025-01-30 14:31:13,760 - DEBUG - Target arrival time: 2025-01-31 09:00:00-05:00
+2025-01-30 14:31:13,760 - DEBUG - 
+Analyzing morning route from 40.0341617,-75.2356293 to 3400 Civic Center Boulevard, Philadelphia, PA 19104
+2025-01-30 14:31:14,561 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738332000&destination=3400+Civic+Center+Boulevard%2C+Philadelphia%2C+PA+19104&mode=transit&origin=40.0341617%2C-75.2356293&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:31:14,569 - DEBUG - 
+Route 1:
+2025-01-30 14:31:14,569 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Ivy Ridge to Penn Medicine Station
+2025-01-30 14:31:14,569 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:31:14,569 - DEBUG -   Valid route found: 37.0 min transit + 7.7 min walk
+2025-01-30 14:31:14,569 - DEBUG - 
+Route 2:
+2025-01-30 14:31:14,569 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Ivy Ridge to Penn Medicine Station
+2025-01-30 14:31:14,569 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:31:14,569 - DEBUG -   Valid route found: 35.0 min transit + 7.7 min walk
+2025-01-30 14:31:14,569 - DEBUG - 
+Route 3:
+2025-01-30 14:31:14,569 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Ivy Ridge to Temple University
+2025-01-30 14:31:14,569 - DEBUG -   Transit: Lansdale/Doylestown Line (Train) from Temple University to Penn Medicine Station
+2025-01-30 14:31:14,569 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:31:14,569 - DEBUG -   Valid route found: 32.0 min transit + 7.7 min walk
+2025-01-30 14:31:14,570 - DEBUG - 
+Route 4:
+2025-01-30 14:31:14,570 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Ivy Ridge to Suburban Station
+2025-01-30 14:31:14,570 - DEBUG -   Walk: 290m (4.2 min)
+2025-01-30 14:31:14,570 - DEBUG -   Transit: SEPTA Route 13 (Light rail) from 15th St Trolley Station to 37th St
+2025-01-30 14:31:14,570 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:31:14,570 - DEBUG -   Valid route found: 34.5 min transit + 9.1 min walk
+2025-01-30 14:31:14,570 - DEBUG - 
+Route 5:
+2025-01-30 14:31:14,570 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Ivy Ridge to Jefferson Station
+2025-01-30 14:31:14,570 - DEBUG -   Walk: 437m (6.3 min)
+2025-01-30 14:31:14,570 - DEBUG -   Transit: SEPTA Route 36 (Light rail) from 13th St Trolley Station to 37th St
+2025-01-30 14:31:14,570 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:31:14,570 - DEBUG -   Valid route found: 30.5 min transit + 9.1 min walk
+2025-01-30 14:31:14,570 - DEBUG - 
+Route 6:
+2025-01-30 14:31:14,570 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Ivy Ridge to Penn Medicine Station
+2025-01-30 14:31:14,570 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:31:14,570 - DEBUG -   Valid route found: 35.0 min transit + 7.7 min walk
+2025-01-30 14:31:14,570 - DEBUG - 
+Selected best route: 30.5 min transit + 9.1 min walk
+2025-01-30 14:31:14,642 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?departure_time=1738324980&destination=40.0341617%2C-75.2356293&mode=driving&origin=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:31:14,643 - DEBUG - 
+Analyzing morning commute using Wissahickon
+2025-01-30 14:31:14,643 - DEBUG - Morning route: Wissahickon -> 3400 Civic Center Boulevard, Philadelphia, PA 19104
+2025-01-30 14:31:14,644 - DEBUG - Target arrival time: 2025-01-31 09:00:00-05:00
+2025-01-30 14:31:14,644 - DEBUG - 
+Analyzing morning route from 40.0166454,-75.2102424 to 3400 Civic Center Boulevard, Philadelphia, PA 19104
+2025-01-30 14:31:15,364 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738332000&destination=3400+Civic+Center+Boulevard%2C+Philadelphia%2C+PA+19104&mode=transit&origin=40.0166454%2C-75.2102424&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:31:15,372 - DEBUG - 
+Route 1:
+2025-01-30 14:31:15,373 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Wissahickon to Penn Medicine Station
+2025-01-30 14:31:15,374 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:31:15,374 - DEBUG -   Valid route found: 31.0 min transit + 7.7 min walk
+2025-01-30 14:31:15,374 - DEBUG - 
+Route 2:
+2025-01-30 14:31:15,374 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Wissahickon to Penn Medicine Station
+2025-01-30 14:31:15,374 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:31:15,374 - DEBUG -   Valid route found: 29.0 min transit + 7.7 min walk
+2025-01-30 14:31:15,374 - DEBUG - 
+Route 3:
+2025-01-30 14:31:15,374 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Wissahickon to Suburban Station
+2025-01-30 14:31:15,374 - DEBUG -   Transit: Wilmington/Newark Line (Train) from Suburban Station to Penn Medicine Station
+2025-01-30 14:31:15,374 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:31:15,374 - DEBUG -   Valid route found: 28.0 min transit + 7.7 min walk
+2025-01-30 14:31:15,374 - DEBUG - 
+Route 4:
+2025-01-30 14:31:15,374 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Wissahickon to Suburban Station
+2025-01-30 14:31:15,374 - DEBUG -   Walk: 290m (4.2 min)
+2025-01-30 14:31:15,374 - DEBUG -   Transit: SEPTA Route 13 (Light rail) from 15th St Trolley Station to 37th St
+2025-01-30 14:31:15,375 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:31:15,375 - DEBUG -   Valid route found: 30.5 min transit + 9.1 min walk
+2025-01-30 14:31:15,375 - DEBUG - 
+Route 5:
+2025-01-30 14:31:15,375 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Wissahickon to Jefferson Station
+2025-01-30 14:31:15,375 - DEBUG -   Walk: 437m (6.3 min)
+2025-01-30 14:31:15,375 - DEBUG -   Transit: SEPTA Route 36 (Light rail) from 13th St Trolley Station to 37th St
+2025-01-30 14:31:15,375 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:31:15,375 - DEBUG -   Valid route found: 26.5 min transit + 9.1 min walk
+2025-01-30 14:31:15,375 - DEBUG - 
+Route 6:
+2025-01-30 14:31:15,375 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Wissahickon to Penn Medicine Station
+2025-01-30 14:31:15,375 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:31:15,375 - DEBUG -   Valid route found: 29.0 min transit + 7.7 min walk
+2025-01-30 14:31:15,375 - DEBUG - 
+Selected best route: 26.5 min transit + 9.1 min walk
+2025-01-30 14:31:15,484 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?departure_time=1738325220&destination=40.0166454%2C-75.2102424&mode=driving&origin=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:31:15,487 - DEBUG - 
+Analyzing morning commute using Manayunk
+2025-01-30 14:31:15,487 - DEBUG - Morning route: Manayunk -> 3400 Civic Center Boulevard, Philadelphia, PA 19104
+2025-01-30 14:31:15,487 - DEBUG - Target arrival time: 2025-01-31 09:00:00-05:00
+2025-01-30 14:31:15,487 - DEBUG - 
+Analyzing morning route from 40.0268558,-75.2252668 to 3400 Civic Center Boulevard, Philadelphia, PA 19104
+2025-01-30 14:31:16,150 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738332000&destination=3400+Civic+Center+Boulevard%2C+Philadelphia%2C+PA+19104&mode=transit&origin=40.0268558%2C-75.2252668&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:31:16,165 - DEBUG - 
+Route 1:
+2025-01-30 14:31:16,165 - DEBUG -   Walk: 63m (3.1 min)
+2025-01-30 14:31:16,165 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Manayunk to Penn Medicine Station
+2025-01-30 14:31:16,165 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:31:16,165 - DEBUG -   Valid route found: 33.0 min transit + 7.7 min walk
+2025-01-30 14:31:16,165 - DEBUG - 
+Route 2:
+2025-01-30 14:31:16,165 - DEBUG -   Walk: 63m (3.1 min)
+2025-01-30 14:31:16,165 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Manayunk to Penn Medicine Station
+2025-01-30 14:31:16,165 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:31:16,165 - DEBUG -   Valid route found: 32.0 min transit + 7.7 min walk
+2025-01-30 14:31:16,165 - DEBUG - 
+Route 3:
+2025-01-30 14:31:16,165 - DEBUG -   Walk: 63m (3.1 min)
+2025-01-30 14:31:16,165 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Manayunk to Suburban Station
+2025-01-30 14:31:16,166 - DEBUG -   Walk: 290m (4.2 min)
+2025-01-30 14:31:16,166 - DEBUG -   Transit: SEPTA Route 13 (Light rail) from 15th St Trolley Station to 37th St
+2025-01-30 14:31:16,166 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:31:16,166 - DEBUG -   Valid route found: 32.5 min transit + 9.1 min walk
+2025-01-30 14:31:16,166 - DEBUG - 
+Route 4:
+2025-01-30 14:31:16,166 - DEBUG -   Walk: 63m (3.1 min)
+2025-01-30 14:31:16,166 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Manayunk to Jefferson Station
+2025-01-30 14:31:16,166 - DEBUG -   Walk: 437m (6.3 min)
+2025-01-30 14:31:16,166 - DEBUG -   Transit: SEPTA Route 36 (Light rail) from 13th St Trolley Station to 37th St
+2025-01-30 14:31:16,166 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:31:16,166 - DEBUG -   Valid route found: 28.5 min transit + 9.1 min walk
+2025-01-30 14:31:16,166 - DEBUG - 
+Route 5:
+2025-01-30 14:31:16,166 - DEBUG -   Walk: 63m (3.1 min)
+2025-01-30 14:31:16,166 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Manayunk to Penn Medicine Station
+2025-01-30 14:31:16,166 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:31:16,166 - DEBUG -   Valid route found: 32.0 min transit + 7.7 min walk
+2025-01-30 14:31:16,166 - DEBUG - 
+Route 6:
+2025-01-30 14:31:16,166 - DEBUG -   Walk: 63m (3.1 min)
+2025-01-30 14:31:16,166 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Manayunk to William H. Gray III 30th Street
+2025-01-30 14:31:16,166 - DEBUG -   Walk: 235m (4.6 min)
+2025-01-30 14:31:16,167 - DEBUG -   Transit: Route 34 (Light rail) from 30th St to 37th St
+2025-01-30 14:31:16,167 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:31:16,167 - DEBUG -   Valid route found: 33.9 min transit + 9.1 min walk
+2025-01-30 14:31:16,167 - DEBUG - 
+Selected best route: 28.5 min transit + 9.1 min walk
+2025-01-30 14:31:16,275 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?departure_time=1738324860&destination=40.0268558%2C-75.2252668&mode=driving&origin=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:31:16,278 - DEBUG - 
+Analyzing morning commute using Wynnewood
+2025-01-30 14:31:16,279 - DEBUG - Morning route: Wynnewood -> 3400 Civic Center Boulevard, Philadelphia, PA 19104
+2025-01-30 14:31:16,279 - DEBUG - Target arrival time: 2025-01-31 09:00:00-05:00
+2025-01-30 14:31:16,279 - DEBUG - 
+Analyzing morning route from 40.0027266,-75.2730773 to 3400 Civic Center Boulevard, Philadelphia, PA 19104
+2025-01-30 14:31:16,755 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738332000&destination=3400+Civic+Center+Boulevard%2C+Philadelphia%2C+PA+19104&mode=transit&origin=40.0027266%2C-75.2730773&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:31:16,768 - DEBUG - 
+Route 1:
+2025-01-30 14:31:16,768 - DEBUG -   Walk: 55m (2.5 min)
+2025-01-30 14:31:16,768 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Wynnewood to William H. Gray III 30th Street
+2025-01-30 14:31:16,768 - DEBUG -   Transit: Airport Line (Train) from William H. Gray III 30th Street to Penn Medicine Station
+2025-01-30 14:31:16,768 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:31:16,769 - DEBUG -   Valid route found: 19.0 min transit + 7.7 min walk
+2025-01-30 14:31:16,769 - DEBUG - 
+Route 2:
+2025-01-30 14:31:16,770 - DEBUG -   Walk: 55m (2.5 min)
+2025-01-30 14:31:16,770 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Wynnewood to Suburban Station
+2025-01-30 14:31:16,770 - DEBUG -   Transit: Wilmington/Newark Line (Train) from Suburban Station to Penn Medicine Station
+2025-01-30 14:31:16,770 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:31:16,770 - DEBUG -   Valid route found: 29.0 min transit + 7.7 min walk
+2025-01-30 14:31:16,770 - DEBUG - 
+Route 3:
+2025-01-30 14:31:16,770 - DEBUG -   Walk: 55m (2.5 min)
+2025-01-30 14:31:16,770 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Wynnewood to Suburban Station
+2025-01-30 14:31:16,770 - DEBUG -   Walk: 290m (4.2 min)
+2025-01-30 14:31:16,770 - DEBUG -   Transit: SEPTA Route 13 (Light rail) from 15th St Trolley Station to 37th St
+2025-01-30 14:31:16,770 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:31:16,770 - DEBUG -   Valid route found: 29.5 min transit + 9.1 min walk
+2025-01-30 14:31:16,770 - DEBUG - 
+Route 4:
+2025-01-30 14:31:16,770 - DEBUG -   Walk: 55m (2.5 min)
+2025-01-30 14:31:16,771 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Wynnewood to William H. Gray III 30th Street
+2025-01-30 14:31:16,771 - DEBUG -   Walk: 235m (4.6 min)
+2025-01-30 14:31:16,771 - DEBUG -   Transit: SEPTA Route 36 (Light rail) from 30th St to 37th St
+2025-01-30 14:31:16,771 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:31:16,771 - DEBUG -   Valid route found: 20.3 min transit + 9.1 min walk
+2025-01-30 14:31:16,771 - DEBUG - 
+Route 5:
+2025-01-30 14:31:16,771 - DEBUG -   Walk: 55m (2.5 min)
+2025-01-30 14:31:16,771 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Wynnewood to Jefferson Station
+2025-01-30 14:31:16,771 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Jefferson Station to Penn Medicine Station
+2025-01-30 14:31:16,771 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:31:16,771 - DEBUG -   Valid route found: 40.0 min transit + 7.7 min walk
+2025-01-30 14:31:16,771 - DEBUG - 
+Route 6:
+2025-01-30 14:31:16,771 - DEBUG -   Walk: 55m (2.5 min)
+2025-01-30 14:31:16,771 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Wynnewood to William H. Gray III 30th Street
+2025-01-30 14:31:16,771 - DEBUG -   Walk: 235m (4.6 min)
+2025-01-30 14:31:16,771 - DEBUG -   Transit: Route 34 (Light rail) from 30th St to 37th St
+2025-01-30 14:31:16,771 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:31:16,771 - DEBUG -   Valid route found: 21.3 min transit + 9.1 min walk
+2025-01-30 14:31:16,771 - DEBUG - 
+Selected best route: 19.0 min transit + 7.7 min walk
+2025-01-30 14:31:16,902 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?departure_time=1738328700&destination=40.0027266%2C-75.2730773&mode=driving&origin=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:31:16,903 - DEBUG - 
+Analyzing morning commute using Narberth
+2025-01-30 14:31:16,904 - DEBUG - Morning route: Narberth -> 3400 Civic Center Boulevard, Philadelphia, PA 19104
+2025-01-30 14:31:16,905 - DEBUG - Target arrival time: 2025-01-31 09:00:00-05:00
+2025-01-30 14:31:16,905 - DEBUG - 
+Analyzing morning route from 40.0047601,-75.2614664 to 3400 Civic Center Boulevard, Philadelphia, PA 19104
+2025-01-30 14:31:17,463 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738332000&destination=3400+Civic+Center+Boulevard%2C+Philadelphia%2C+PA+19104&mode=transit&origin=40.0047601%2C-75.2614664&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:31:17,470 - DEBUG - 
+Route 1:
+2025-01-30 14:31:17,471 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Narberth to William H. Gray III 30th Street
+2025-01-30 14:31:17,471 - DEBUG -   Transit: Airport Line (Train) from William H. Gray III 30th Street to Penn Medicine Station
+2025-01-30 14:31:17,471 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:31:17,471 - DEBUG -   Valid route found: 17.0 min transit + 7.7 min walk
+2025-01-30 14:31:17,471 - DEBUG - 
+Route 2:
+2025-01-30 14:31:17,471 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Narberth to Suburban Station
+2025-01-30 14:31:17,471 - DEBUG -   Transit: Wilmington/Newark Line (Train) from Suburban Station to Penn Medicine Station
+2025-01-30 14:31:17,472 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:31:17,472 - DEBUG -   Valid route found: 27.0 min transit + 7.7 min walk
+2025-01-30 14:31:17,472 - DEBUG - 
+Route 3:
+2025-01-30 14:31:17,472 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Narberth to Suburban Station
+2025-01-30 14:31:17,472 - DEBUG -   Walk: 290m (4.2 min)
+2025-01-30 14:31:17,472 - DEBUG -   Transit: SEPTA Route 13 (Light rail) from 15th St Trolley Station to 37th St
+2025-01-30 14:31:17,472 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:31:17,472 - DEBUG -   Valid route found: 27.5 min transit + 9.1 min walk
+2025-01-30 14:31:17,472 - DEBUG - 
+Route 4:
+2025-01-30 14:31:17,472 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Narberth to William H. Gray III 30th Street
+2025-01-30 14:31:17,472 - DEBUG -   Walk: 235m (4.6 min)
+2025-01-30 14:31:17,472 - DEBUG -   Transit: SEPTA Route 36 (Light rail) from 30th St to 37th St
+2025-01-30 14:31:17,472 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:31:17,472 - DEBUG -   Valid route found: 18.3 min transit + 9.1 min walk
+2025-01-30 14:31:17,472 - DEBUG - 
+Route 5:
+2025-01-30 14:31:17,472 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Narberth to Jefferson Station
+2025-01-30 14:31:17,472 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Jefferson Station to Penn Medicine Station
+2025-01-30 14:31:17,473 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:31:17,473 - DEBUG -   Valid route found: 38.0 min transit + 7.7 min walk
+2025-01-30 14:31:17,473 - DEBUG - 
+Route 6:
+2025-01-30 14:31:17,473 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Narberth to William H. Gray III 30th Street
+2025-01-30 14:31:17,474 - DEBUG -   Walk: 235m (4.6 min)
+2025-01-30 14:31:17,474 - DEBUG -   Transit: Route 34 (Light rail) from 30th St to 37th St
+2025-01-30 14:31:17,474 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:31:17,474 - DEBUG -   Valid route found: 19.3 min transit + 9.1 min walk
+2025-01-30 14:31:17,474 - DEBUG - 
+Selected best route: 17.0 min transit + 7.7 min walk
+2025-01-30 14:31:17,617 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?departure_time=1738329000&destination=40.0047601%2C-75.2614664&mode=driving&origin=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:31:17,618 - DEBUG - 
+Analyzing morning commute using Bala
+2025-01-30 14:31:17,619 - DEBUG - Morning route: Bala -> 3400 Civic Center Boulevard, Philadelphia, PA 19104
+2025-01-30 14:31:17,619 - DEBUG - Target arrival time: 2025-01-31 09:00:00-05:00
+2025-01-30 14:31:17,619 - DEBUG - 
+Analyzing morning route from 40.0010048,-75.22781069999999 to 3400 Civic Center Boulevard, Philadelphia, PA 19104
+2025-01-30 14:31:18,400 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738332000&destination=3400+Civic+Center+Boulevard%2C+Philadelphia%2C+PA+19104&mode=transit&origin=40.0010048%2C-75.22781069999999&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:31:18,408 - DEBUG - 
+Route 1:
+2025-01-30 14:31:18,409 - DEBUG -   Transit: Cynwyd Line (Train) from Bala to William H. Gray III 30th Street
+2025-01-30 14:31:18,409 - DEBUG -   Transit: Airport Line (Train) from William H. Gray III 30th Street to Penn Medicine Station
+2025-01-30 14:31:18,409 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:31:18,409 - DEBUG -   Valid route found: 18.0 min transit + 7.7 min walk
+2025-01-30 14:31:18,409 - DEBUG - 
+Route 2:
+2025-01-30 14:31:18,409 - DEBUG -   Transit: Cynwyd Line (Train) from Bala to William H. Gray III 30th Street
+2025-01-30 14:31:18,409 - DEBUG -   Walk: 235m (4.6 min)
+2025-01-30 14:31:18,409 - DEBUG -   Transit: SEPTA Route 13 (Light rail) from 30th St to 37th St
+2025-01-30 14:31:18,409 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:31:18,409 - DEBUG -   Valid route found: 19.3 min transit + 9.1 min walk
+2025-01-30 14:31:18,409 - DEBUG - 
+Route 3:
+2025-01-30 14:31:18,409 - DEBUG -   Walk: 187m (2.7 min)
+2025-01-30 14:31:18,409 - DEBUG -   Transit: Germantown-Chelten to 69th St TC (Bus) from City Av & Bala Av to City Av & Merion Rd
+2025-01-30 14:31:18,409 - DEBUG -   Walk: 138m (2.3 min)
+2025-01-30 14:31:18,409 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Overbrook to William H. Gray III 30th Street
+2025-01-30 14:31:18,409 - DEBUG -   Transit: Airport Line (Train) from William H. Gray III 30th Street to Penn Medicine Station
+2025-01-30 14:31:18,409 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:31:18,409 - DEBUG -   Valid route found: 19.1 min transit + 7.7 min walk
+2025-01-30 14:31:18,409 - DEBUG - 
+Route 4:
+2025-01-30 14:31:18,409 - DEBUG -   Walk: 187m (2.7 min)
+2025-01-30 14:31:18,409 - DEBUG -   Transit: Germantown-Chelten to 69th St TC (Bus) from City Av & Bala Av to City Av & Merion Rd
+2025-01-30 14:31:18,409 - DEBUG -   Walk: 138m (2.3 min)
+2025-01-30 14:31:18,409 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Overbrook to Suburban Station
+2025-01-30 14:31:18,409 - DEBUG -   Transit: Wilmington/Newark Line (Train) from Suburban Station to Penn Medicine Station
+2025-01-30 14:31:18,409 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:31:18,409 - DEBUG -   Valid route found: 29.1 min transit + 7.7 min walk
+2025-01-30 14:31:18,409 - DEBUG - 
+Route 5:
+2025-01-30 14:31:18,409 - DEBUG -   Walk: 198m (3.5 min)
+2025-01-30 14:31:18,409 - DEBUG -   Transit: Germantown-Chelten to 69th St TC (Bus) from City Av & Conshohocken Av - FS to Ridge Av & Osborn St - MBNS
+2025-01-30 14:31:18,409 - DEBUG -   Walk: 87m (3.2 min)
+2025-01-30 14:31:18,409 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Wissahickon to Penn Medicine Station
+2025-01-30 14:31:18,410 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:31:18,410 - DEBUG -   Valid route found: 38.9 min transit + 7.7 min walk
+2025-01-30 14:31:18,410 - DEBUG - 
+Route 6:
+2025-01-30 14:31:18,410 - DEBUG -   Walk: 187m (2.7 min)
+2025-01-30 14:31:18,410 - DEBUG -   Transit: Germantown-Chelten to 69th St TC (Bus) from City Av & Bala Av to Malvern Av & 63rd St - FS
+2025-01-30 14:31:18,410 - DEBUG -   Walk: 39m (0.7 min)
+2025-01-30 14:31:18,410 - DEBUG -   Transit: SEPTA Route 10 (Light rail) from Malvern Av & 63rd St to 33rd St
+2025-01-30 14:31:18,410 - DEBUG -   Walk: 1044m (14.7 min)
+2025-01-30 14:31:18,410 - DEBUG -   Valid route found: 38.0 min transit + 14.7 min walk
+2025-01-30 14:31:18,410 - DEBUG - 
+Selected best route: 18.0 min transit + 7.7 min walk
+2025-01-30 14:31:18,541 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?departure_time=1738326600&destination=40.0010048%2C-75.22781069999999&mode=driving&origin=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:31:18,543 - DEBUG - 
+Searching for stations near 1420 Centennial Rd, Narberth, PA 19072
+2025-01-30 14:31:18,604 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:31:18,936 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/place/nearbysearch/json?keyword=train+station&location=40.0293325%2C-75.2460143&maxprice=None&minprice=None&radius=3000&type=train_station&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 2693
+2025-01-30 14:31:18,937 - INFO - 
+Found stations near 1420 Centennial Rd, Narberth, PA 19072:
+2025-01-30 14:31:18,937 - INFO - - Cynwyd (Bala Cynwyd)
+2025-01-30 14:31:18,937 - INFO - - Ivy Ridge (Philadelphia)
+2025-01-30 14:31:18,937 - INFO - - Wissahickon (Philadelphia)
+2025-01-30 14:31:18,937 - INFO - - Manayunk (District of Freedom#8573311~!#, Philadelphia)
+2025-01-30 14:31:18,937 - INFO - - Wynnewood (Lower Merion Township)
+2025-01-30 14:31:18,938 - INFO - - Narberth (211 Elmwood Ave, Narberth)
+2025-01-30 14:31:18,938 - INFO - - Bala (Bala Cynwyd)
+2025-01-30 14:31:18,938 - DEBUG - 
+Analyzing evening commute using Cynwyd
+2025-01-30 14:31:18,938 - DEBUG - Evening route: 3400 Civic Center Boulevard, Philadelphia, PA 19104 -> Cynwyd
+2025-01-30 14:31:18,938 - DEBUG - Target arrival time: 2025-01-31 17:30:00-05:00
+2025-01-30 14:31:18,938 - DEBUG - 
+Analyzing evening route from 3400 Civic Center Boulevard, Philadelphia, PA 19104 to 40.0067313,-75.23191190000001
+2025-01-30 14:31:19,387 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738362600&destination=40.0067313%2C-75.23191190000001&mode=transit&origin=3400+Civic+Center+Boulevard%2C+Philadelphia%2C+PA+19104&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:31:19,419 - DEBUG - 
+Route 1:
+2025-01-30 14:31:19,419 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:31:19,419 - DEBUG -   Transit: Media/Wawa Line (Train) from Penn Medicine Station to William H. Gray III 30th Street
+2025-01-30 14:31:19,419 - DEBUG -   Transit: Cynwyd Line (Train) from William H. Gray III 30th Street to Cynwyd
+2025-01-30 14:31:19,419 - DEBUG -   Walk: 0m (0.0 min)
+2025-01-30 14:31:19,420 - DEBUG -   Valid route found: 19.0 min transit + 0.0 min walk
+2025-01-30 14:31:19,420 - DEBUG - 
+Route 2:
+2025-01-30 14:31:19,420 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:31:19,420 - DEBUG -   Transit: Wilmington/Newark Line (Train) from Penn Medicine Station to Suburban Station
+2025-01-30 14:31:19,420 - DEBUG -   Transit: Cynwyd Line (Train) from Suburban Station to Cynwyd
+2025-01-30 14:31:19,420 - DEBUG -   Walk: 0m (0.0 min)
+2025-01-30 14:31:19,420 - DEBUG -   Valid route found: 28.0 min transit + 0.0 min walk
+2025-01-30 14:31:19,420 - DEBUG - 
+Route 3:
+2025-01-30 14:31:19,420 - DEBUG -   Walk: 669m (9.9 min)
+2025-01-30 14:31:19,420 - DEBUG -   Transit: SEPTA Route 13 (Light rail) from 37th St to Drexel Station at 30th St
+2025-01-30 14:31:19,420 - DEBUG -   Walk: 266m (5.3 min)
+2025-01-30 14:31:19,420 - DEBUG -   Transit: Cynwyd Line (Train) from William H. Gray III 30th Street to Cynwyd
+2025-01-30 14:31:19,420 - DEBUG -   Walk: 0m (0.0 min)
+2025-01-30 14:31:19,420 - DEBUG -   Valid route found: 20.1 min transit + 0.0 min walk
+2025-01-30 14:31:19,420 - DEBUG - 
+Route 4:
+2025-01-30 14:31:19,420 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:31:19,420 - DEBUG -   Transit: Airport Line (Train) from Penn Medicine Station to William H. Gray III 30th Street
+2025-01-30 14:31:19,420 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from William H. Gray III 30th Street to Merion
+2025-01-30 14:31:19,420 - DEBUG -   Walk: 2126m (30.5 min)
+2025-01-30 14:31:19,420 - DEBUG -   Valid route found: 13.0 min transit + 30.5 min walk
+2025-01-30 14:31:19,420 - DEBUG - 
+Route 5:
+2025-01-30 14:31:19,420 - DEBUG -   Walk: 669m (9.9 min)
+2025-01-30 14:31:19,420 - DEBUG -   Transit: SEPTA Route 11 (Light rail) from 37th St to Drexel Station at 30th St
+2025-01-30 14:31:19,420 - DEBUG -   Walk: 266m (5.3 min)
+2025-01-30 14:31:19,420 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from William H. Gray III 30th Street to Merion
+2025-01-30 14:31:19,420 - DEBUG -   Walk: 2126m (30.5 min)
+2025-01-30 14:31:19,420 - DEBUG -   Valid route found: 14.1 min transit + 30.5 min walk
+2025-01-30 14:31:19,420 - DEBUG - 
+Route 6:
+2025-01-30 14:31:19,420 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:31:19,420 - DEBUG -   Transit: Media/Wawa Line (Train) from Penn Medicine Station to Wissahickon
+2025-01-30 14:31:19,420 - DEBUG -   Walk: 422m (7.0 min)
+2025-01-30 14:31:19,420 - DEBUG -   Transit: Germantown-Chelten to 69th St TC (Bus) from Ridge Av & Wissahickon Transit Center to City Av & Conshohocken State Rd
+2025-01-30 14:31:19,420 - DEBUG -   Walk: 909m (12.8 min)
+2025-01-30 14:31:19,420 - DEBUG -   Valid route found: 34.6 min transit + 12.8 min walk
+2025-01-30 14:31:19,420 - DEBUG - 
+Selected best route: 19.0 min transit + 0.0 min walk
+2025-01-30 14:31:19,540 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?departure_time=1738358580&destination=40.0067313%2C-75.23191190000001&mode=driving&origin=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:31:19,541 - DEBUG - 
+Analyzing evening commute using Ivy Ridge
+2025-01-30 14:31:19,541 - DEBUG - Evening route: 3400 Civic Center Boulevard, Philadelphia, PA 19104 -> Ivy Ridge
+2025-01-30 14:31:19,542 - DEBUG - Target arrival time: 2025-01-31 17:30:00-05:00
+2025-01-30 14:31:19,542 - DEBUG - 
+Analyzing evening route from 3400 Civic Center Boulevard, Philadelphia, PA 19104 to 40.0341617,-75.2356293
+2025-01-30 14:31:19,927 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738362600&destination=40.0341617%2C-75.2356293&mode=transit&origin=3400+Civic+Center+Boulevard%2C+Philadelphia%2C+PA+19104&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:31:19,930 - DEBUG - 
+Route 1:
+2025-01-30 14:31:19,930 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:31:19,930 - DEBUG -   Transit: Media/Wawa Line (Train) from Penn Medicine Station to Ivy Ridge
+2025-01-30 14:31:19,930 - DEBUG -   Valid route found: 32.0 min transit + 7.2 min walk
+2025-01-30 14:31:19,930 - DEBUG - 
+Route 2:
+2025-01-30 14:31:19,930 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:31:19,930 - DEBUG -   Transit: Wilmington/Newark Line (Train) from Penn Medicine Station to Ivy Ridge
+2025-01-30 14:31:19,930 - DEBUG -   Valid route found: 33.0 min transit + 7.2 min walk
+2025-01-30 14:31:19,930 - DEBUG - 
+Route 3:
+2025-01-30 14:31:19,930 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:31:19,930 - DEBUG -   Transit: Media/Wawa Line (Train) from Penn Medicine Station to Ivy Ridge
+2025-01-30 14:31:19,931 - DEBUG -   Valid route found: 32.0 min transit + 7.2 min walk
+2025-01-30 14:31:19,931 - DEBUG - 
+Route 4:
+2025-01-30 14:31:19,931 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:31:19,931 - DEBUG -   Transit: Wilmington/Newark Line (Train) from Penn Medicine Station to Temple University
+2025-01-30 14:31:19,931 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Temple University to Ivy Ridge
+2025-01-30 14:31:19,931 - DEBUG -   Valid route found: 29.0 min transit + 7.2 min walk
+2025-01-30 14:31:19,931 - DEBUG - 
+Route 5:
+2025-01-30 14:31:19,931 - DEBUG -   Walk: 669m (9.9 min)
+2025-01-30 14:31:19,931 - DEBUG -   Transit: SEPTA Route 36 (Light rail) from 37th St to 15th St Trolley Station
+2025-01-30 14:31:19,931 - DEBUG -   Walk: 324m (4.7 min)
+2025-01-30 14:31:19,931 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Suburban Station to Ivy Ridge
+2025-01-30 14:31:19,931 - DEBUG -   Valid route found: 31.3 min transit + 4.7 min walk
+2025-01-30 14:31:19,931 - DEBUG - 
+Route 6:
+2025-01-30 14:31:19,931 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:31:19,931 - DEBUG -   Transit: Media/Wawa Line (Train) from Penn Medicine Station to Ivy Ridge
+2025-01-30 14:31:19,931 - DEBUG -   Valid route found: 32.0 min transit + 7.2 min walk
+2025-01-30 14:31:19,931 - DEBUG - 
+Selected best route: 31.3 min transit + 4.7 min walk
+2025-01-30 14:31:20,076 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?departure_time=1738353600&destination=40.0341617%2C-75.2356293&mode=driving&origin=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:31:20,077 - DEBUG - 
+Analyzing evening commute using Wissahickon
+2025-01-30 14:31:20,078 - DEBUG - Evening route: 3400 Civic Center Boulevard, Philadelphia, PA 19104 -> Wissahickon
+2025-01-30 14:31:20,078 - DEBUG - Target arrival time: 2025-01-31 17:30:00-05:00
+2025-01-30 14:31:20,078 - DEBUG - 
+Analyzing evening route from 3400 Civic Center Boulevard, Philadelphia, PA 19104 to 40.0166454,-75.2102424
+2025-01-30 14:31:20,537 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738362600&destination=40.0166454%2C-75.2102424&mode=transit&origin=3400+Civic+Center+Boulevard%2C+Philadelphia%2C+PA+19104&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:31:20,544 - DEBUG - 
+Route 1:
+2025-01-30 14:31:20,545 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:31:20,545 - DEBUG -   Transit: Media/Wawa Line (Train) from Penn Medicine Station to Wissahickon
+2025-01-30 14:31:20,545 - DEBUG -   Valid route found: 27.0 min transit + 7.2 min walk
+2025-01-30 14:31:20,545 - DEBUG - 
+Route 2:
+2025-01-30 14:31:20,546 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:31:20,546 - DEBUG -   Transit: Airport Line (Train) from Penn Medicine Station to William H. Gray III 30th Street
+2025-01-30 14:31:20,546 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from William H. Gray III 30th Street to Wissahickon
+2025-01-30 14:31:20,546 - DEBUG -   Valid route found: 27.0 min transit + 7.2 min walk
+2025-01-30 14:31:20,546 - DEBUG - 
+Route 3:
+2025-01-30 14:31:20,546 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:31:20,546 - DEBUG -   Transit: Airport Line (Train) from Penn Medicine Station to Jefferson Station
+2025-01-30 14:31:20,546 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Jefferson Station to Wissahickon
+2025-01-30 14:31:20,546 - DEBUG -   Valid route found: 27.0 min transit + 7.2 min walk
+2025-01-30 14:31:20,546 - DEBUG - 
+Route 4:
+2025-01-30 14:31:20,546 - DEBUG -   Walk: 669m (9.9 min)
+2025-01-30 14:31:20,546 - DEBUG -   Transit: SEPTA Route 11 (Light rail) from 37th St to 13th St Trolley Station
+2025-01-30 14:31:20,546 - DEBUG -   Walk: 437m (6.2 min)
+2025-01-30 14:31:20,546 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Jefferson Station to Wissahickon
+2025-01-30 14:31:20,546 - DEBUG -   Valid route found: 23.4 min transit + 6.2 min walk
+2025-01-30 14:31:20,546 - DEBUG - 
+Route 5:
+2025-01-30 14:31:20,546 - DEBUG -   Walk: 669m (9.9 min)
+2025-01-30 14:31:20,546 - DEBUG -   Transit: SEPTA Route 13 (Light rail) from 37th St to 15th St Trolley Station
+2025-01-30 14:31:20,553 - DEBUG -   Walk: 324m (4.7 min)
+2025-01-30 14:31:20,553 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Suburban Station to Wissahickon
+2025-01-30 14:31:20,553 - DEBUG -   Valid route found: 27.3 min transit + 4.7 min walk
+2025-01-30 14:31:20,553 - DEBUG - 
+Route 6:
+2025-01-30 14:31:20,553 - DEBUG -   Walk: 669m (9.9 min)
+2025-01-30 14:31:20,553 - DEBUG -   Transit: SEPTA Route 36 (Light rail) from 37th St to 13th St Trolley Station
+2025-01-30 14:31:20,553 - DEBUG -   Walk: 551m (8.3 min)
+2025-01-30 14:31:20,553 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Suburban Station to Wissahickon
+2025-01-30 14:31:20,553 - DEBUG -   Valid route found: 28.4 min transit + 8.3 min walk
+2025-01-30 14:31:20,553 - DEBUG - 
+Selected best route: 23.4 min transit + 6.2 min walk
+2025-01-30 14:31:20,639 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?departure_time=1738359900&destination=40.0166454%2C-75.2102424&mode=driving&origin=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:31:20,641 - DEBUG - 
+Analyzing evening commute using Manayunk
+2025-01-30 14:31:20,641 - DEBUG - Evening route: 3400 Civic Center Boulevard, Philadelphia, PA 19104 -> Manayunk
+2025-01-30 14:31:20,641 - DEBUG - Target arrival time: 2025-01-31 17:30:00-05:00
+2025-01-30 14:31:20,642 - DEBUG - 
+Analyzing evening route from 3400 Civic Center Boulevard, Philadelphia, PA 19104 to 40.0268558,-75.2252668
+2025-01-30 14:31:21,086 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738362600&destination=40.0268558%2C-75.2252668&mode=transit&origin=3400+Civic+Center+Boulevard%2C+Philadelphia%2C+PA+19104&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:31:21,089 - DEBUG - 
+Route 1:
+2025-01-30 14:31:21,090 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:31:21,090 - DEBUG -   Transit: Media/Wawa Line (Train) from Penn Medicine Station to Manayunk
+2025-01-30 14:31:21,090 - DEBUG -   Walk: 63m (3.2 min)
+2025-01-30 14:31:21,090 - DEBUG -   Valid route found: 30.0 min transit + 3.2 min walk
+2025-01-30 14:31:21,090 - DEBUG - 
+Route 2:
+2025-01-30 14:31:21,090 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:31:21,090 - DEBUG -   Transit: Wilmington/Newark Line (Train) from Penn Medicine Station to Manayunk
+2025-01-30 14:31:21,090 - DEBUG -   Walk: 63m (3.2 min)
+2025-01-30 14:31:21,090 - DEBUG -   Valid route found: 30.0 min transit + 3.2 min walk
+2025-01-30 14:31:21,090 - DEBUG - 
+Route 3:
+2025-01-30 14:31:21,090 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:31:21,090 - DEBUG -   Transit: Media/Wawa Line (Train) from Penn Medicine Station to Manayunk
+2025-01-30 14:31:21,090 - DEBUG -   Walk: 63m (3.2 min)
+2025-01-30 14:31:21,090 - DEBUG -   Valid route found: 30.0 min transit + 3.2 min walk
+2025-01-30 14:31:21,091 - DEBUG - 
+Route 4:
+2025-01-30 14:31:21,091 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:31:21,091 - DEBUG -   Transit: Wilmington/Newark Line (Train) from Penn Medicine Station to Temple University
+2025-01-30 14:31:21,091 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Temple University to Manayunk
+2025-01-30 14:31:21,091 - DEBUG -   Walk: 63m (3.2 min)
+2025-01-30 14:31:21,091 - DEBUG -   Valid route found: 27.0 min transit + 3.2 min walk
+2025-01-30 14:31:21,091 - DEBUG - 
+Route 5:
+2025-01-30 14:31:21,091 - DEBUG -   Walk: 669m (9.9 min)
+2025-01-30 14:31:21,091 - DEBUG -   Transit: SEPTA Route 36 (Light rail) from 37th St to 15th St Trolley Station
+2025-01-30 14:31:21,091 - DEBUG -   Walk: 324m (4.7 min)
+2025-01-30 14:31:21,091 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Suburban Station to Manayunk
+2025-01-30 14:31:21,091 - DEBUG -   Walk: 63m (3.2 min)
+2025-01-30 14:31:21,091 - DEBUG -   Valid route found: 29.3 min transit + 3.2 min walk
+2025-01-30 14:31:21,091 - DEBUG - 
+Route 6:
+2025-01-30 14:31:21,091 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:31:21,091 - DEBUG -   Transit: Media/Wawa Line (Train) from Penn Medicine Station to Manayunk
+2025-01-30 14:31:21,091 - DEBUG -   Walk: 63m (3.2 min)
+2025-01-30 14:31:21,091 - DEBUG -   Valid route found: 30.0 min transit + 3.2 min walk
+2025-01-30 14:31:21,091 - DEBUG - 
+Selected best route: 27.0 min transit + 3.2 min walk
+2025-01-30 14:31:21,173 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?departure_time=1738353660&destination=40.0268558%2C-75.2252668&mode=driving&origin=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:31:21,176 - DEBUG - 
+Analyzing evening commute using Wynnewood
+2025-01-30 14:31:21,177 - DEBUG - Evening route: 3400 Civic Center Boulevard, Philadelphia, PA 19104 -> Wynnewood
+2025-01-30 14:31:21,177 - DEBUG - Target arrival time: 2025-01-31 17:30:00-05:00
+2025-01-30 14:31:21,177 - DEBUG - 
+Analyzing evening route from 3400 Civic Center Boulevard, Philadelphia, PA 19104 to 40.0027266,-75.2730773
+2025-01-30 14:31:21,574 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738362600&destination=40.0027266%2C-75.2730773&mode=transit&origin=3400+Civic+Center+Boulevard%2C+Philadelphia%2C+PA+19104&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:31:21,585 - DEBUG - 
+Route 1:
+2025-01-30 14:31:21,586 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:31:21,587 - DEBUG -   Transit: Media/Wawa Line (Train) from Penn Medicine Station to William H. Gray III 30th Street
+2025-01-30 14:31:21,587 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from William H. Gray III 30th Street to Wynnewood
+2025-01-30 14:31:21,587 - DEBUG -   Walk: 55m (2.4 min)
+2025-01-30 14:31:21,587 - DEBUG -   Valid route found: 17.0 min transit + 2.4 min walk
+2025-01-30 14:31:21,587 - DEBUG - 
+Route 2:
+2025-01-30 14:31:21,587 - DEBUG -   Walk: 669m (9.9 min)
+2025-01-30 14:31:21,587 - DEBUG -   Transit: SEPTA Route 36 (Light rail) from 37th St to Drexel Station at 30th St
+2025-01-30 14:31:21,587 - DEBUG -   Walk: 266m (5.3 min)
+2025-01-30 14:31:21,587 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from William H. Gray III 30th Street to Wynnewood
+2025-01-30 14:31:21,587 - DEBUG -   Walk: 55m (2.4 min)
+2025-01-30 14:31:21,587 - DEBUG -   Valid route found: 18.1 min transit + 2.4 min walk
+2025-01-30 14:31:21,587 - DEBUG - 
+Route 3:
+2025-01-30 14:31:21,587 - DEBUG -   Walk: 669m (9.9 min)
+2025-01-30 14:31:21,587 - DEBUG -   Transit: SEPTA Route 36 (Light rail) from 37th St to 13th St Trolley Station
+2025-01-30 14:31:21,588 - DEBUG -   Walk: 437m (6.2 min)
+2025-01-30 14:31:21,588 - DEBUG -   Transit: Chestnut Hill East Line (Train) from Jefferson Station to Wynnewood
+2025-01-30 14:31:21,588 - DEBUG -   Walk: 55m (2.4 min)
+2025-01-30 14:31:21,588 - DEBUG -   Valid route found: 33.4 min transit + 2.4 min walk
+2025-01-30 14:31:21,588 - DEBUG - 
+Route 4:
+2025-01-30 14:31:21,588 - DEBUG -   Walk: 1044m (14.7 min)
+2025-01-30 14:31:21,588 - DEBUG -   Transit: SEPTA Route 10 (Light rail) from 33rd St to 13th St Trolley Station
+2025-01-30 14:31:21,588 - DEBUG -   Walk: 551m (8.3 min)
+2025-01-30 14:31:21,588 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Suburban Station to Wynnewood
+2025-01-30 14:31:21,588 - DEBUG -   Walk: 55m (2.4 min)
+2025-01-30 14:31:21,588 - DEBUG -   Valid route found: 26.8 min transit + 2.4 min walk
+2025-01-30 14:31:21,588 - DEBUG - 
+Route 5:
+2025-01-30 14:31:21,588 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:31:21,588 - DEBUG -   Transit: Airport Line (Train) from Penn Medicine Station to William H. Gray III 30th Street
+2025-01-30 14:31:21,588 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from William H. Gray III 30th Street to Wynnewood
+2025-01-30 14:31:21,588 - DEBUG -   Walk: 55m (2.4 min)
+2025-01-30 14:31:21,589 - DEBUG -   Valid route found: 17.0 min transit + 2.4 min walk
+2025-01-30 14:31:21,589 - DEBUG - 
+Route 6:
+2025-01-30 14:31:21,589 - DEBUG -   Walk: 669m (9.9 min)
+2025-01-30 14:31:21,589 - DEBUG -   Transit: SEPTA Route 36 (Light rail) from 37th St to Drexel Station at 30th St
+2025-01-30 14:31:21,589 - DEBUG -   Walk: 266m (5.3 min)
+2025-01-30 14:31:21,589 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from William H. Gray III 30th Street to Wynnewood
+2025-01-30 14:31:21,589 - DEBUG -   Walk: 55m (2.4 min)
+2025-01-30 14:31:21,589 - DEBUG -   Valid route found: 18.1 min transit + 2.4 min walk
+2025-01-30 14:31:21,589 - DEBUG - 
+Selected best route: 17.0 min transit + 2.4 min walk
+2025-01-30 14:31:21,687 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?departure_time=1738358580&destination=40.0027266%2C-75.2730773&mode=driving&origin=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:31:21,688 - DEBUG - 
+Analyzing evening commute using Narberth
+2025-01-30 14:31:21,688 - DEBUG - Evening route: 3400 Civic Center Boulevard, Philadelphia, PA 19104 -> Narberth
+2025-01-30 14:31:21,688 - DEBUG - Target arrival time: 2025-01-31 17:30:00-05:00
+2025-01-30 14:31:21,688 - DEBUG - 
+Analyzing evening route from 3400 Civic Center Boulevard, Philadelphia, PA 19104 to 40.0047601,-75.2614664
+2025-01-30 14:31:22,072 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738362600&destination=40.0047601%2C-75.2614664&mode=transit&origin=3400+Civic+Center+Boulevard%2C+Philadelphia%2C+PA+19104&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:31:22,078 - DEBUG - 
+Route 1:
+2025-01-30 14:31:22,079 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:31:22,079 - DEBUG -   Transit: Airport Line (Train) from Penn Medicine Station to William H. Gray III 30th Street
+2025-01-30 14:31:22,079 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from William H. Gray III 30th Street to Narberth
+2025-01-30 14:31:22,079 - DEBUG -   Valid route found: 15.0 min transit + 7.2 min walk
+2025-01-30 14:31:22,079 - DEBUG - 
+Route 2:
+2025-01-30 14:31:22,079 - DEBUG -   Walk: 669m (9.9 min)
+2025-01-30 14:31:22,079 - DEBUG -   Transit: SEPTA Route 13 (Light rail) from 37th St to Drexel Station at 30th St
+2025-01-30 14:31:22,079 - DEBUG -   Walk: 266m (5.3 min)
+2025-01-30 14:31:22,079 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from William H. Gray III 30th Street to Narberth
+2025-01-30 14:31:22,079 - DEBUG -   Valid route found: 16.1 min transit + 5.3 min walk
+2025-01-30 14:31:22,079 - DEBUG - 
+Route 3:
+2025-01-30 14:31:22,079 - DEBUG -   Walk: 669m (9.9 min)
+2025-01-30 14:31:22,079 - DEBUG -   Transit: SEPTA Route 36 (Light rail) from 37th St to 13th St Trolley Station
+2025-01-30 14:31:22,079 - DEBUG -   Walk: 437m (6.2 min)
+2025-01-30 14:31:22,079 - DEBUG -   Transit: Warminster Line (Train) from Jefferson Station to Narberth
+2025-01-30 14:31:22,079 - DEBUG -   Valid route found: 30.4 min transit + 6.2 min walk
+2025-01-30 14:31:22,079 - DEBUG - 
+Route 4:
+2025-01-30 14:31:22,079 - DEBUG -   Walk: 669m (9.9 min)
+2025-01-30 14:31:22,079 - DEBUG -   Transit: SEPTA Route 36 (Light rail) from 37th St to 13th St Trolley Station
+2025-01-30 14:31:22,079 - DEBUG -   Walk: 551m (8.3 min)
+2025-01-30 14:31:22,079 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Suburban Station to Narberth
+2025-01-30 14:31:22,079 - DEBUG -   Valid route found: 25.4 min transit + 8.3 min walk
+2025-01-30 14:31:22,079 - DEBUG - 
+Route 5:
+2025-01-30 14:31:22,079 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:31:22,079 - DEBUG -   Transit: Media/Wawa Line (Train) from Penn Medicine Station to William H. Gray III 30th Street
+2025-01-30 14:31:22,079 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from William H. Gray III 30th Street to Narberth
+2025-01-30 14:31:22,079 - DEBUG -   Valid route found: 15.0 min transit + 7.2 min walk
+2025-01-30 14:31:22,079 - DEBUG - 
+Route 6:
+2025-01-30 14:31:22,079 - DEBUG -   Walk: 1044m (14.7 min)
+2025-01-30 14:31:22,080 - DEBUG -   Transit: SEPTA Route 10 (Light rail) from 33rd St to 13th St Trolley Station
+2025-01-30 14:31:22,080 - DEBUG -   Walk: 551m (8.3 min)
+2025-01-30 14:31:22,080 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Suburban Station to Narberth
+2025-01-30 14:31:22,080 - DEBUG -   Valid route found: 24.8 min transit + 8.3 min walk
+2025-01-30 14:31:22,080 - DEBUG - 
+Selected best route: 16.1 min transit + 5.3 min walk
+2025-01-30 14:31:22,231 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?departure_time=1738360260&destination=40.0047601%2C-75.2614664&mode=driving&origin=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:31:22,233 - DEBUG - 
+Analyzing evening commute using Bala
+2025-01-30 14:31:22,236 - DEBUG - Evening route: 3400 Civic Center Boulevard, Philadelphia, PA 19104 -> Bala
+2025-01-30 14:31:22,236 - DEBUG - Target arrival time: 2025-01-31 17:30:00-05:00
+2025-01-30 14:31:22,236 - DEBUG - 
+Analyzing evening route from 3400 Civic Center Boulevard, Philadelphia, PA 19104 to 40.0010048,-75.22781069999999
+2025-01-30 14:31:22,850 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738362600&destination=40.0010048%2C-75.22781069999999&mode=transit&origin=3400+Civic+Center+Boulevard%2C+Philadelphia%2C+PA+19104&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:31:22,871 - DEBUG - 
+Route 1:
+2025-01-30 14:31:22,871 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:31:22,871 - DEBUG -   Transit: Media/Wawa Line (Train) from Penn Medicine Station to William H. Gray III 30th Street
+2025-01-30 14:31:22,871 - DEBUG -   Transit: Cynwyd Line (Train) from William H. Gray III 30th Street to Bala
+2025-01-30 14:31:22,871 - DEBUG -   Valid route found: 17.0 min transit + 7.2 min walk
+2025-01-30 14:31:22,871 - DEBUG - 
+Route 2:
+2025-01-30 14:31:22,871 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:31:22,871 - DEBUG -   Transit: Wilmington/Newark Line (Train) from Penn Medicine Station to Suburban Station
+2025-01-30 14:31:22,871 - DEBUG -   Transit: Cynwyd Line (Train) from Suburban Station to Bala
+2025-01-30 14:31:22,871 - DEBUG -   Valid route found: 26.0 min transit + 7.2 min walk
+2025-01-30 14:31:22,871 - DEBUG - 
+Route 3:
+2025-01-30 14:31:22,871 - DEBUG -   Walk: 669m (9.9 min)
+2025-01-30 14:31:22,871 - DEBUG -   Transit: SEPTA Route 13 (Light rail) from 37th St to Drexel Station at 30th St
+2025-01-30 14:31:22,871 - DEBUG -   Walk: 266m (5.3 min)
+2025-01-30 14:31:22,871 - DEBUG -   Transit: Cynwyd Line (Train) from William H. Gray III 30th Street to Bala
+2025-01-30 14:31:22,871 - DEBUG -   Valid route found: 18.1 min transit + 5.3 min walk
+2025-01-30 14:31:22,871 - DEBUG - 
+Route 4:
+2025-01-30 14:31:22,871 - DEBUG -   Walk: 669m (9.9 min)
+2025-01-30 14:31:22,871 - DEBUG -   Transit: SEPTA Route 36 (Light rail) from 37th St to Drexel Station at 30th St
+2025-01-30 14:31:22,871 - DEBUG -   Walk: 266m (5.3 min)
+2025-01-30 14:31:22,871 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from William H. Gray III 30th Street to Overbrook
+2025-01-30 14:31:22,871 - DEBUG -   Walk: 193m (3.1 min)
+2025-01-30 14:31:22,871 - DEBUG -   Transit: Germantown-Chelten to 69th St TC (Bus) from City Av & Overbrook Av - MBNS to City Av & Bala Av
+2025-01-30 14:31:22,871 - DEBUG -   Walk: 248m (4.1 min)
+2025-01-30 14:31:22,871 - DEBUG -   Valid route found: 18.5 min transit + 4.1 min walk
+2025-01-30 14:31:22,871 - DEBUG - 
+Route 5:
+2025-01-30 14:31:22,871 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:31:22,871 - DEBUG -   Transit: Airport Line (Train) from Penn Medicine Station to William H. Gray III 30th Street
+2025-01-30 14:31:22,871 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from William H. Gray III 30th Street to Overbrook
+2025-01-30 14:31:22,871 - DEBUG -   Walk: 193m (3.1 min)
+2025-01-30 14:31:22,871 - DEBUG -   Transit: Germantown-Chelten to 69th St TC (Bus) from City Av & Overbrook Av - MBNS to City Av & Bala Av
+2025-01-30 14:31:22,871 - DEBUG -   Walk: 248m (4.1 min)
+2025-01-30 14:31:22,871 - DEBUG -   Valid route found: 17.4 min transit + 4.1 min walk
+2025-01-30 14:31:22,871 - DEBUG - 
+Route 6:
+2025-01-30 14:31:22,871 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:31:22,871 - DEBUG -   Transit: Media/Wawa Line (Train) from Penn Medicine Station to Wissahickon
+2025-01-30 14:31:22,871 - DEBUG -   Walk: 422m (7.0 min)
+2025-01-30 14:31:22,871 - DEBUG -   Transit: Germantown-Chelten to 69th St TC (Bus) from Ridge Av & Wissahickon Transit Center to City Av & Conshohocken State Rd
+2025-01-30 14:31:22,871 - DEBUG -   Walk: 191m (3.1 min)
+2025-01-30 14:31:22,871 - DEBUG -   Valid route found: 34.6 min transit + 3.1 min walk
+2025-01-30 14:31:22,872 - DEBUG - 
+Selected best route: 17.4 min transit + 4.1 min walk
+2025-01-30 14:31:23,005 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?departure_time=1738356540&destination=40.0010048%2C-75.22781069999999&mode=driving&origin=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:34:35,995 - INFO - API queries_quota: 60
+2025-01-30 14:34:36,006 - DEBUG - 
+Searching for stations near 1420 Centennial Rd, Narberth, PA 19072
+2025-01-30 14:34:36,010 - DEBUG - Starting new HTTPS connection (1): maps.googleapis.com:443
+2025-01-30 14:34:36,151 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:34:36,509 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/place/nearbysearch/json?keyword=train+station&location=40.0293325%2C-75.2460143&maxprice=None&minprice=None&radius=3000&type=train_station&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 2699
+2025-01-30 14:34:36,510 - INFO - 
+Found stations near 1420 Centennial Rd, Narberth, PA 19072:
+2025-01-30 14:34:36,511 - INFO - - Cynwyd (Bala Cynwyd)
+2025-01-30 14:34:36,511 - INFO - - Ivy Ridge (Philadelphia)
+2025-01-30 14:34:36,511 - INFO - - Wissahickon (Philadelphia)
+2025-01-30 14:34:36,511 - INFO - - Manayunk (District of Freedom#8573311~!#, Philadelphia)
+2025-01-30 14:34:36,511 - INFO - - Wynnewood (Lower Merion Township)
+2025-01-30 14:34:36,511 - INFO - - Narberth (211 Elmwood Ave, Narberth)
+2025-01-30 14:34:36,511 - INFO - - Bala (Bala Cynwyd)
+2025-01-30 14:34:36,511 - DEBUG - 
+Analyzing morning commute using Cynwyd
+2025-01-30 14:34:36,511 - DEBUG - Morning route: Cynwyd -> 3400 Civic Center Boulevard, Philadelphia, PA 19104
+2025-01-30 14:34:36,511 - DEBUG - Target arrival time: 2025-01-31 09:00:00-05:00
+2025-01-30 14:34:36,511 - DEBUG - 
+Analyzing morning route from 40.0067313,-75.23191190000001 to 3400 Civic Center Boulevard, Philadelphia, PA 19104
+2025-01-30 14:34:37,248 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738332000&destination=3400+Civic+Center+Boulevard%2C+Philadelphia%2C+PA+19104&mode=transit&origin=40.0067313%2C-75.23191190000001&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:34:37,262 - DEBUG - 
+Route 1:
+2025-01-30 14:34:37,262 - DEBUG -   Walk: 0m (0.0 min)
+2025-01-30 14:34:37,262 - DEBUG -   Transit: Cynwyd Line (Train) from Cynwyd to William H. Gray III 30th Street
+2025-01-30 14:34:37,262 - DEBUG -   Transit: Airport Line (Train) from William H. Gray III 30th Street to Penn Medicine Station
+2025-01-30 14:34:37,262 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:34:37,262 - DEBUG -   Valid route found: 20.0 min transit + 7.7 min walk
+2025-01-30 14:34:37,262 - DEBUG - 
+Route 2:
+2025-01-30 14:34:37,262 - DEBUG -   Walk: 0m (0.0 min)
+2025-01-30 14:34:37,262 - DEBUG -   Transit: Cynwyd Line (Train) from Cynwyd to William H. Gray III 30th Street
+2025-01-30 14:34:37,262 - DEBUG -   Walk: 235m (4.6 min)
+2025-01-30 14:34:37,262 - DEBUG -   Transit: SEPTA Route 13 (Light rail) from 30th St to 37th St
+2025-01-30 14:34:37,262 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:34:37,262 - DEBUG -   Rejected: No valid rail connection to Penn Medicine
+2025-01-30 14:34:37,262 - DEBUG - 
+Route 3:
+2025-01-30 14:34:37,262 - DEBUG -   Walk: 2127m (29.4 min)
+2025-01-30 14:34:37,262 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Merion to William H. Gray III 30th Street
+2025-01-30 14:34:37,262 - DEBUG -   Transit: Airport Line (Train) from William H. Gray III 30th Street to Penn Medicine Station
+2025-01-30 14:34:37,262 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:34:37,262 - DEBUG -   Valid route found: 15.0 min transit + 7.7 min walk
+2025-01-30 14:34:37,262 - DEBUG - 
+Route 4:
+2025-01-30 14:34:37,262 - DEBUG -   Walk: 2127m (29.4 min)
+2025-01-30 14:34:37,262 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Merion to Suburban Station
+2025-01-30 14:34:37,262 - DEBUG -   Transit: Wilmington/Newark Line (Train) from Suburban Station to Penn Medicine Station
+2025-01-30 14:34:37,262 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:34:37,262 - DEBUG -   Valid route found: 25.0 min transit + 7.7 min walk
+2025-01-30 14:34:37,262 - DEBUG - 
+Route 5:
+2025-01-30 14:34:37,262 - DEBUG -   Walk: 2127m (29.4 min)
+2025-01-30 14:34:37,263 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Merion to William H. Gray III 30th Street
+2025-01-30 14:34:37,263 - DEBUG -   Walk: 235m (4.6 min)
+2025-01-30 14:34:37,263 - DEBUG -   Transit: SEPTA Route 36 (Light rail) from 30th St to 37th St
+2025-01-30 14:34:37,263 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:34:37,263 - DEBUG -   Valid route found: 16.3 min transit + 9.1 min walk
+2025-01-30 14:34:37,263 - DEBUG - 
+Route 6:
+2025-01-30 14:34:37,263 - DEBUG -   Walk: 868m (12.1 min)
+2025-01-30 14:34:37,263 - DEBUG -   Transit: Germantown-Chelten to 69th St TC (Bus) from City Av & Bala Av to Malvern Av & 63rd St - FS
+2025-01-30 14:34:37,263 - DEBUG -   Walk: 39m (0.7 min)
+2025-01-30 14:34:37,263 - DEBUG -   Transit: SEPTA Route 10 (Light rail) from Malvern Av & 63rd St to 33rd St
+2025-01-30 14:34:37,263 - DEBUG -   Walk: 1044m (14.7 min)
+2025-01-30 14:34:37,263 - DEBUG -   Rejected: No valid rail connection to Penn Medicine
+2025-01-30 14:34:37,263 - DEBUG - 
+Selected best route: 15.0 min transit + 7.7 min walk
+2025-01-30 14:34:37,446 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?departure_time=1738327320&destination=40.0067313%2C-75.23191190000001&mode=driving&origin=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:34:37,448 - DEBUG - 
+Analyzing morning commute using Ivy Ridge
+2025-01-30 14:34:37,448 - DEBUG - Morning route: Ivy Ridge -> 3400 Civic Center Boulevard, Philadelphia, PA 19104
+2025-01-30 14:34:37,448 - DEBUG - Target arrival time: 2025-01-31 09:00:00-05:00
+2025-01-30 14:34:37,449 - DEBUG - 
+Analyzing morning route from 40.0341617,-75.2356293 to 3400 Civic Center Boulevard, Philadelphia, PA 19104
+2025-01-30 14:34:38,059 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738332000&destination=3400+Civic+Center+Boulevard%2C+Philadelphia%2C+PA+19104&mode=transit&origin=40.0341617%2C-75.2356293&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:34:38,064 - DEBUG - 
+Route 1:
+2025-01-30 14:34:38,065 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Ivy Ridge to Penn Medicine Station
+2025-01-30 14:34:38,065 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:34:38,065 - DEBUG -   Rejected: No valid rail connection to Penn Medicine
+2025-01-30 14:34:38,065 - DEBUG - 
+Route 2:
+2025-01-30 14:34:38,065 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Ivy Ridge to Penn Medicine Station
+2025-01-30 14:34:38,065 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:34:38,066 - DEBUG -   Rejected: No valid rail connection to Penn Medicine
+2025-01-30 14:34:38,066 - DEBUG - 
+Route 3:
+2025-01-30 14:34:38,066 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Ivy Ridge to Temple University
+2025-01-30 14:34:38,066 - DEBUG -   Transit: Lansdale/Doylestown Line (Train) from Temple University to Penn Medicine Station
+2025-01-30 14:34:38,066 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:34:38,066 - DEBUG -   Rejected: No valid rail connection to Penn Medicine
+2025-01-30 14:34:38,066 - DEBUG - 
+Route 4:
+2025-01-30 14:34:38,066 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Ivy Ridge to Suburban Station
+2025-01-30 14:34:38,066 - DEBUG -   Walk: 290m (4.2 min)
+2025-01-30 14:34:38,066 - DEBUG -   Transit: SEPTA Route 13 (Light rail) from 15th St Trolley Station to 37th St
+2025-01-30 14:34:38,066 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:34:38,066 - DEBUG -   Rejected: No valid rail connection to Penn Medicine
+2025-01-30 14:34:38,066 - DEBUG - 
+Route 5:
+2025-01-30 14:34:38,066 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Ivy Ridge to Jefferson Station
+2025-01-30 14:34:38,066 - DEBUG -   Walk: 437m (6.3 min)
+2025-01-30 14:34:38,066 - DEBUG -   Transit: SEPTA Route 36 (Light rail) from 13th St Trolley Station to 37th St
+2025-01-30 14:34:38,066 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:34:38,066 - DEBUG -   Rejected: No valid rail connection to Penn Medicine
+2025-01-30 14:34:38,066 - DEBUG - 
+Route 6:
+2025-01-30 14:34:38,066 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Ivy Ridge to Penn Medicine Station
+2025-01-30 14:34:38,066 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:34:38,067 - DEBUG -   Rejected: No valid rail connection to Penn Medicine
+2025-01-30 14:34:38,067 - DEBUG - No valid transit routes found for Ivy Ridge
+2025-01-30 14:34:38,068 - DEBUG - 
+Analyzing morning commute using Wissahickon
+2025-01-30 14:34:38,068 - DEBUG - Morning route: Wissahickon -> 3400 Civic Center Boulevard, Philadelphia, PA 19104
+2025-01-30 14:34:38,068 - DEBUG - Target arrival time: 2025-01-31 09:00:00-05:00
+2025-01-30 14:34:38,068 - DEBUG - 
+Analyzing morning route from 40.0166454,-75.2102424 to 3400 Civic Center Boulevard, Philadelphia, PA 19104
+2025-01-30 14:34:38,702 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738332000&destination=3400+Civic+Center+Boulevard%2C+Philadelphia%2C+PA+19104&mode=transit&origin=40.0166454%2C-75.2102424&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:34:38,706 - DEBUG - 
+Route 1:
+2025-01-30 14:34:38,706 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Wissahickon to Penn Medicine Station
+2025-01-30 14:34:38,706 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:34:38,706 - DEBUG -   Rejected: No valid rail connection to Penn Medicine
+2025-01-30 14:34:38,707 - DEBUG - 
+Route 2:
+2025-01-30 14:34:38,707 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Wissahickon to Penn Medicine Station
+2025-01-30 14:34:38,707 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:34:38,707 - DEBUG -   Rejected: No valid rail connection to Penn Medicine
+2025-01-30 14:34:38,707 - DEBUG - 
+Route 3:
+2025-01-30 14:34:38,707 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Wissahickon to Suburban Station
+2025-01-30 14:34:38,707 - DEBUG -   Transit: Wilmington/Newark Line (Train) from Suburban Station to Penn Medicine Station
+2025-01-30 14:34:38,707 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:34:38,707 - DEBUG -   Valid route found: 28.0 min transit + 7.7 min walk
+2025-01-30 14:34:38,707 - DEBUG - 
+Route 4:
+2025-01-30 14:34:38,707 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Wissahickon to Suburban Station
+2025-01-30 14:34:38,707 - DEBUG -   Walk: 290m (4.2 min)
+2025-01-30 14:34:38,707 - DEBUG -   Transit: SEPTA Route 13 (Light rail) from 15th St Trolley Station to 37th St
+2025-01-30 14:34:38,707 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:34:38,707 - DEBUG -   Rejected: No valid rail connection to Penn Medicine
+2025-01-30 14:34:38,707 - DEBUG - 
+Route 5:
+2025-01-30 14:34:38,707 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Wissahickon to Jefferson Station
+2025-01-30 14:34:38,707 - DEBUG -   Walk: 437m (6.3 min)
+2025-01-30 14:34:38,707 - DEBUG -   Transit: SEPTA Route 36 (Light rail) from 13th St Trolley Station to 37th St
+2025-01-30 14:34:38,707 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:34:38,707 - DEBUG -   Rejected: No valid rail connection to Penn Medicine
+2025-01-30 14:34:38,707 - DEBUG - 
+Route 6:
+2025-01-30 14:34:38,707 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Wissahickon to Penn Medicine Station
+2025-01-30 14:34:38,707 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:34:38,707 - DEBUG -   Rejected: No valid rail connection to Penn Medicine
+2025-01-30 14:34:38,707 - DEBUG - 
+Selected best route: 28.0 min transit + 7.7 min walk
+2025-01-30 14:34:38,851 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?departure_time=1738325220&destination=40.0166454%2C-75.2102424&mode=driving&origin=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:34:38,853 - DEBUG - 
+Analyzing morning commute using Manayunk
+2025-01-30 14:34:38,853 - DEBUG - Morning route: Manayunk -> 3400 Civic Center Boulevard, Philadelphia, PA 19104
+2025-01-30 14:34:38,853 - DEBUG - Target arrival time: 2025-01-31 09:00:00-05:00
+2025-01-30 14:34:38,853 - DEBUG - 
+Analyzing morning route from 40.0268558,-75.2252668 to 3400 Civic Center Boulevard, Philadelphia, PA 19104
+2025-01-30 14:34:39,473 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738332000&destination=3400+Civic+Center+Boulevard%2C+Philadelphia%2C+PA+19104&mode=transit&origin=40.0268558%2C-75.2252668&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:34:39,482 - DEBUG - 
+Route 1:
+2025-01-30 14:34:39,488 - DEBUG -   Walk: 63m (3.1 min)
+2025-01-30 14:34:39,488 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Manayunk to Penn Medicine Station
+2025-01-30 14:34:39,489 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:34:39,489 - DEBUG -   Rejected: No valid rail connection to Penn Medicine
+2025-01-30 14:34:39,489 - DEBUG - 
+Route 2:
+2025-01-30 14:34:39,489 - DEBUG -   Walk: 63m (3.1 min)
+2025-01-30 14:34:39,489 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Manayunk to Penn Medicine Station
+2025-01-30 14:34:39,489 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:34:39,489 - DEBUG -   Rejected: No valid rail connection to Penn Medicine
+2025-01-30 14:34:39,489 - DEBUG - 
+Route 3:
+2025-01-30 14:34:39,489 - DEBUG -   Walk: 63m (3.1 min)
+2025-01-30 14:34:39,489 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Manayunk to Suburban Station
+2025-01-30 14:34:39,489 - DEBUG -   Walk: 290m (4.2 min)
+2025-01-30 14:34:39,489 - DEBUG -   Transit: SEPTA Route 13 (Light rail) from 15th St Trolley Station to 37th St
+2025-01-30 14:34:39,489 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:34:39,489 - DEBUG -   Rejected: No valid rail connection to Penn Medicine
+2025-01-30 14:34:39,489 - DEBUG - 
+Route 4:
+2025-01-30 14:34:39,489 - DEBUG -   Walk: 63m (3.1 min)
+2025-01-30 14:34:39,489 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Manayunk to Jefferson Station
+2025-01-30 14:34:39,489 - DEBUG -   Walk: 437m (6.3 min)
+2025-01-30 14:34:39,489 - DEBUG -   Transit: SEPTA Route 36 (Light rail) from 13th St Trolley Station to 37th St
+2025-01-30 14:34:39,489 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:34:39,489 - DEBUG -   Rejected: No valid rail connection to Penn Medicine
+2025-01-30 14:34:39,489 - DEBUG - 
+Route 5:
+2025-01-30 14:34:39,489 - DEBUG -   Walk: 63m (3.1 min)
+2025-01-30 14:34:39,489 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Manayunk to Penn Medicine Station
+2025-01-30 14:34:39,489 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:34:39,489 - DEBUG -   Rejected: No valid rail connection to Penn Medicine
+2025-01-30 14:34:39,489 - DEBUG - 
+Route 6:
+2025-01-30 14:34:39,489 - DEBUG -   Walk: 63m (3.1 min)
+2025-01-30 14:34:39,489 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Manayunk to William H. Gray III 30th Street
+2025-01-30 14:34:39,489 - DEBUG -   Walk: 235m (4.6 min)
+2025-01-30 14:34:39,489 - DEBUG -   Transit: Route 34 (Light rail) from 30th St to 37th St
+2025-01-30 14:34:39,489 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:34:39,489 - DEBUG -   Rejected: No valid rail connection to Penn Medicine
+2025-01-30 14:34:39,490 - DEBUG - No valid transit routes found for Manayunk
+2025-01-30 14:34:39,490 - DEBUG - 
+Analyzing morning commute using Wynnewood
+2025-01-30 14:34:39,490 - DEBUG - Morning route: Wynnewood -> 3400 Civic Center Boulevard, Philadelphia, PA 19104
+2025-01-30 14:34:39,490 - DEBUG - Target arrival time: 2025-01-31 09:00:00-05:00
+2025-01-30 14:34:39,490 - DEBUG - 
+Analyzing morning route from 40.0027266,-75.2730773 to 3400 Civic Center Boulevard, Philadelphia, PA 19104
+2025-01-30 14:34:39,975 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738332000&destination=3400+Civic+Center+Boulevard%2C+Philadelphia%2C+PA+19104&mode=transit&origin=40.0027266%2C-75.2730773&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:34:39,978 - DEBUG - 
+Route 1:
+2025-01-30 14:34:39,978 - DEBUG -   Walk: 55m (2.5 min)
+2025-01-30 14:34:39,978 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Wynnewood to William H. Gray III 30th Street
+2025-01-30 14:34:39,978 - DEBUG -   Transit: Airport Line (Train) from William H. Gray III 30th Street to Penn Medicine Station
+2025-01-30 14:34:39,978 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:34:39,979 - DEBUG -   Valid route found: 19.0 min transit + 7.7 min walk
+2025-01-30 14:34:39,979 - DEBUG - 
+Route 2:
+2025-01-30 14:34:39,979 - DEBUG -   Walk: 55m (2.5 min)
+2025-01-30 14:34:39,979 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Wynnewood to Suburban Station
+2025-01-30 14:34:39,979 - DEBUG -   Transit: Wilmington/Newark Line (Train) from Suburban Station to Penn Medicine Station
+2025-01-30 14:34:39,979 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:34:39,979 - DEBUG -   Valid route found: 29.0 min transit + 7.7 min walk
+2025-01-30 14:34:39,979 - DEBUG - 
+Route 3:
+2025-01-30 14:34:39,979 - DEBUG -   Walk: 55m (2.5 min)
+2025-01-30 14:34:39,979 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Wynnewood to Suburban Station
+2025-01-30 14:34:39,979 - DEBUG -   Walk: 290m (4.2 min)
+2025-01-30 14:34:39,979 - DEBUG -   Transit: SEPTA Route 13 (Light rail) from 15th St Trolley Station to 37th St
+2025-01-30 14:34:39,979 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:34:39,979 - DEBUG -   Valid route found: 29.5 min transit + 9.1 min walk
+2025-01-30 14:34:39,979 - DEBUG - 
+Route 4:
+2025-01-30 14:34:39,979 - DEBUG -   Walk: 55m (2.5 min)
+2025-01-30 14:34:39,979 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Wynnewood to William H. Gray III 30th Street
+2025-01-30 14:34:39,979 - DEBUG -   Walk: 235m (4.6 min)
+2025-01-30 14:34:39,979 - DEBUG -   Transit: SEPTA Route 36 (Light rail) from 30th St to 37th St
+2025-01-30 14:34:39,979 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:34:39,979 - DEBUG -   Valid route found: 20.3 min transit + 9.1 min walk
+2025-01-30 14:34:39,979 - DEBUG - 
+Route 5:
+2025-01-30 14:34:39,979 - DEBUG -   Walk: 55m (2.5 min)
+2025-01-30 14:34:39,979 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Wynnewood to Jefferson Station
+2025-01-30 14:34:39,979 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Jefferson Station to Penn Medicine Station
+2025-01-30 14:34:39,979 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:34:39,979 - DEBUG -   Valid route found: 40.0 min transit + 7.7 min walk
+2025-01-30 14:34:39,980 - DEBUG - 
+Route 6:
+2025-01-30 14:34:39,980 - DEBUG -   Walk: 55m (2.5 min)
+2025-01-30 14:34:39,980 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Wynnewood to William H. Gray III 30th Street
+2025-01-30 14:34:39,980 - DEBUG -   Walk: 235m (4.6 min)
+2025-01-30 14:34:39,980 - DEBUG -   Transit: Route 34 (Light rail) from 30th St to 37th St
+2025-01-30 14:34:39,980 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:34:39,980 - DEBUG -   Valid route found: 21.3 min transit + 9.1 min walk
+2025-01-30 14:34:39,980 - DEBUG - 
+Selected best route: 19.0 min transit + 7.7 min walk
+2025-01-30 14:34:40,129 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?departure_time=1738328700&destination=40.0027266%2C-75.2730773&mode=driving&origin=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:34:40,131 - DEBUG - 
+Analyzing morning commute using Narberth
+2025-01-30 14:34:40,131 - DEBUG - Morning route: Narberth -> 3400 Civic Center Boulevard, Philadelphia, PA 19104
+2025-01-30 14:34:40,131 - DEBUG - Target arrival time: 2025-01-31 09:00:00-05:00
+2025-01-30 14:34:40,131 - DEBUG - 
+Analyzing morning route from 40.0047601,-75.2614664 to 3400 Civic Center Boulevard, Philadelphia, PA 19104
+2025-01-30 14:34:40,713 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738332000&destination=3400+Civic+Center+Boulevard%2C+Philadelphia%2C+PA+19104&mode=transit&origin=40.0047601%2C-75.2614664&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:34:40,730 - DEBUG - 
+Route 1:
+2025-01-30 14:34:40,730 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Narberth to William H. Gray III 30th Street
+2025-01-30 14:34:40,730 - DEBUG -   Transit: Airport Line (Train) from William H. Gray III 30th Street to Penn Medicine Station
+2025-01-30 14:34:40,730 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:34:40,730 - DEBUG -   Valid route found: 17.0 min transit + 7.7 min walk
+2025-01-30 14:34:40,731 - DEBUG - 
+Route 2:
+2025-01-30 14:34:40,731 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Narberth to Suburban Station
+2025-01-30 14:34:40,731 - DEBUG -   Transit: Wilmington/Newark Line (Train) from Suburban Station to Penn Medicine Station
+2025-01-30 14:34:40,731 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:34:40,731 - DEBUG -   Valid route found: 27.0 min transit + 7.7 min walk
+2025-01-30 14:34:40,731 - DEBUG - 
+Route 3:
+2025-01-30 14:34:40,731 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Narberth to Suburban Station
+2025-01-30 14:34:40,731 - DEBUG -   Walk: 290m (4.2 min)
+2025-01-30 14:34:40,731 - DEBUG -   Transit: SEPTA Route 13 (Light rail) from 15th St Trolley Station to 37th St
+2025-01-30 14:34:40,731 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:34:40,731 - DEBUG -   Valid route found: 27.5 min transit + 9.1 min walk
+2025-01-30 14:34:40,731 - DEBUG - 
+Route 4:
+2025-01-30 14:34:40,731 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Narberth to William H. Gray III 30th Street
+2025-01-30 14:34:40,731 - DEBUG -   Walk: 235m (4.6 min)
+2025-01-30 14:34:40,731 - DEBUG -   Transit: SEPTA Route 36 (Light rail) from 30th St to 37th St
+2025-01-30 14:34:40,731 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:34:40,731 - DEBUG -   Valid route found: 18.3 min transit + 9.1 min walk
+2025-01-30 14:34:40,731 - DEBUG - 
+Route 5:
+2025-01-30 14:34:40,731 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Narberth to Jefferson Station
+2025-01-30 14:34:40,731 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Jefferson Station to Penn Medicine Station
+2025-01-30 14:34:40,731 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:34:40,731 - DEBUG -   Valid route found: 38.0 min transit + 7.7 min walk
+2025-01-30 14:34:40,731 - DEBUG - 
+Route 6:
+2025-01-30 14:34:40,731 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Narberth to William H. Gray III 30th Street
+2025-01-30 14:34:40,731 - DEBUG -   Walk: 235m (4.6 min)
+2025-01-30 14:34:40,731 - DEBUG -   Transit: Route 34 (Light rail) from 30th St to 37th St
+2025-01-30 14:34:40,731 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:34:40,731 - DEBUG -   Valid route found: 19.3 min transit + 9.1 min walk
+2025-01-30 14:34:40,731 - DEBUG - 
+Selected best route: 17.0 min transit + 7.7 min walk
+2025-01-30 14:34:40,859 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?departure_time=1738329000&destination=40.0047601%2C-75.2614664&mode=driving&origin=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:34:40,861 - DEBUG - 
+Analyzing morning commute using Bala
+2025-01-30 14:34:40,861 - DEBUG - Morning route: Bala -> 3400 Civic Center Boulevard, Philadelphia, PA 19104
+2025-01-30 14:34:40,861 - DEBUG - Target arrival time: 2025-01-31 09:00:00-05:00
+2025-01-30 14:34:40,861 - DEBUG - 
+Analyzing morning route from 40.0010048,-75.22781069999999 to 3400 Civic Center Boulevard, Philadelphia, PA 19104
+2025-01-30 14:34:41,545 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738332000&destination=3400+Civic+Center+Boulevard%2C+Philadelphia%2C+PA+19104&mode=transit&origin=40.0010048%2C-75.22781069999999&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:34:41,551 - DEBUG - 
+Route 1:
+2025-01-30 14:34:41,551 - DEBUG -   Transit: Cynwyd Line (Train) from Bala to William H. Gray III 30th Street
+2025-01-30 14:34:41,551 - DEBUG -   Transit: Airport Line (Train) from William H. Gray III 30th Street to Penn Medicine Station
+2025-01-30 14:34:41,551 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:34:41,551 - DEBUG -   Valid route found: 18.0 min transit + 7.7 min walk
+2025-01-30 14:34:41,551 - DEBUG - 
+Route 2:
+2025-01-30 14:34:41,551 - DEBUG -   Transit: Cynwyd Line (Train) from Bala to William H. Gray III 30th Street
+2025-01-30 14:34:41,551 - DEBUG -   Walk: 235m (4.6 min)
+2025-01-30 14:34:41,551 - DEBUG -   Transit: SEPTA Route 13 (Light rail) from 30th St to 37th St
+2025-01-30 14:34:41,551 - DEBUG -   Walk: 645m (9.1 min)
+2025-01-30 14:34:41,551 - DEBUG -   Rejected: No valid rail connection to Penn Medicine
+2025-01-30 14:34:41,551 - DEBUG - 
+Route 3:
+2025-01-30 14:34:41,551 - DEBUG -   Walk: 187m (2.7 min)
+2025-01-30 14:34:41,552 - DEBUG -   Transit: Germantown-Chelten to 69th St TC (Bus) from City Av & Bala Av to City Av & Merion Rd
+2025-01-30 14:34:41,552 - DEBUG -   Walk: 138m (2.3 min)
+2025-01-30 14:34:41,552 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Overbrook to William H. Gray III 30th Street
+2025-01-30 14:34:41,552 - DEBUG -   Transit: Airport Line (Train) from William H. Gray III 30th Street to Penn Medicine Station
+2025-01-30 14:34:41,552 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:34:41,552 - DEBUG -   Valid route found: 19.1 min transit + 7.7 min walk
+2025-01-30 14:34:41,552 - DEBUG - 
+Route 4:
+2025-01-30 14:34:41,552 - DEBUG -   Walk: 187m (2.7 min)
+2025-01-30 14:34:41,552 - DEBUG -   Transit: Germantown-Chelten to 69th St TC (Bus) from City Av & Bala Av to City Av & Merion Rd
+2025-01-30 14:34:41,552 - DEBUG -   Walk: 138m (2.3 min)
+2025-01-30 14:34:41,552 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Overbrook to Suburban Station
+2025-01-30 14:34:41,552 - DEBUG -   Transit: Wilmington/Newark Line (Train) from Suburban Station to Penn Medicine Station
+2025-01-30 14:34:41,552 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:34:41,552 - DEBUG -   Valid route found: 29.1 min transit + 7.7 min walk
+2025-01-30 14:34:41,552 - DEBUG - 
+Route 5:
+2025-01-30 14:34:41,552 - DEBUG -   Walk: 198m (3.5 min)
+2025-01-30 14:34:41,552 - DEBUG -   Transit: Germantown-Chelten to 69th St TC (Bus) from City Av & Conshohocken Av - FS to Ridge Av & Osborn St - MBNS
+2025-01-30 14:34:41,552 - DEBUG -   Walk: 87m (3.2 min)
+2025-01-30 14:34:41,552 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Wissahickon to Penn Medicine Station
+2025-01-30 14:34:41,552 - DEBUG -   Walk: 389m (7.7 min)
+2025-01-30 14:34:41,552 - DEBUG -   Rejected: No valid rail connection to Penn Medicine
+2025-01-30 14:34:41,552 - DEBUG - 
+Route 6:
+2025-01-30 14:34:41,552 - DEBUG -   Walk: 187m (2.7 min)
+2025-01-30 14:34:41,552 - DEBUG -   Transit: Germantown-Chelten to 69th St TC (Bus) from City Av & Bala Av to Malvern Av & 63rd St - FS
+2025-01-30 14:34:41,552 - DEBUG -   Walk: 39m (0.7 min)
+2025-01-30 14:34:41,552 - DEBUG -   Transit: SEPTA Route 10 (Light rail) from Malvern Av & 63rd St to 33rd St
+2025-01-30 14:34:41,552 - DEBUG -   Walk: 1044m (14.7 min)
+2025-01-30 14:34:41,552 - DEBUG -   Rejected: No valid rail connection to Penn Medicine
+2025-01-30 14:34:41,552 - DEBUG - 
+Selected best route: 18.0 min transit + 7.7 min walk
+2025-01-30 14:34:41,689 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?departure_time=1738326600&destination=40.0010048%2C-75.22781069999999&mode=driving&origin=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:34:41,692 - DEBUG - 
+Searching for stations near 1420 Centennial Rd, Narberth, PA 19072
+2025-01-30 14:34:41,739 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/geocode/json?address=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:34:41,820 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/place/nearbysearch/json?keyword=train+station&location=40.0293325%2C-75.2460143&maxprice=None&minprice=None&radius=3000&type=train_station&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 2701
+2025-01-30 14:34:41,821 - INFO - 
+Found stations near 1420 Centennial Rd, Narberth, PA 19072:
+2025-01-30 14:34:41,821 - INFO - - Cynwyd (Bala Cynwyd)
+2025-01-30 14:34:41,821 - INFO - - Ivy Ridge (Philadelphia)
+2025-01-30 14:34:41,821 - INFO - - Wissahickon (Philadelphia)
+2025-01-30 14:34:41,821 - INFO - - Manayunk (District of Freedom#8573311~!#, Philadelphia)
+2025-01-30 14:34:41,821 - INFO - - Wynnewood (Lower Merion Township)
+2025-01-30 14:34:41,821 - INFO - - Narberth (211 Elmwood Ave, Narberth)
+2025-01-30 14:34:41,821 - INFO - - Bala (Bala Cynwyd)
+2025-01-30 14:34:41,821 - DEBUG - 
+Analyzing evening commute using Cynwyd
+2025-01-30 14:34:41,822 - DEBUG - Evening route: 3400 Civic Center Boulevard, Philadelphia, PA 19104 -> Cynwyd
+2025-01-30 14:34:41,822 - DEBUG - Target arrival time: 2025-01-31 17:30:00-05:00
+2025-01-30 14:34:41,822 - DEBUG - 
+Analyzing evening route from 3400 Civic Center Boulevard, Philadelphia, PA 19104 to 40.0067313,-75.23191190000001
+2025-01-30 14:34:42,297 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738362600&destination=40.0067313%2C-75.23191190000001&mode=transit&origin=3400+Civic+Center+Boulevard%2C+Philadelphia%2C+PA+19104&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:34:42,306 - DEBUG - 
+Route 1:
+2025-01-30 14:34:42,306 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:34:42,306 - DEBUG -   Transit: Media/Wawa Line (Train) from Penn Medicine Station to William H. Gray III 30th Street
+2025-01-30 14:34:42,306 - DEBUG -   Transit: Cynwyd Line (Train) from William H. Gray III 30th Street to Cynwyd
+2025-01-30 14:34:42,306 - DEBUG -   Walk: 0m (0.0 min)
+2025-01-30 14:34:42,306 - DEBUG -   Valid route found: 19.0 min transit + 0.0 min walk
+2025-01-30 14:34:42,306 - DEBUG - 
+Route 2:
+2025-01-30 14:34:42,306 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:34:42,306 - DEBUG -   Transit: Wilmington/Newark Line (Train) from Penn Medicine Station to Suburban Station
+2025-01-30 14:34:42,306 - DEBUG -   Transit: Cynwyd Line (Train) from Suburban Station to Cynwyd
+2025-01-30 14:34:42,306 - DEBUG -   Walk: 0m (0.0 min)
+2025-01-30 14:34:42,307 - DEBUG -   Valid route found: 28.0 min transit + 0.0 min walk
+2025-01-30 14:34:42,307 - DEBUG - 
+Route 3:
+2025-01-30 14:34:42,307 - DEBUG -   Walk: 669m (9.9 min)
+2025-01-30 14:34:42,307 - DEBUG -   Transit: SEPTA Route 13 (Light rail) from 37th St to Drexel Station at 30th St
+2025-01-30 14:34:42,307 - DEBUG -   Walk: 266m (5.3 min)
+2025-01-30 14:34:42,307 - DEBUG -   Transit: Cynwyd Line (Train) from William H. Gray III 30th Street to Cynwyd
+2025-01-30 14:34:42,307 - DEBUG -   Walk: 0m (0.0 min)
+2025-01-30 14:34:42,307 - DEBUG -   Rejected: No valid rail connection to Penn Medicine
+2025-01-30 14:34:42,307 - DEBUG - 
+Route 4:
+2025-01-30 14:34:42,308 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:34:42,308 - DEBUG -   Transit: Airport Line (Train) from Penn Medicine Station to William H. Gray III 30th Street
+2025-01-30 14:34:42,308 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from William H. Gray III 30th Street to Merion
+2025-01-30 14:34:42,308 - DEBUG -   Walk: 2126m (30.5 min)
+2025-01-30 14:34:42,309 - DEBUG -   Valid route found: 13.0 min transit + 30.5 min walk
+2025-01-30 14:34:42,309 - DEBUG - 
+Route 5:
+2025-01-30 14:34:42,310 - DEBUG -   Walk: 669m (9.9 min)
+2025-01-30 14:34:42,310 - DEBUG -   Transit: SEPTA Route 11 (Light rail) from 37th St to Drexel Station at 30th St
+2025-01-30 14:34:42,310 - DEBUG -   Walk: 266m (5.3 min)
+2025-01-30 14:34:42,310 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from William H. Gray III 30th Street to Merion
+2025-01-30 14:34:42,310 - DEBUG -   Walk: 2126m (30.5 min)
+2025-01-30 14:34:42,310 - DEBUG -   Valid route found: 14.1 min transit + 30.5 min walk
+2025-01-30 14:34:42,310 - DEBUG - 
+Route 6:
+2025-01-30 14:34:42,310 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:34:42,310 - DEBUG -   Transit: Media/Wawa Line (Train) from Penn Medicine Station to Wissahickon
+2025-01-30 14:34:42,310 - DEBUG -   Walk: 422m (7.0 min)
+2025-01-30 14:34:42,310 - DEBUG -   Transit: Germantown-Chelten to 69th St TC (Bus) from Ridge Av & Wissahickon Transit Center to City Av & Conshohocken State Rd
+2025-01-30 14:34:42,310 - DEBUG -   Walk: 909m (12.8 min)
+2025-01-30 14:34:42,310 - DEBUG -   Valid route found: 34.6 min transit + 12.8 min walk
+2025-01-30 14:34:42,310 - DEBUG - 
+Selected best route: 19.0 min transit + 0.0 min walk
+2025-01-30 14:34:42,432 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?departure_time=1738358580&destination=40.0067313%2C-75.23191190000001&mode=driving&origin=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:34:42,435 - DEBUG - 
+Analyzing evening commute using Ivy Ridge
+2025-01-30 14:34:42,436 - DEBUG - Evening route: 3400 Civic Center Boulevard, Philadelphia, PA 19104 -> Ivy Ridge
+2025-01-30 14:34:42,436 - DEBUG - Target arrival time: 2025-01-31 17:30:00-05:00
+2025-01-30 14:34:42,436 - DEBUG - 
+Analyzing evening route from 3400 Civic Center Boulevard, Philadelphia, PA 19104 to 40.0341617,-75.2356293
+2025-01-30 14:34:42,922 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738362600&destination=40.0341617%2C-75.2356293&mode=transit&origin=3400+Civic+Center+Boulevard%2C+Philadelphia%2C+PA+19104&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:34:42,926 - DEBUG - 
+Route 1:
+2025-01-30 14:34:42,926 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:34:42,926 - DEBUG -   Transit: Media/Wawa Line (Train) from Penn Medicine Station to Ivy Ridge
+2025-01-30 14:34:42,926 - DEBUG -   Valid route found: 32.0 min transit + 7.2 min walk
+2025-01-30 14:34:42,927 - DEBUG - 
+Route 2:
+2025-01-30 14:34:42,927 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:34:42,927 - DEBUG -   Transit: Wilmington/Newark Line (Train) from Penn Medicine Station to Ivy Ridge
+2025-01-30 14:34:42,927 - DEBUG -   Valid route found: 33.0 min transit + 7.2 min walk
+2025-01-30 14:34:42,927 - DEBUG - 
+Route 3:
+2025-01-30 14:34:42,927 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:34:42,927 - DEBUG -   Transit: Media/Wawa Line (Train) from Penn Medicine Station to Ivy Ridge
+2025-01-30 14:34:42,927 - DEBUG -   Valid route found: 32.0 min transit + 7.2 min walk
+2025-01-30 14:34:42,927 - DEBUG - 
+Route 4:
+2025-01-30 14:34:42,927 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:34:42,927 - DEBUG -   Transit: Wilmington/Newark Line (Train) from Penn Medicine Station to Temple University
+2025-01-30 14:34:42,927 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Temple University to Ivy Ridge
+2025-01-30 14:34:42,927 - DEBUG -   Valid route found: 29.0 min transit + 7.2 min walk
+2025-01-30 14:34:42,927 - DEBUG - 
+Route 5:
+2025-01-30 14:34:42,927 - DEBUG -   Walk: 669m (9.9 min)
+2025-01-30 14:34:42,927 - DEBUG -   Transit: SEPTA Route 36 (Light rail) from 37th St to 15th St Trolley Station
+2025-01-30 14:34:42,927 - DEBUG -   Walk: 324m (4.7 min)
+2025-01-30 14:34:42,927 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Suburban Station to Ivy Ridge
+2025-01-30 14:34:42,927 - DEBUG -   Rejected: No valid rail connection to Penn Medicine
+2025-01-30 14:34:42,927 - DEBUG - 
+Route 6:
+2025-01-30 14:34:42,927 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:34:42,927 - DEBUG -   Transit: Media/Wawa Line (Train) from Penn Medicine Station to Ivy Ridge
+2025-01-30 14:34:42,928 - DEBUG -   Valid route found: 32.0 min transit + 7.2 min walk
+2025-01-30 14:34:42,928 - DEBUG - 
+Selected best route: 29.0 min transit + 7.2 min walk
+2025-01-30 14:34:43,003 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?departure_time=1738353660&destination=40.0341617%2C-75.2356293&mode=driving&origin=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:34:43,004 - DEBUG - 
+Analyzing evening commute using Wissahickon
+2025-01-30 14:34:43,004 - DEBUG - Evening route: 3400 Civic Center Boulevard, Philadelphia, PA 19104 -> Wissahickon
+2025-01-30 14:34:43,004 - DEBUG - Target arrival time: 2025-01-31 17:30:00-05:00
+2025-01-30 14:34:43,004 - DEBUG - 
+Analyzing evening route from 3400 Civic Center Boulevard, Philadelphia, PA 19104 to 40.0166454,-75.2102424
+2025-01-30 14:34:43,517 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738362600&destination=40.0166454%2C-75.2102424&mode=transit&origin=3400+Civic+Center+Boulevard%2C+Philadelphia%2C+PA+19104&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:34:43,521 - DEBUG - 
+Route 1:
+2025-01-30 14:34:43,522 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:34:43,525 - DEBUG -   Transit: Media/Wawa Line (Train) from Penn Medicine Station to Wissahickon
+2025-01-30 14:34:43,530 - DEBUG -   Valid route found: 27.0 min transit + 7.2 min walk
+2025-01-30 14:34:43,531 - DEBUG - 
+Route 2:
+2025-01-30 14:34:43,531 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:34:43,531 - DEBUG -   Transit: Airport Line (Train) from Penn Medicine Station to William H. Gray III 30th Street
+2025-01-30 14:34:43,531 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from William H. Gray III 30th Street to Wissahickon
+2025-01-30 14:34:43,531 - DEBUG -   Valid route found: 27.0 min transit + 7.2 min walk
+2025-01-30 14:34:43,531 - DEBUG - 
+Route 3:
+2025-01-30 14:34:43,531 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:34:43,532 - DEBUG -   Transit: Airport Line (Train) from Penn Medicine Station to Jefferson Station
+2025-01-30 14:34:43,532 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Jefferson Station to Wissahickon
+2025-01-30 14:34:43,532 - DEBUG -   Valid route found: 27.0 min transit + 7.2 min walk
+2025-01-30 14:34:43,532 - DEBUG - 
+Route 4:
+2025-01-30 14:34:43,532 - DEBUG -   Walk: 669m (9.9 min)
+2025-01-30 14:34:43,532 - DEBUG -   Transit: SEPTA Route 11 (Light rail) from 37th St to 13th St Trolley Station
+2025-01-30 14:34:43,532 - DEBUG -   Walk: 437m (6.2 min)
+2025-01-30 14:34:43,532 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Jefferson Station to Wissahickon
+2025-01-30 14:34:43,532 - DEBUG -   Rejected: No valid rail connection to Penn Medicine
+2025-01-30 14:34:43,532 - DEBUG - 
+Route 5:
+2025-01-30 14:34:43,532 - DEBUG -   Walk: 669m (9.9 min)
+2025-01-30 14:34:43,532 - DEBUG -   Transit: SEPTA Route 13 (Light rail) from 37th St to 15th St Trolley Station
+2025-01-30 14:34:43,532 - DEBUG -   Walk: 324m (4.7 min)
+2025-01-30 14:34:43,533 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Suburban Station to Wissahickon
+2025-01-30 14:34:43,533 - DEBUG -   Rejected: No valid rail connection to Penn Medicine
+2025-01-30 14:34:43,533 - DEBUG - 
+Route 6:
+2025-01-30 14:34:43,533 - DEBUG -   Walk: 669m (9.9 min)
+2025-01-30 14:34:43,533 - DEBUG -   Transit: SEPTA Route 36 (Light rail) from 37th St to 13th St Trolley Station
+2025-01-30 14:34:43,533 - DEBUG -   Walk: 551m (8.3 min)
+2025-01-30 14:34:43,533 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Suburban Station to Wissahickon
+2025-01-30 14:34:43,533 - DEBUG -   Rejected: No valid rail connection to Penn Medicine
+2025-01-30 14:34:43,533 - DEBUG - 
+Selected best route: 27.0 min transit + 7.2 min walk
+2025-01-30 14:34:43,647 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?departure_time=1738359660&destination=40.0166454%2C-75.2102424&mode=driving&origin=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:34:43,649 - DEBUG - 
+Analyzing evening commute using Manayunk
+2025-01-30 14:34:43,649 - DEBUG - Evening route: 3400 Civic Center Boulevard, Philadelphia, PA 19104 -> Manayunk
+2025-01-30 14:34:43,649 - DEBUG - Target arrival time: 2025-01-31 17:30:00-05:00
+2025-01-30 14:34:43,649 - DEBUG - 
+Analyzing evening route from 3400 Civic Center Boulevard, Philadelphia, PA 19104 to 40.0268558,-75.2252668
+2025-01-30 14:34:44,068 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738362600&destination=40.0268558%2C-75.2252668&mode=transit&origin=3400+Civic+Center+Boulevard%2C+Philadelphia%2C+PA+19104&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:34:44,079 - DEBUG - 
+Route 1:
+2025-01-30 14:34:44,079 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:34:44,079 - DEBUG -   Transit: Media/Wawa Line (Train) from Penn Medicine Station to Manayunk
+2025-01-30 14:34:44,080 - DEBUG -   Walk: 63m (3.2 min)
+2025-01-30 14:34:44,080 - DEBUG -   Valid route found: 30.0 min transit + 3.2 min walk
+2025-01-30 14:34:44,080 - DEBUG - 
+Route 2:
+2025-01-30 14:34:44,080 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:34:44,080 - DEBUG -   Transit: Wilmington/Newark Line (Train) from Penn Medicine Station to Manayunk
+2025-01-30 14:34:44,080 - DEBUG -   Walk: 63m (3.2 min)
+2025-01-30 14:34:44,080 - DEBUG -   Valid route found: 30.0 min transit + 3.2 min walk
+2025-01-30 14:34:44,080 - DEBUG - 
+Route 3:
+2025-01-30 14:34:44,080 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:34:44,080 - DEBUG -   Transit: Media/Wawa Line (Train) from Penn Medicine Station to Manayunk
+2025-01-30 14:34:44,080 - DEBUG -   Walk: 63m (3.2 min)
+2025-01-30 14:34:44,080 - DEBUG -   Valid route found: 30.0 min transit + 3.2 min walk
+2025-01-30 14:34:44,080 - DEBUG - 
+Route 4:
+2025-01-30 14:34:44,081 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:34:44,081 - DEBUG -   Transit: Wilmington/Newark Line (Train) from Penn Medicine Station to Temple University
+2025-01-30 14:34:44,081 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Temple University to Manayunk
+2025-01-30 14:34:44,081 - DEBUG -   Walk: 63m (3.2 min)
+2025-01-30 14:34:44,081 - DEBUG -   Valid route found: 27.0 min transit + 3.2 min walk
+2025-01-30 14:34:44,081 - DEBUG - 
+Route 5:
+2025-01-30 14:34:44,081 - DEBUG -   Walk: 669m (9.9 min)
+2025-01-30 14:34:44,081 - DEBUG -   Transit: SEPTA Route 36 (Light rail) from 37th St to 15th St Trolley Station
+2025-01-30 14:34:44,081 - DEBUG -   Walk: 324m (4.7 min)
+2025-01-30 14:34:44,081 - DEBUG -   Transit: Manayunk/Norristown Line (Train) from Suburban Station to Manayunk
+2025-01-30 14:34:44,081 - DEBUG -   Walk: 63m (3.2 min)
+2025-01-30 14:34:44,081 - DEBUG -   Rejected: No valid rail connection to Penn Medicine
+2025-01-30 14:34:44,081 - DEBUG - 
+Route 6:
+2025-01-30 14:34:44,081 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:34:44,081 - DEBUG -   Transit: Media/Wawa Line (Train) from Penn Medicine Station to Manayunk
+2025-01-30 14:34:44,081 - DEBUG -   Walk: 63m (3.2 min)
+2025-01-30 14:34:44,081 - DEBUG -   Valid route found: 30.0 min transit + 3.2 min walk
+2025-01-30 14:34:44,081 - DEBUG - 
+Selected best route: 27.0 min transit + 3.2 min walk
+2025-01-30 14:34:44,187 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?departure_time=1738353660&destination=40.0268558%2C-75.2252668&mode=driving&origin=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:34:44,200 - DEBUG - 
+Analyzing evening commute using Wynnewood
+2025-01-30 14:34:44,202 - DEBUG - Evening route: 3400 Civic Center Boulevard, Philadelphia, PA 19104 -> Wynnewood
+2025-01-30 14:34:44,202 - DEBUG - Target arrival time: 2025-01-31 17:30:00-05:00
+2025-01-30 14:34:44,202 - DEBUG - 
+Analyzing evening route from 3400 Civic Center Boulevard, Philadelphia, PA 19104 to 40.0027266,-75.2730773
+2025-01-30 14:34:44,583 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738362600&destination=40.0027266%2C-75.2730773&mode=transit&origin=3400+Civic+Center+Boulevard%2C+Philadelphia%2C+PA+19104&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:34:44,592 - DEBUG - 
+Route 1:
+2025-01-30 14:34:44,592 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:34:44,592 - DEBUG -   Transit: Media/Wawa Line (Train) from Penn Medicine Station to William H. Gray III 30th Street
+2025-01-30 14:34:44,592 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from William H. Gray III 30th Street to Wynnewood
+2025-01-30 14:34:44,592 - DEBUG -   Walk: 55m (2.4 min)
+2025-01-30 14:34:44,592 - DEBUG -   Valid route found: 17.0 min transit + 2.4 min walk
+2025-01-30 14:34:44,592 - DEBUG - 
+Route 2:
+2025-01-30 14:34:44,592 - DEBUG -   Walk: 669m (9.9 min)
+2025-01-30 14:34:44,592 - DEBUG -   Transit: SEPTA Route 36 (Light rail) from 37th St to Drexel Station at 30th St
+2025-01-30 14:34:44,592 - DEBUG -   Walk: 266m (5.3 min)
+2025-01-30 14:34:44,592 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from William H. Gray III 30th Street to Wynnewood
+2025-01-30 14:34:44,593 - DEBUG -   Walk: 55m (2.4 min)
+2025-01-30 14:34:44,593 - DEBUG -   Valid route found: 18.1 min transit + 2.4 min walk
+2025-01-30 14:34:44,593 - DEBUG - 
+Route 3:
+2025-01-30 14:34:44,593 - DEBUG -   Walk: 669m (9.9 min)
+2025-01-30 14:34:44,593 - DEBUG -   Transit: SEPTA Route 36 (Light rail) from 37th St to 13th St Trolley Station
+2025-01-30 14:34:44,593 - DEBUG -   Walk: 437m (6.2 min)
+2025-01-30 14:34:44,593 - DEBUG -   Transit: Chestnut Hill East Line (Train) from Jefferson Station to Wynnewood
+2025-01-30 14:34:44,593 - DEBUG -   Walk: 55m (2.4 min)
+2025-01-30 14:34:44,593 - DEBUG -   Rejected: No valid rail connection to Penn Medicine
+2025-01-30 14:34:44,593 - DEBUG - 
+Route 4:
+2025-01-30 14:34:44,593 - DEBUG -   Walk: 1044m (14.7 min)
+2025-01-30 14:34:44,594 - DEBUG -   Transit: SEPTA Route 10 (Light rail) from 33rd St to 13th St Trolley Station
+2025-01-30 14:34:44,594 - DEBUG -   Walk: 551m (8.3 min)
+2025-01-30 14:34:44,594 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Suburban Station to Wynnewood
+2025-01-30 14:34:44,594 - DEBUG -   Walk: 55m (2.4 min)
+2025-01-30 14:34:44,594 - DEBUG -   Valid route found: 26.8 min transit + 2.4 min walk
+2025-01-30 14:34:44,594 - DEBUG - 
+Route 5:
+2025-01-30 14:34:44,594 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:34:44,594 - DEBUG -   Transit: Airport Line (Train) from Penn Medicine Station to William H. Gray III 30th Street
+2025-01-30 14:34:44,594 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from William H. Gray III 30th Street to Wynnewood
+2025-01-30 14:34:44,594 - DEBUG -   Walk: 55m (2.4 min)
+2025-01-30 14:34:44,594 - DEBUG -   Valid route found: 17.0 min transit + 2.4 min walk
+2025-01-30 14:34:44,594 - DEBUG - 
+Route 6:
+2025-01-30 14:34:44,594 - DEBUG -   Walk: 669m (9.9 min)
+2025-01-30 14:34:44,594 - DEBUG -   Transit: SEPTA Route 36 (Light rail) from 37th St to Drexel Station at 30th St
+2025-01-30 14:34:44,594 - DEBUG -   Walk: 266m (5.3 min)
+2025-01-30 14:34:44,594 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from William H. Gray III 30th Street to Wynnewood
+2025-01-30 14:34:44,594 - DEBUG -   Walk: 55m (2.4 min)
+2025-01-30 14:34:44,594 - DEBUG -   Valid route found: 18.1 min transit + 2.4 min walk
+2025-01-30 14:34:44,594 - DEBUG - 
+Selected best route: 17.0 min transit + 2.4 min walk
+2025-01-30 14:34:44,843 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?departure_time=1738358580&destination=40.0027266%2C-75.2730773&mode=driving&origin=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:34:44,845 - DEBUG - 
+Analyzing evening commute using Narberth
+2025-01-30 14:34:44,845 - DEBUG - Evening route: 3400 Civic Center Boulevard, Philadelphia, PA 19104 -> Narberth
+2025-01-30 14:34:44,845 - DEBUG - Target arrival time: 2025-01-31 17:30:00-05:00
+2025-01-30 14:34:44,845 - DEBUG - 
+Analyzing evening route from 3400 Civic Center Boulevard, Philadelphia, PA 19104 to 40.0047601,-75.2614664
+2025-01-30 14:34:45,202 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738362600&destination=40.0047601%2C-75.2614664&mode=transit&origin=3400+Civic+Center+Boulevard%2C+Philadelphia%2C+PA+19104&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:34:45,206 - DEBUG - 
+Route 1:
+2025-01-30 14:34:45,206 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:34:45,206 - DEBUG -   Transit: Airport Line (Train) from Penn Medicine Station to William H. Gray III 30th Street
+2025-01-30 14:34:45,206 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from William H. Gray III 30th Street to Narberth
+2025-01-30 14:34:45,206 - DEBUG -   Valid route found: 15.0 min transit + 7.2 min walk
+2025-01-30 14:34:45,206 - DEBUG - 
+Route 2:
+2025-01-30 14:34:45,206 - DEBUG -   Walk: 669m (9.9 min)
+2025-01-30 14:34:45,206 - DEBUG -   Transit: SEPTA Route 13 (Light rail) from 37th St to Drexel Station at 30th St
+2025-01-30 14:34:45,206 - DEBUG -   Walk: 266m (5.3 min)
+2025-01-30 14:34:45,206 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from William H. Gray III 30th Street to Narberth
+2025-01-30 14:34:45,207 - DEBUG -   Valid route found: 16.1 min transit + 5.3 min walk
+2025-01-30 14:34:45,207 - DEBUG - 
+Route 3:
+2025-01-30 14:34:45,208 - DEBUG -   Walk: 669m (9.9 min)
+2025-01-30 14:34:45,208 - DEBUG -   Transit: SEPTA Route 36 (Light rail) from 37th St to 13th St Trolley Station
+2025-01-30 14:34:45,208 - DEBUG -   Walk: 437m (6.2 min)
+2025-01-30 14:34:45,208 - DEBUG -   Transit: Warminster Line (Train) from Jefferson Station to Narberth
+2025-01-30 14:34:45,208 - DEBUG -   Rejected: No valid rail connection to Penn Medicine
+2025-01-30 14:34:45,208 - DEBUG - 
+Route 4:
+2025-01-30 14:34:45,208 - DEBUG -   Walk: 669m (9.9 min)
+2025-01-30 14:34:45,208 - DEBUG -   Transit: SEPTA Route 36 (Light rail) from 37th St to 13th St Trolley Station
+2025-01-30 14:34:45,208 - DEBUG -   Walk: 551m (8.3 min)
+2025-01-30 14:34:45,208 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Suburban Station to Narberth
+2025-01-30 14:34:45,208 - DEBUG -   Valid route found: 25.4 min transit + 8.3 min walk
+2025-01-30 14:34:45,208 - DEBUG - 
+Route 5:
+2025-01-30 14:34:45,208 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:34:45,208 - DEBUG -   Transit: Media/Wawa Line (Train) from Penn Medicine Station to William H. Gray III 30th Street
+2025-01-30 14:34:45,209 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from William H. Gray III 30th Street to Narberth
+2025-01-30 14:34:45,209 - DEBUG -   Valid route found: 15.0 min transit + 7.2 min walk
+2025-01-30 14:34:45,209 - DEBUG - 
+Route 6:
+2025-01-30 14:34:45,209 - DEBUG -   Walk: 1044m (14.7 min)
+2025-01-30 14:34:45,209 - DEBUG -   Transit: SEPTA Route 10 (Light rail) from 33rd St to 13th St Trolley Station
+2025-01-30 14:34:45,209 - DEBUG -   Walk: 551m (8.3 min)
+2025-01-30 14:34:45,209 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from Suburban Station to Narberth
+2025-01-30 14:34:45,209 - DEBUG -   Valid route found: 24.8 min transit + 8.3 min walk
+2025-01-30 14:34:45,209 - DEBUG - 
+Selected best route: 16.1 min transit + 5.3 min walk
+2025-01-30 14:34:45,345 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?departure_time=1738360260&destination=40.0047601%2C-75.2614664&mode=driving&origin=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:34:45,346 - DEBUG - 
+Analyzing evening commute using Bala
+2025-01-30 14:34:45,347 - DEBUG - Evening route: 3400 Civic Center Boulevard, Philadelphia, PA 19104 -> Bala
+2025-01-30 14:34:45,347 - DEBUG - Target arrival time: 2025-01-31 17:30:00-05:00
+2025-01-30 14:34:45,347 - DEBUG - 
+Analyzing evening route from 3400 Civic Center Boulevard, Philadelphia, PA 19104 to 40.0010048,-75.22781069999999
+2025-01-30 14:34:45,859 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?alternatives=true&arrival_time=1738362600&destination=40.0010048%2C-75.22781069999999&mode=transit&origin=3400+Civic+Center+Boulevard%2C+Philadelphia%2C+PA+19104&transit_mode=rail&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
+2025-01-30 14:34:45,873 - DEBUG - 
+Route 1:
+2025-01-30 14:34:45,873 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:34:45,874 - DEBUG -   Transit: Media/Wawa Line (Train) from Penn Medicine Station to William H. Gray III 30th Street
+2025-01-30 14:34:45,876 - DEBUG -   Transit: Cynwyd Line (Train) from William H. Gray III 30th Street to Bala
+2025-01-30 14:34:45,876 - DEBUG -   Valid route found: 17.0 min transit + 7.2 min walk
+2025-01-30 14:34:45,876 - DEBUG - 
+Route 2:
+2025-01-30 14:34:45,876 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:34:45,876 - DEBUG -   Transit: Wilmington/Newark Line (Train) from Penn Medicine Station to Suburban Station
+2025-01-30 14:34:45,876 - DEBUG -   Transit: Cynwyd Line (Train) from Suburban Station to Bala
+2025-01-30 14:34:45,876 - DEBUG -   Valid route found: 26.0 min transit + 7.2 min walk
+2025-01-30 14:34:45,876 - DEBUG - 
+Route 3:
+2025-01-30 14:34:45,876 - DEBUG -   Walk: 669m (9.9 min)
+2025-01-30 14:34:45,876 - DEBUG -   Transit: SEPTA Route 13 (Light rail) from 37th St to Drexel Station at 30th St
+2025-01-30 14:34:45,876 - DEBUG -   Walk: 266m (5.3 min)
+2025-01-30 14:34:45,876 - DEBUG -   Transit: Cynwyd Line (Train) from William H. Gray III 30th Street to Bala
+2025-01-30 14:34:45,876 - DEBUG -   Rejected: No valid rail connection to Penn Medicine
+2025-01-30 14:34:45,876 - DEBUG - 
+Route 4:
+2025-01-30 14:34:45,876 - DEBUG -   Walk: 669m (9.9 min)
+2025-01-30 14:34:45,877 - DEBUG -   Transit: SEPTA Route 36 (Light rail) from 37th St to Drexel Station at 30th St
+2025-01-30 14:34:45,877 - DEBUG -   Walk: 266m (5.3 min)
+2025-01-30 14:34:45,877 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from William H. Gray III 30th Street to Overbrook
+2025-01-30 14:34:45,877 - DEBUG -   Walk: 193m (3.1 min)
+2025-01-30 14:34:45,877 - DEBUG -   Transit: Germantown-Chelten to 69th St TC (Bus) from City Av & Overbrook Av - MBNS to City Av & Bala Av
+2025-01-30 14:34:45,877 - DEBUG -   Walk: 248m (4.1 min)
+2025-01-30 14:34:45,877 - DEBUG -   Valid route found: 18.5 min transit + 4.1 min walk
+2025-01-30 14:34:45,877 - DEBUG - 
+Route 5:
+2025-01-30 14:34:45,877 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:34:45,877 - DEBUG -   Transit: Airport Line (Train) from Penn Medicine Station to William H. Gray III 30th Street
+2025-01-30 14:34:45,877 - DEBUG -   Transit: Paoli/Thorndale Line (Train) from William H. Gray III 30th Street to Overbrook
+2025-01-30 14:34:45,877 - DEBUG -   Walk: 193m (3.1 min)
+2025-01-30 14:34:45,877 - DEBUG -   Transit: Germantown-Chelten to 69th St TC (Bus) from City Av & Overbrook Av - MBNS to City Av & Bala Av
+2025-01-30 14:34:45,877 - DEBUG -   Walk: 248m (4.1 min)
+2025-01-30 14:34:45,877 - DEBUG -   Valid route found: 17.4 min transit + 4.1 min walk
+2025-01-30 14:34:45,877 - DEBUG - 
+Route 6:
+2025-01-30 14:34:45,877 - DEBUG -   Walk: 389m (7.2 min)
+2025-01-30 14:34:45,877 - DEBUG -   Transit: Media/Wawa Line (Train) from Penn Medicine Station to Wissahickon
+2025-01-30 14:34:45,877 - DEBUG -   Walk: 422m (7.0 min)
+2025-01-30 14:34:45,877 - DEBUG -   Transit: Germantown-Chelten to 69th St TC (Bus) from Ridge Av & Wissahickon Transit Center to City Av & Conshohocken State Rd
+2025-01-30 14:34:45,877 - DEBUG -   Walk: 191m (3.1 min)
+2025-01-30 14:34:45,877 - DEBUG -   Valid route found: 34.6 min transit + 3.1 min walk
+2025-01-30 14:34:45,877 - DEBUG - 
+Selected best route: 17.4 min transit + 4.1 min walk
+2025-01-30 14:34:46,012 - DEBUG - https://maps.googleapis.com:443 "GET /maps/api/directions/json?departure_time=1738356540&destination=40.0010048%2C-75.22781069999999&mode=driving&origin=1420+Centennial+Rd%2C+Narberth%2C+PA+19072&key=AIzaSyDClsQrl0pNe6xJBpPi3m6E2FX2aewJjPo HTTP/1.1" 200 None
